@@ -6,25 +6,27 @@
 /* ---------- Google Fonts ---------- */
 
 :root {
-    --navy: #0D47A1;
-    --blue: #1976D2;
-    --bright-blue: #42A5F5;
-    --light-blue: #90CAF9;
-    --pale-blue: #E3F2FD;
+    --cream: #FFF8E7;
+    --yellow-soft: #FFE8A3;
+    --yellow: #F6C85F;
+    --gold: #E8AE45;
+    --brown-light: #C89F70;
+    --brown: #8B6F47;
+    --brown-dark: #4E3B2A;
+    --white: #FFFDF7;
 
-    --white: #FFFFFF;
-    --text: #14213D;
-    --muted: #607089;
-    --border: #DCE8F5;
-    --soft-bg: #F5FAFF;
+    --background: #FFF9ED;
+    --text: #4E3B2A;
+    --text-light: #8B7A68;
+    --border: #EAD9BA;
 
-    --shadow-sm: 0 8px 25px rgba(13, 71, 161, 0.08);
-    --shadow-md: 0 18px 45px rgba(13, 71, 161, 0.12);
-    --shadow-lg: 0 30px 70px rgba(13, 71, 161, 0.18);
+    --shadow-sm: 0 8px 20px rgba(139, 111, 71, 0.10);
+    --shadow-md: 0 15px 35px rgba(139, 111, 71, 0.15);
+    --shadow-lg: 0 25px 55px rgba(139, 111, 71, 0.20);
 
-    --radius-sm: 12px;
-    --radius-md: 20px;
-    --radius-lg: 30px;
+    --radius-sm: 14px;
+    --radius-md: 24px;
+    --radius-lg: 35px;
 
     --container: 1180px;
 
