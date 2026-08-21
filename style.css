@@ -10,27 +10,14 @@
    ========================================================= */
 
 :root {
-    --blue-dark: #0D47A1;
-    --blue: #1976D2;
-    --blue-light: #42A5F5;
-    --blue-soft: #90CAF9;
-    --blue-pale: #E3F2FD;
-
+    --bg: #FDFBF7;
+    --brand: #D4A373;
+    --olive: #CCD5AE;
+    --dark-green: #283618;
     --white: #FFFFFF;
-    --text: #10233F;
-    --text-light: #64748B;
-    --background: #F7FAFE;
-    --border: #DCE8F5;
-
-    --shadow-sm: 0 8px 25px rgba(13, 71, 161, 0.08);
-    --shadow-md: 0 18px 45px rgba(13, 71, 161, 0.12);
-    --shadow-lg: 0 25px 70px rgba(13, 71, 161, 0.18);
-
-    --radius-sm: 12px;
-    --radius-md: 20px;
-    --radius-lg: 30px;
-
-    --container: 1180px;
+    --brown-hover: #A66A3F;
+    --text-muted: #68705A;
+    --border: #E8E2D8;
 }
 
 
