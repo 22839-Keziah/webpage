@@ -3,47 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="เว็บไซต์ Portfolio ของเคไซยาห์ เมกาน ชินวรรธนวงศ์">
-    <title>Meggan | Spring Garden Portfolio</title>
+
+    <meta name="description" content="My Profile - Portfolio ของเคไซยาห์ เมกาน ชินวรรธนวงศ์">
+
+    <title>My Profile | Mystic Forest</title>
+
+    <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&family=Prompt:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
     <!-- Loading Screen -->
     <div class="loading-screen">
-        <div class="loader-garden">
-            <div class="loader-flower">🌸</div>
-            <div class="loader-circle"></div>
-        </div>
-
-        <h2>กำลังเข้าสู่สวนของฉัน</h2>
-        <p>Welcome to my spring garden...</p>
-
-        <div class="loading-bar">
-            <span></span>
+        <div class="loader">
+            <div class="loader-ring"></div>
+            <span>MY PROFILE</span>
+            <small>Entering the Mystic Forest...</small>
         </div>
     </div>
 
-    <!-- Floating Decorations -->
-    <div class="floating-flower flower-1">🌸</div>
-    <div class="floating-flower flower-2">🌼</div>
-    <div class="floating-flower flower-3">🌷</div>
-    <div class="floating-leaf leaf-1">🍃</div>
-    <div class="floating-leaf leaf-2">🌿</div>
+    <!-- Rain -->
+    <div class="rain" aria-hidden="true"></div>
+
+    <!-- Decorative Glow -->
+    <div class="forest-glow glow-one"></div>
+    <div class="forest-glow glow-two"></div>
 
     <!-- Navigation -->
     <header class="site-header">
-        <nav class="navbar">
+        <nav class="navbar container">
 
             <a href="index.html" class="logo">
-                <span class="logo-flower">🌸</span>
-                <span>Meggan.</span>
+                <span class="logo-symbol">✦</span>
+                <span>MY PROFILE</span>
             </a>
 
             <div class="nav-links">
@@ -62,31 +58,36 @@
         <!-- Hero -->
         <section class="hero">
 
-            <div class="hero-background">
-                <div class="sun"></div>
-                <div class="cloud cloud-1"></div>
-                <div class="cloud cloud-2"></div>
+            <div class="hero-particles">
+                <span>✦</span>
+                <span>✧</span>
+                <span>✦</span>
+                <span>✧</span>
+                <span>✦</span>
             </div>
 
-            <div class="hero-content">
+            <div class="container hero-grid">
 
-                <div class="hero-text">
+                <div class="hero-content reveal">
 
-                    <span class="eyebrow">
-                        🌿 WELCOME TO MY GARDEN
-                    </span>
+                    <div class="eyebrow">
+                        <span class="eyebrow-line"></span>
+                        STUDENT PORTFOLIO
+                    </div>
 
                     <h1>
-                        สวัสดีครับ<br>
-                        ผมชื่อ
-                        <span>เมกาน</span>
+                        Welcome to
+                        <span>My Profile</span>
                     </h1>
 
-                    <p class="hero-description">
+                    <p class="hero-name">
                         เคไซยาห์ เมกาน ชินวรรธนวงศ์
+                    </p>
+
+                    <p class="hero-description">
                         นักเรียนชั้นมัธยมศึกษาปีที่ 3
-                        ผู้กำลังเรียนรู้ เติบโต และค้นหาสิ่งใหม่ ๆ
-                        เหมือนต้นไม้เล็ก ๆ ที่กำลังเติบโตในสวนแห่งความฝัน
+                        ผู้ชื่นชอบการเรียนรู้ การสร้างสรรค์
+                        และการค้นหาสิ่งใหม่ ๆ ในโลกแห่งเทคโนโลยี
                     </p>
 
                     <div class="hero-buttons">
@@ -97,223 +98,123 @@
 
                         <a href="hobby.html" class="btn btn-outline">
                             ดูงานอดิเรกของฉัน
-                            <span>🌼</span>
                         </a>
                     </div>
 
                     <div class="hero-stats">
 
-                        <div>
+                        <div class="stat">
                             <strong>15</strong>
                             <span>อายุ</span>
                         </div>
 
-                        <div>
+                        <div class="stat-divider"></div>
+
+                        <div class="stat">
                             <strong>ม.3/2</strong>
                             <span>ระดับชั้น</span>
                         </div>
 
-                        <div>
-                            <strong>🌱</strong>
-                            <span>กำลังเติบโต</span>
+                        <div class="stat-divider"></div>
+
+                        <div class="stat">
+                            <strong>CT</strong>
+                            <span>โรงเรียนจอมทอง</span>
                         </div>
 
                     </div>
 
                 </div>
 
-                <div class="hero-visual">
+                <!-- Profile Visual -->
+                <div class="hero-visual reveal">
 
-                    <div class="garden-orbit orbit-1"></div>
-                    <div class="garden-orbit orbit-2"></div>
+                    <div class="magic-circle circle-one"></div>
+                    <div class="magic-circle circle-two"></div>
 
-                    <div class="profile-blob">
+                    <div class="profile-orb">
 
-                        <div class="profile-ring">
-                            <img
-                                src="https://placehold.co/500x600/FCE4EC/285943?text=MEGGAN"
-                                alt="รูปโปรไฟล์ของเมกาน"
-                            >
+                        <div class="orb-glow"></div>
+
+                        <img
+                            src="https://placehold.co/520x620/102F26/D9FFF4?text=MY+PROFILE"
+                            alt="รูปโปรไฟล์ของฉัน"
+                        >
+
+                        <div class="floating-badge badge-top">
+                            ✦ Explorer
                         </div>
 
-                    </div>
-
-                    <div class="flower-decoration flower-a">🌸</div>
-                    <div class="flower-decoration flower-b">🌼</div>
-                    <div class="flower-decoration flower-c">🌷</div>
-
-                    <div class="mini-card">
-                        <span>🌱</span>
-                        <div>
-                            <strong>Growing Everyday</strong>
-                            <small>เรียนรู้สิ่งใหม่ในทุกวัน</small>
+                        <div class="floating-badge badge-bottom">
+                            🌿 Creative Student
                         </div>
+
                     </div>
 
                 </div>
 
             </div>
 
-            <!-- Grass -->
-            <div class="grass-decoration">
-                <span>🌿</span>
-                <span>🌱</span>
-                <span>🌿</span>
-                <span>🌱</span>
-                <span>🌿</span>
+            <div class="scroll-indicator">
+                <span>SCROLL TO EXPLORE</span>
+                <div class="scroll-line"></div>
             </div>
 
         </section>
 
+        <!-- Intro -->
+        <section class="section intro-section">
 
-        <!-- About Preview -->
-        <section class="section about-preview">
+            <div class="container intro-grid">
 
-            <div class="section-heading">
-                <span class="section-tag">ABOUT ME</span>
-                <h2>เติบโตไปพร้อมกับ<br><span>ความฝันของฉัน</span></h2>
-                <p>
-                    ทุกประสบการณ์เปรียบเสมือนเมล็ดพันธุ์
-                    ที่ค่อย ๆ เติบโตเป็นต้นไม้แห่งความฝัน
-                </p>
-            </div>
+                <div>
+                    <span class="section-label">01 — ABOUT</span>
 
-            <div class="about-grid">
-
-                <div class="about-image">
-                    <div class="image-frame">
-                        <img
-                            src="https://placehold.co/700x800/E8F5E9/285943?text=MY+GARDEN"
-                            alt="ภาพประกอบสวนดอกไม้"
-                        >
-                    </div>
-
-                    <div class="image-sticker">
-                        🌻
-                    </div>
+                    <h2>
+                        ทุกคนมีเรื่องราว
+                        <span>เป็นของตัวเอง</span>
+                    </h2>
                 </div>
 
-                <div class="about-content">
-
-                    <span class="small-title">MY STORY 🌿</span>
-
-                    <h3>
-                        สวัสดีครับ ผมเมกาน
-                    </h3>
-
-                    <p>
-                        ผมเป็นนักเรียนชั้นมัธยมศึกษาปีที่ 3
-                        โรงเรียนจอมทอง จังหวัดเชียงใหม่
-                        ผมชอบเรียนรู้สิ่งใหม่ ๆ และสนใจเรื่องเทคโนโลยี
-                        ภาษา และกิจกรรมที่ช่วยให้ได้พัฒนาตัวเอง
-                    </p>
-
-                    <p>
-                        เว็บไซต์นี้เปรียบเสมือนสวนเล็ก ๆ
-                        ที่รวบรวมเรื่องราวเกี่ยวกับตัวผม
-                        ทั้งประวัติ การศึกษา งานอดิเรก
-                        และสิ่งที่ผมสนใจ
+                <div>
+                    <p class="large-text">
+                        เว็บไซต์นี้คือพื้นที่เล็ก ๆ ที่รวบรวมตัวตน
+                        ความสนใจ การศึกษา และสิ่งที่ฉันกำลังเรียนรู้
                     </p>
 
                     <a href="profile.html" class="text-link">
-                        อ่านเรื่องราวของฉัน
-                        <span>→</span>
+                        สำรวจเรื่องราวของฉัน →
                     </a>
-
                 </div>
 
             </div>
-
-        </section>
-
-
-        <!-- Highlights -->
-        <section class="section highlights">
-
-            <div class="section-heading centered">
-                <span class="section-tag">MY WORLD</span>
-                <h2>สิ่งเล็ก ๆ ที่ทำให้ฉัน<br><span>เติบโตทุกวัน</span></h2>
-            </div>
-
-            <div class="highlight-grid">
-
-                <article class="highlight-card card-green">
-                    <div class="card-icon">📚</div>
-                    <h3>การเรียนรู้</h3>
-                    <p>
-                        สนุกกับการเรียนรู้สิ่งใหม่
-                        และพัฒนาตัวเองอยู่เสมอ
-                    </p>
-                    <a href="education.html">ดูการศึกษา →</a>
-                </article>
-
-                <article class="highlight-card card-pink">
-                    <div class="card-icon">🎮</div>
-                    <h3>งานอดิเรก</h3>
-                    <p>
-                        ใช้เวลาว่างกับสิ่งที่ชอบ
-                        และกิจกรรมที่ทำให้มีความสุข
-                    </p>
-                    <a href="hobby.html">ดูงานอดิเรก →</a>
-                </article>
-
-                <article class="highlight-card card-yellow">
-                    <div class="card-icon">🌱</div>
-                    <h3>อนาคต</h3>
-                    <p>
-                        ค่อย ๆ เติบโตและสร้างอนาคต
-                        จากความฝันของตัวเอง
-                    </p>
-                    <a href="contact.html">ติดต่อฉัน →</a>
-                </article>
-
-            </div>
-
-        </section>
-
-
-        <!-- CTA -->
-        <section class="garden-cta">
-
-            <div class="cta-flower">🌸</div>
-
-            <div>
-                <span>LET'S EXPLORE MY GARDEN</span>
-                <h2>พร้อมทำความรู้จักกับฉันหรือยัง?</h2>
-                <p>
-                    ลองเดินชมสวนเล็ก ๆ ของฉัน
-                    แล้วมาทำความรู้จักกันมากขึ้น
-                </p>
-            </div>
-
-            <a href="profile.html" class="btn btn-light">
-                เริ่มสำรวจสวนของฉัน →
-            </a>
 
         </section>
 
     </main>
 
-
     <!-- Footer -->
     <footer class="footer">
 
-        <div class="footer-main">
+        <div class="container footer-grid">
 
-            <div class="footer-brand">
-                <a href="index.html" class="logo footer-logo">
-                    <span>🌸</span>
-                    <span>Meggan.</span>
+            <div>
+                <a href="index.html" class="footer-logo">
+                    ✦ MY PROFILE
                 </a>
 
                 <p>
-                    My little spring garden 🌿<br>
-                    A portfolio by Meggan.
+                    Mystic Forest Student Portfolio
                 </p>
             </div>
 
+            <div class="footer-info">
+                <strong>เคไซยาห์ เมกาน ชินวรรธนวงศ์</strong>
+                <span>นักเรียนชั้น ม.3/2</span>
+                <span>โรงเรียนจอมทอง จังหวัดเชียงใหม่</span>
+            </div>
+
             <div class="footer-links">
-                <h4>สำรวจเว็บไซต์</h4>
                 <a href="index.html">หน้าแรก</a>
                 <a href="profile.html">ประวัติส่วนตัว</a>
                 <a href="education.html">การศึกษา</a>
@@ -321,20 +222,25 @@
                 <a href="contact.html">ติดต่อ</a>
             </div>
 
-            <div class="footer-info">
-                <h4>เกี่ยวกับฉัน</h4>
-                <p>เคไซยาห์ เมกาน ชินวรรธนวงศ์</p>
-                <p>ชั้นมัธยมศึกษาปีที่ 3/2</p>
-                <p>โรงเรียนจอมทอง</p>
-            </div>
-
         </div>
 
         <div class="footer-bottom">
-            <p>© 2026 Meggan. Made with 🌱 and creativity.</p>
+            © 2026 My Profile — Student Portfolio
         </div>
 
     </footer>
+
+    <!-- Tiny mouse glow effect -->
+    <script>
+        const mouseGlow = document.createElement("div");
+        mouseGlow.className = "mouse-glow";
+        document.body.appendChild(mouseGlow);
+
+        document.addEventListener("mousemove", (event) => {
+            mouseGlow.style.left = event.clientX + "px";
+            mouseGlow.style.top = event.clientY + "px";
+        });
+    </script>
 
 </body>
 </html>
