@@ -3,255 +3,214 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="เว็บไซต์ Portfolio แนะนำตัวเองของนักเรียนชั้นมัธยมศึกษาปีที่ 3">
-    <title>My Portfolio | หน้าแรก</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-
+    <meta name="description" content="Portfolio ของเคไซยาห์ เมกาน ชินวรรธนวงศ์">
+    <title>Megane | Under The Sea Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header class="site-header">
-        <nav class="navbar container" aria-label="เมนูหลัก">
+    <!-- Loading Screen -->
+    <div class="loader">
+        <div class="loader-content">
+            <div class="loader-bubble">🐚</div>
+            <h2>DIVING INTO MY WORLD</h2>
+            <p>กำลังดำดิ่งเข้าสู่โลกของเมกาน...</p>
+            <div class="loader-line">
+                <span></span>
+            </div>
+        </div>
+    </div>
 
-            <a href="index.html" class="brand">
-                <span class="brand-mark">P</span>
-                <span>My Portfolio</span>
+    <!-- Floating Bubbles -->
+    <div class="bubble bubble-1"></div>
+    <div class="bubble bubble-2"></div>
+    <div class="bubble bubble-3"></div>
+    <div class="bubble bubble-4"></div>
+    <div class="bubble bubble-5"></div>
+
+    <header class="navbar">
+        <div class="container nav-wrapper">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🌊</span>
+                <span>MEGANE</span>
             </a>
 
-            <div class="nav-links">
+            <nav>
                 <a href="index.html" class="active">หน้าแรก</a>
                 <a href="profile.html">ประวัติส่วนตัว</a>
                 <a href="education.html">การศึกษา</a>
                 <a href="hobby.html">งานอดิเรก</a>
                 <a href="contact.html">ติดต่อ</a>
-            </div>
-
-        </nav>
+            </nav>
+        </div>
     </header>
 
     <main>
 
-        <!-- Hero Section -->
-        <section class="hero section">
+        <!-- Hero -->
+        <section class="hero">
+            <div class="light-ray"></div>
+
             <div class="container hero-grid">
 
                 <div class="hero-content reveal">
-
-                    <div class="eyebrow">
-                        <span class="eyebrow-dot"></span>
-                        STUDENT PORTFOLIO
-                    </div>
+                    <span class="eyebrow">🌊 WELCOME TO MY OCEAN</span>
 
                     <h1>
-                        สวัสดีครับ/ค่ะ
-                        <span>ฉันคือ [กรอกชื่อ]</span>
+                        Hello, I'm
+                        <span class="gradient-text">Megane</span>
                     </h1>
 
-                    <p class="hero-lead">
-                        นักเรียนชั้นมัธยมศึกษาปีที่ 3
-                        ที่ชอบเรียนรู้สิ่งใหม่ ๆ สนใจเทคโนโลยี
-                        และกำลังสร้างผลงานที่สะท้อนความเป็นตัวเอง
+                    <h2>นักเรียนชั้นมัธยมศึกษาปีที่ 3/2</h2>
+
+                    <p>
+                        สวัสดีครับ ผมชื่อ <strong>เคไซยาห์ เมกาน ชินวรรธนวงศ์</strong>
+                        หรือเรียกสั้น ๆ ว่า <strong>เมกาน</strong>
+                        เว็บไซต์นี้คือพื้นที่เล็ก ๆ ที่รวบรวมเรื่องราว
+                        ตัวตน ความสนใจ และเส้นทางการเรียนรู้ของผม
                     </p>
 
                     <div class="hero-buttons">
                         <a href="profile.html" class="btn btn-primary">
-                            รู้จักฉันมากขึ้น
-                            <span>→</span>
+                            รู้จักฉันมากขึ้น →
                         </a>
 
-                        <a href="hobby.html" class="btn btn-secondary">
-                            ดูงานอดิเรกของฉัน
+                        <a href="hobby.html" class="btn btn-outline">
+                            🐠 ดูงานอดิเรก
                         </a>
                     </div>
 
                     <div class="hero-stats">
-
-                        <div class="stat-item">
-                            <strong>ม.3</strong>
-                            <span>ระดับชั้น</span>
+                        <div>
+                            <strong>15</strong>
+                            <span>Years Old</span>
                         </div>
 
-                        <div class="stat-divider"></div>
-
-                        <div class="stat-item">
-                            <strong>[จังหวัด]</strong>
-                            <span>จังหวัด</span>
+                        <div>
+                            <strong>ม.3/2</strong>
+                            <span>Student</span>
                         </div>
 
-                        <div class="stat-divider"></div>
-
-                        <div class="stat-item">
-                            <strong>[วิชา]</strong>
-                            <span>วิชาที่ชอบ</span>
+                        <div>
+                            <strong>JTC</strong>
+                            <span>School</span>
                         </div>
-
                     </div>
-
                 </div>
 
-                <div class="hero-visual reveal">
+                <div class="hero-visual">
+                    <div class="ocean-ring ring-one"></div>
+                    <div class="ocean-ring ring-two"></div>
 
-                    <div class="hero-orb orb-one"></div>
-                    <div class="hero-orb orb-two"></div>
+                    <div class="profile-orbit">
+                        <span class="orbit-icon">🐠</span>
+                    </div>
 
                     <div class="profile-frame">
-                        <div class="profile-frame-top">
-                            <span>MY PROFILE</span>
-                            <span class="status-dot">●</span>
-                        </div>
-
-                        <div class="profile-image-wrapper">
-                            <div class="image-ring"></div>
-
-                            <img
-                                src="https://placehold.co/600x700/1976D2/FFFFFF?text=PROFILE"
-                                alt="รูปโปรไฟล์ของฉัน"
-                                class="hero-profile-image"
-                            >
-                        </div>
-
-                        <div class="profile-mini-info">
-                            <div>
-                                <span class="mini-label">STUDENT</span>
-                                <strong>[กรอกชื่อเล่น]</strong>
-                            </div>
-
-                            <span class="mini-arrow">↗</span>
-                        </div>
+                        <img
+                            src="https://placehold.co/500x500/087E8B/E8FBFF?text=MEGANE"
+                            alt="รูปโปรไฟล์ของเมกาน"
+                        >
                     </div>
 
-                    <div class="floating-card floating-card-top">
-                        <span class="floating-icon">✦</span>
-                        <div>
-                            <strong>Creative</strong>
-                            <small>คิดและสร้างสรรค์</small>
-                        </div>
+                    <div class="floating-card card-top">
+                        🌊
+                        <span>Explorer</span>
                     </div>
 
-                    <div class="floating-card floating-card-bottom">
-                        <span class="floating-icon blue">✓</span>
-                        <div>
-                            <strong>Always Learn</strong>
-                            <small>เรียนรู้สิ่งใหม่เสมอ</small>
-                        </div>
+                    <div class="floating-card card-bottom">
+                        💻
+                        <span>Creative Student</span>
                     </div>
-
                 </div>
 
+            </div>
+
+            <div class="wave-bottom">
+                <svg viewBox="0 0 1440 180" preserveAspectRatio="none">
+                    <path d="M0,80 C240,180 480,0 720,80 C960,160 1200,20 1440,90 L1440,180 L0,180 Z"></path>
+                </svg>
             </div>
         </section>
 
         <!-- Introduction -->
-        <section class="intro-strip section-small">
-            <div class="container intro-grid">
-
-                <div>
-                    <span class="section-label">A LITTLE ABOUT ME</span>
-                    <h2>เรียนรู้ เติบโต และสร้างสิ่งที่เป็นตัวเอง</h2>
-                </div>
-
-                <p>
-                    เว็บไซต์นี้เป็น Portfolio ที่จัดทำขึ้นเพื่อแนะนำตัวเอง
-                    ประวัติการศึกษา งานอดิเรก ความสนใจ และช่องทางการติดต่อ
-                    โดยออกแบบให้สะท้อนตัวตนและความสนใจของฉัน
-                </p>
-
-            </div>
-        </section>
-
-        <!-- Quick Navigation -->
-        <section class="section">
+        <section class="section ocean-section">
             <div class="container">
 
-                <div class="section-heading centered">
-                    <span class="section-label">EXPLORE MY PORTFOLIO</span>
-                    <h2>มาทำความรู้จักฉันกันมากขึ้น</h2>
+                <div class="section-heading">
+                    <span class="section-label">01 — ABOUT ME</span>
+                    <h2>ทำความรู้จักกับ <span>เมกาน</span></h2>
                     <p>
-                        เลือกดูข้อมูลแต่ละส่วนของ Portfolio ได้จากด้านล่าง
+                        ทุกคนมีโลกของตัวเอง และนี่คือโลกเล็ก ๆ ของผม
                     </p>
                 </div>
 
-                <div class="feature-grid">
+                <div class="intro-grid">
 
-                    <a href="profile.html" class="feature-card feature-card-large">
-                        <div class="feature-icon">01</div>
-                        <div>
-                            <span class="card-label">PROFILE</span>
-                            <h3>ประวัติส่วนตัว</h3>
-                            <p>
-                                ทำความรู้จักตัวตน ข้อมูลส่วนตัว
-                                และเรื่องราวเกี่ยวกับฉัน
-                            </p>
-                        </div>
-                        <span class="card-arrow">→</span>
-                    </a>
+                    <div class="glass-card intro-main">
+                        <span class="big-icon">🐚</span>
 
-                    <a href="education.html" class="feature-card">
-                        <div class="feature-icon">02</div>
-                        <div>
-                            <span class="card-label">EDUCATION</span>
-                            <h3>การศึกษา</h3>
-                            <p>เส้นทางการเรียนรู้และเป้าหมายทางการศึกษา</p>
-                        </div>
-                        <span class="card-arrow">→</span>
-                    </a>
+                        <h3>My Little Ocean</h3>
 
-                    <a href="hobby.html" class="feature-card">
-                        <div class="feature-icon">03</div>
-                        <div>
-                            <span class="card-label">HOBBY</span>
-                            <h3>งานอดิเรก</h3>
-                            <p>สิ่งที่ฉันชอบทำในเวลาว่าง</p>
-                        </div>
-                        <span class="card-arrow">→</span>
-                    </a>
+                        <p>
+                            ผมเป็นนักเรียนชั้นมัธยมศึกษาปีที่ 3
+                            จากโรงเรียนจอมทอง จังหวัดเชียงใหม่
+                            เว็บไซต์นี้จัดทำขึ้นเพื่อเป็น Portfolio
+                            สำหรับโครงงานวิชาคอมพิวเตอร์
+                        </p>
+
+                        <a href="profile.html" class="text-link">
+                            อ่านเรื่องราวของฉัน →
+                        </a>
+                    </div>
+
+                    <div class="mini-card">
+                        <span>🎂</span>
+                        <h3>วันเกิด</h3>
+                        <p>1 สิงหาคม 2554</p>
+                    </div>
+
+                    <div class="mini-card">
+                        <span>📍</span>
+                        <h3>จังหวัด</h3>
+                        <p>เชียงใหม่</p>
+                    </div>
 
                 </div>
-
             </div>
         </section>
 
         <!-- CTA -->
-        <section class="section cta-section">
-            <div class="container">
-
-                <div class="cta-box">
-                    <div>
-                        <span class="section-label light-label">LET'S CONNECT</span>
-                        <h2>ขอบคุณที่เข้ามาเยี่ยมชม Portfolio ของฉัน</h2>
-                        <p>
-                            หากต้องการรู้จักฉันมากขึ้น สามารถดูข้อมูลเพิ่มเติม
-                            หรือไปที่หน้าติดต่อได้เลย
-                        </p>
-                    </div>
-
-                    <a href="contact.html" class="btn btn-light">
-                        ติดต่อฉัน →
-                    </a>
+        <section class="cta-section">
+            <div class="container cta-box">
+                <div>
+                    <span class="section-label">KEEP EXPLORING</span>
+                    <h2>พร้อมจะสำรวจโลกของผมหรือยัง? 🌊</h2>
+                    <p>
+                        ลองดำดิ่งไปดูเรื่องราวในแต่ละส่วนของ Portfolio กันเลย
+                    </p>
                 </div>
 
+                <a href="contact.html" class="btn btn-white">
+                    ติดต่อฉัน →
+                </a>
             </div>
         </section>
 
     </main>
 
-    <footer class="site-footer">
+    <footer class="footer">
         <div class="container footer-grid">
 
             <div>
-                <a href="index.html" class="brand footer-brand">
-                    <span class="brand-mark">P</span>
-                    <span>My Portfolio</span>
-                </a>
+                <a href="index.html" class="footer-logo">🌊 MEGANE</a>
+                <p>Under The Sea Student Portfolio</p>
+            </div>
 
-                <p>
-                    Portfolio ของนักเรียนชั้นมัธยมศึกษาปีที่ 3
-                </p>
+            <div class="footer-info">
+                <p>เคไซยาห์ เมกาน ชินวรรธนวงศ์</p>
+                <p>นักเรียนชั้นมัธยมศึกษาปีที่ 3/2</p>
             </div>
 
             <div class="footer-links">
@@ -264,9 +223,8 @@
 
         </div>
 
-        <div class="container footer-bottom">
-            <span>© 2026 [กรอกชื่อ] — Student Portfolio</span>
-            <span>Made with HTML & CSS</span>
+        <div class="copyright">
+            © 2026 Megane. Student Portfolio Project.
         </div>
     </footer>
 
