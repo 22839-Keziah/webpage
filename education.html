@@ -1,216 +1,416 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="ประวัติการศึกษาของเมกาน">
-    <title>Education | Megane</title>
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="ประวัติการศึกษาของเคไซยาห์ เมกาน">
+
+    <title>การศึกษา | Meggan</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&family=Prompt:wght@300;400;500;600&display=swap"
+          rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-    <header class="navbar">
-        <div class="container nav-wrapper">
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+
+        <div class="loader-garden">
+            <div class="loader-flower">🌸</div>
+            <div class="loader-circle"></div>
+        </div>
+
+        <h2>กำลังเข้าสู่สวนของฉัน</h2>
+
+        <p>
+            Growing knowledge...
+        </p>
+
+        <div class="loading-bar">
+            <span></span>
+        </div>
+
+    </div>
+
+
+    <!-- Decorations -->
+    <div class="floating-flower flower-1">🌸</div>
+    <div class="floating-flower flower-2">🌼</div>
+    <div class="floating-leaf leaf-1">🍃</div>
+
+
+    <!-- Navigation -->
+    <header class="site-header">
+
+        <nav class="navbar">
 
             <a href="index.html" class="logo">
-                <span class="logo-icon">🌊</span>
-                <span>MEGANE</span>
+                <span>🌸</span>
+                <span>Meggan.</span>
             </a>
 
-            <nav>
-                <a href="index.html">หน้าแรก</a>
-                <a href="profile.html">ประวัติส่วนตัว</a>
-                <a href="education.html" class="active">การศึกษา</a>
-                <a href="hobby.html">งานอดิเรก</a>
-                <a href="contact.html">ติดต่อ</a>
-            </nav>
+            <div class="nav-links">
 
-        </div>
+                <a href="index.html">
+                    หน้าแรก
+                </a>
+
+                <a href="profile.html">
+                    ประวัติส่วนตัว
+                </a>
+
+                <a href="education.html"
+                   class="active">
+                    การศึกษา
+                </a>
+
+                <a href="hobby.html">
+                    งานอดิเรก
+                </a>
+
+                <a href="contact.html">
+                    ติดต่อ
+                </a>
+
+            </div>
+
+        </nav>
+
     </header>
+
 
     <main>
 
+        <!-- Page Hero -->
         <section class="page-hero">
-            <div class="container">
-                <span class="eyebrow">🎓 MY JOURNEY</span>
-                <h1>เส้นทางการศึกษา</h1>
-                <p>Every step is part of the journey.</p>
-            </div>
+
+            <span class="section-tag">
+                MY EDUCATION 📚
+            </span>
+
+            <h1>
+                เส้นทางการเรียนรู้
+            </h1>
+
+            <p>
+                ทุกห้องเรียนคือแปลงดอกไม้
+                ที่ช่วยให้เราเติบโตขึ้นอีกหนึ่งก้าว
+            </p>
+
         </section>
 
-        <section class="section">
-            <div class="container">
 
-                <div class="section-heading left">
-                    <span class="section-label">EDUCATION TIMELINE</span>
-                    <h2>เส้นทางการเรียนรู้ของฉัน</h2>
-                </div>
+        <!-- Education Timeline -->
+        <section class="section education-section">
 
-                <div class="timeline">
+            <div class="timeline">
 
-                    <div class="timeline-item">
-                        <div class="timeline-dot">🌱</div>
+                <!-- Primary -->
+                <div class="timeline-item">
 
-                        <div class="timeline-content">
-                            <span class="timeline-year">ระดับประถมศึกษา</span>
-                            <h3>ประถมศึกษา</h3>
-                            <p>
-                                จุดเริ่มต้นของการเรียนรู้
-                                และการค้นพบสิ่งใหม่ ๆ รอบตัว
-                            </p>
-                        </div>
+                    <div class="timeline-icon">
+                        🌱
                     </div>
 
-                    <div class="timeline-item">
-                        <div class="timeline-dot">🐚</div>
+                    <div class="timeline-content">
 
-                        <div class="timeline-content">
-                            <span class="timeline-year">ระดับมัธยมศึกษาตอนต้น</span>
-                            <h3>มัธยมศึกษาตอนต้น</h3>
-                            <p>
-                                เริ่มค้นหาความสนใจของตัวเอง
-                                และเรียนรู้ทักษะด้านต่าง ๆ มากขึ้น
-                            </p>
-                        </div>
-                    </div>
+                        <span class="timeline-year">
+                            ระดับประถมศึกษา
+                        </span>
 
-                    <div class="timeline-item current">
-                        <div class="timeline-dot">🌊</div>
-
-                        <div class="timeline-content">
-                            <span class="timeline-year">ปัจจุบัน</span>
-                            <h3>โรงเรียนจอมทอง — ม.3/2</h3>
-                            <p>
-                                ปัจจุบันกำลังศึกษาอยู่ชั้นมัธยมศึกษาปีที่ 3/2
-                                โรงเรียนจอมทอง จังหวัดเชียงใหม่
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="education-highlight">
-
-                    <div class="highlight-main">
-                        <span class="section-label">CURRENT SCHOOL</span>
-
-                        <h2>โรงเรียนจอมทอง</h2>
+                        <h3>
+                            จุดเริ่มต้นของการเรียนรู้
+                        </h3>
 
                         <p>
-                            สถานที่ที่ผมกำลังเรียนรู้ เติบโต
-                            และสร้างประสบการณ์ใหม่ ๆ
+                            เป็นช่วงเวลาที่ได้เรียนรู้พื้นฐาน
+                            และค้นพบความสนใจต่าง ๆ
                         </p>
 
-                        <div class="school-tags">
-                            <span>🏫 ม.3/2</span>
-                            <span>📍 เชียงใหม่</span>
-                            <span>📚 Student</span>
-                        </div>
                     </div>
-
-                    <div class="school-icon">🎓</div>
 
                 </div>
 
-                <div class="subject-section">
 
-                    <div class="section-heading left">
-                        <span class="section-label">MY FAVORITE SUBJECT</span>
-                        <h2>วิชาที่ชอบ</h2>
+                <!-- Middle -->
+                <div class="timeline-item">
+
+                    <div class="timeline-icon">
+                        🌿
                     </div>
 
-                    <div class="favorite-subject">
+                    <div class="timeline-content">
 
-                        <div class="subject-icon">🇬🇧</div>
+                        <span class="timeline-year">
+                            มัธยมศึกษาตอนต้น
+                        </span>
 
-                        <div>
-                            <h3>ภาษาอังกฤษ</h3>
-                            <p>
-                                วิชาที่ชอบและเป็นหนึ่งในวิชาที่สนใจ
-                                เพราะช่วยให้สามารถสื่อสารและเรียนรู้
-                                ข้อมูลจากแหล่งต่าง ๆ ได้มากขึ้น
-                            </p>
-                        </div>
+                        <h3>
+                            เริ่มค้นหาตัวเอง
+                        </h3>
 
-                        <div class="subject-number">01</div>
+                        <p>
+                            ได้พบกับวิชา กิจกรรม
+                            และประสบการณ์ใหม่ ๆ
+                            ที่ช่วยให้รู้จักตัวเองมากขึ้น
+                        </p>
 
                     </div>
 
                 </div>
 
-                <div class="education-table-wrapper">
 
-                    <div class="section-heading left">
-                        <span class="section-label">EDUCATION RECORD</span>
-                        <h2>ข้อมูลการศึกษา</h2>
+                <!-- Current -->
+                <div class="timeline-item current">
+
+                    <div class="timeline-icon">
+                        🌳
                     </div>
 
-                    <div class="table-scroll">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>ระดับ</th>
-                                    <th>สถานศึกษา</th>
-                                    <th>สถานะ</th>
-                                </tr>
-                            </thead>
+                    <div class="timeline-content">
 
-                            <tbody>
-                                <tr>
-                                    <td>ประถมศึกษา</td>
-                                    <td>ประวัติการศึกษาระดับประถมศึกษา</td>
-                                    <td><span class="status">สำเร็จแล้ว</span></td>
-                                </tr>
+                        <span class="timeline-year">
+                            ปัจจุบัน
+                        </span>
 
-                                <tr>
-                                    <td>มัธยมศึกษาตอนต้น</td>
-                                    <td>โรงเรียนจอมทอง</td>
-                                    <td><span class="status active-status">กำลังศึกษา</span></td>
-                                </tr>
+                        <h3>
+                            มัธยมศึกษาปีที่ 3/2
+                        </h3>
 
-                                <tr>
-                                    <td>ระดับปัจจุบัน</td>
-                                    <td>ม.3/2 โรงเรียนจอมทอง</td>
-                                    <td><span class="status active-status">ปัจจุบัน</span></td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <p>
+                            โรงเรียนจอมทอง จังหวัดเชียงใหม่
+                            กำลังเรียนรู้และเตรียมตัว
+                            สำหรับก้าวต่อไปของชีวิต
+                        </p>
+
+                        <div class="current-badge">
+                            ✨ CURRENTLY GROWING
+                        </div>
+
                     </div>
 
                 </div>
 
             </div>
+
+        </section>
+
+
+        <!-- Education Highlight -->
+        <section class="section education-highlight">
+
+            <div class="education-intro">
+
+                <span class="section-tag">
+                    SCHOOL LIFE
+                </span>
+
+                <h2>
+                    สิ่งที่กำลังเติบโต<br>
+                    <span>ในสวนการเรียนรู้</span>
+                </h2>
+
+                <p>
+                    โรงเรียนไม่ได้มีเพียงบทเรียน
+                    แต่ยังเป็นสถานที่ที่เราได้เรียนรู้
+                    การใช้ชีวิตและการทำงานร่วมกับผู้อื่น
+                </p>
+
+            </div>
+
+
+            <div class="education-features">
+
+                <div class="education-feature">
+                    <span>🏫</span>
+                    <strong>โรงเรียน</strong>
+                    <p>จอมทอง</p>
+                </div>
+
+                <div class="education-feature">
+                    <span>🎓</span>
+                    <strong>ระดับชั้น</strong>
+                    <p>ม.3/2</p>
+                </div>
+
+                <div class="education-feature">
+                    <span>📖</span>
+                    <strong>วิชาที่ชอบ</strong>
+                    <p>ภาษาอังกฤษ</p>
+                </div>
+
+                <div class="education-feature">
+                    <span>🌱</span>
+                    <strong>เป้าหมาย</strong>
+                    <p>พัฒนาตัวเอง</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Table -->
+        <section class="section table-section">
+
+            <div class="section-heading centered">
+
+                <span class="section-tag">
+                    EDUCATION RECORD
+                </span>
+
+                <h2>
+                    ประวัติการศึกษา
+                </h2>
+
+            </div>
+
+
+            <div class="table-wrapper">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>ช่วงการศึกษา</th>
+                            <th>ระดับ</th>
+                            <th>สถานศึกษา</th>
+                            <th>สถานะ</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>ประถมศึกษา</td>
+                            <td>ประถมศึกษา</td>
+                            <td>โรงเรียน</td>
+                            <td>
+                                <span class="status">
+                                    สำเร็จแล้ว
+                                </span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>มัธยมต้น</td>
+                            <td>มัธยมศึกษาตอนต้น</td>
+                            <td>โรงเรียนจอมทอง</td>
+                            <td>
+                                <span class="status">
+                                    กำลังเรียน
+                                </span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>ปัจจุบัน</td>
+                            <td>ม.3/2</td>
+                            <td>โรงเรียนจอมทอง</td>
+                            <td>
+                                <span class="status current-status">
+                                    ปัจจุบัน
+                                </span>
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
         </section>
 
     </main>
 
+
+    <!-- Footer -->
     <footer class="footer">
-        <div class="container footer-grid">
 
-            <div>
-                <a href="index.html" class="footer-logo">🌊 MEGANE</a>
-                <p>Under The Sea Student Portfolio</p>
+        <div class="footer-main">
+
+            <div class="footer-brand">
+
+                <a href="index.html"
+                   class="logo footer-logo">
+
+                    <span>🌸</span>
+                    <span>Meggan.</span>
+
+                </a>
+
+                <p>
+                    Learning and growing every day 🌱
+                </p>
+
             </div>
 
-            <div class="footer-info">
-                <p>เคไซยาห์ เมกาน ชินวรรธนวงศ์</p>
-                <p>นักเรียนชั้นมัธยมศึกษาปีที่ 3/2</p>
-            </div>
 
             <div class="footer-links">
+
+                <h4>
+                    สำรวจเว็บไซต์
+                </h4>
+
                 <a href="index.html">หน้าแรก</a>
                 <a href="profile.html">ประวัติส่วนตัว</a>
                 <a href="education.html">การศึกษา</a>
                 <a href="hobby.html">งานอดิเรก</a>
                 <a href="contact.html">ติดต่อ</a>
+
+            </div>
+
+
+            <div class="footer-info">
+
+                <h4>
+                    ข้อมูล
+                </h4>
+
+                <p>
+                    เมกาน
+                </p>
+
+                <p>
+                    ม.3/2 โรงเรียนจอมทอง
+                </p>
+
+                <p>
+                    เชียงใหม่
+                </p>
+
             </div>
 
         </div>
 
-        <div class="copyright">
-            © 2026 Megane. Student Portfolio Project.
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Meggan. Made with 🌱 and creativity.
+            </p>
+
         </div>
+
     </footer>
 
 </body>
