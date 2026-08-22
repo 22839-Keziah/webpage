@@ -3,217 +3,317 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio ของเคไซยาห์ เมกาน ชินวรรธนวงศ์">
-    <title>Megane | Under The Sea Portfolio</title>
+    <meta name="description" content="เว็บไซต์ Portfolio ของเคไซยาห์ เมกาน ชินวรรธนวงศ์">
+    <title>Meggan | Spring Garden Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&family=Prompt:wght@300;400;500;600&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <!-- Loading Screen -->
-    <div class="loader">
-        <div class="loader-content">
-            <div class="loader-bubble">🐚</div>
-            <h2>DIVING INTO MY WORLD</h2>
-            <p>กำลังดำดิ่งเข้าสู่โลกของเมกาน...</p>
-            <div class="loader-line">
-                <span></span>
-            </div>
+    <div class="loading-screen">
+        <div class="loader-garden">
+            <div class="loader-flower">🌸</div>
+            <div class="loader-circle"></div>
+        </div>
+
+        <h2>กำลังเข้าสู่สวนของฉัน</h2>
+        <p>Welcome to my spring garden...</p>
+
+        <div class="loading-bar">
+            <span></span>
         </div>
     </div>
 
-    <!-- Floating Bubbles -->
-    <div class="bubble bubble-1"></div>
-    <div class="bubble bubble-2"></div>
-    <div class="bubble bubble-3"></div>
-    <div class="bubble bubble-4"></div>
-    <div class="bubble bubble-5"></div>
+    <!-- Floating Decorations -->
+    <div class="floating-flower flower-1">🌸</div>
+    <div class="floating-flower flower-2">🌼</div>
+    <div class="floating-flower flower-3">🌷</div>
+    <div class="floating-leaf leaf-1">🍃</div>
+    <div class="floating-leaf leaf-2">🌿</div>
 
-    <header class="navbar">
-        <div class="container nav-wrapper">
+    <!-- Navigation -->
+    <header class="site-header">
+        <nav class="navbar">
+
             <a href="index.html" class="logo">
-                <span class="logo-icon">🌊</span>
-                <span>MEGANE</span>
+                <span class="logo-flower">🌸</span>
+                <span>Meggan.</span>
             </a>
 
-            <nav>
+            <div class="nav-links">
                 <a href="index.html" class="active">หน้าแรก</a>
                 <a href="profile.html">ประวัติส่วนตัว</a>
                 <a href="education.html">การศึกษา</a>
                 <a href="hobby.html">งานอดิเรก</a>
                 <a href="contact.html">ติดต่อ</a>
-            </nav>
-        </div>
+            </div>
+
+        </nav>
     </header>
 
     <main>
 
         <!-- Hero -->
         <section class="hero">
-            <div class="light-ray"></div>
 
-            <div class="container hero-grid">
+            <div class="hero-background">
+                <div class="sun"></div>
+                <div class="cloud cloud-1"></div>
+                <div class="cloud cloud-2"></div>
+            </div>
 
-                <div class="hero-content reveal">
-                    <span class="eyebrow">🌊 WELCOME TO MY OCEAN</span>
+            <div class="hero-content">
+
+                <div class="hero-text">
+
+                    <span class="eyebrow">
+                        🌿 WELCOME TO MY GARDEN
+                    </span>
 
                     <h1>
-                        Hello, I'm
-                        <span class="gradient-text">Megane</span>
+                        สวัสดีครับ<br>
+                        ผมชื่อ
+                        <span>เมกาน</span>
                     </h1>
 
-                    <h2>นักเรียนชั้นมัธยมศึกษาปีที่ 3/2</h2>
-
-                    <p>
-                        สวัสดีครับ ผมชื่อ <strong>เคไซยาห์ เมกาน ชินวรรธนวงศ์</strong>
-                        หรือเรียกสั้น ๆ ว่า <strong>เมกาน</strong>
-                        เว็บไซต์นี้คือพื้นที่เล็ก ๆ ที่รวบรวมเรื่องราว
-                        ตัวตน ความสนใจ และเส้นทางการเรียนรู้ของผม
+                    <p class="hero-description">
+                        เคไซยาห์ เมกาน ชินวรรธนวงศ์
+                        นักเรียนชั้นมัธยมศึกษาปีที่ 3
+                        ผู้กำลังเรียนรู้ เติบโต และค้นหาสิ่งใหม่ ๆ
+                        เหมือนต้นไม้เล็ก ๆ ที่กำลังเติบโตในสวนแห่งความฝัน
                     </p>
 
                     <div class="hero-buttons">
                         <a href="profile.html" class="btn btn-primary">
-                            รู้จักฉันมากขึ้น →
+                            รู้จักฉันมากขึ้น
+                            <span>→</span>
                         </a>
 
                         <a href="hobby.html" class="btn btn-outline">
-                            🐠 ดูงานอดิเรก
+                            ดูงานอดิเรกของฉัน
+                            <span>🌼</span>
                         </a>
                     </div>
 
                     <div class="hero-stats">
+
                         <div>
                             <strong>15</strong>
-                            <span>Years Old</span>
+                            <span>อายุ</span>
                         </div>
 
                         <div>
                             <strong>ม.3/2</strong>
-                            <span>Student</span>
+                            <span>ระดับชั้น</span>
                         </div>
 
                         <div>
-                            <strong>JTC</strong>
-                            <span>School</span>
+                            <strong>🌱</strong>
+                            <span>กำลังเติบโต</span>
                         </div>
+
                     </div>
+
                 </div>
 
                 <div class="hero-visual">
-                    <div class="ocean-ring ring-one"></div>
-                    <div class="ocean-ring ring-two"></div>
 
-                    <div class="profile-orbit">
-                        <span class="orbit-icon">🐠</span>
+                    <div class="garden-orbit orbit-1"></div>
+                    <div class="garden-orbit orbit-2"></div>
+
+                    <div class="profile-blob">
+
+                        <div class="profile-ring">
+                            <img
+                                src="https://placehold.co/500x600/FCE4EC/285943?text=MEGGAN"
+                                alt="รูปโปรไฟล์ของเมกาน"
+                            >
+                        </div>
+
                     </div>
 
-                    <div class="profile-frame">
+                    <div class="flower-decoration flower-a">🌸</div>
+                    <div class="flower-decoration flower-b">🌼</div>
+                    <div class="flower-decoration flower-c">🌷</div>
+
+                    <div class="mini-card">
+                        <span>🌱</span>
+                        <div>
+                            <strong>Growing Everyday</strong>
+                            <small>เรียนรู้สิ่งใหม่ในทุกวัน</small>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Grass -->
+            <div class="grass-decoration">
+                <span>🌿</span>
+                <span>🌱</span>
+                <span>🌿</span>
+                <span>🌱</span>
+                <span>🌿</span>
+            </div>
+
+        </section>
+
+
+        <!-- About Preview -->
+        <section class="section about-preview">
+
+            <div class="section-heading">
+                <span class="section-tag">ABOUT ME</span>
+                <h2>เติบโตไปพร้อมกับ<br><span>ความฝันของฉัน</span></h2>
+                <p>
+                    ทุกประสบการณ์เปรียบเสมือนเมล็ดพันธุ์
+                    ที่ค่อย ๆ เติบโตเป็นต้นไม้แห่งความฝัน
+                </p>
+            </div>
+
+            <div class="about-grid">
+
+                <div class="about-image">
+                    <div class="image-frame">
                         <img
-                            src="https://placehold.co/500x500/087E8B/E8FBFF?text=MEGANE"
-                            alt="รูปโปรไฟล์ของเมกาน"
+                            src="https://placehold.co/700x800/E8F5E9/285943?text=MY+GARDEN"
+                            alt="ภาพประกอบสวนดอกไม้"
                         >
                     </div>
 
-                    <div class="floating-card card-top">
-                        🌊
-                        <span>Explorer</span>
-                    </div>
-
-                    <div class="floating-card card-bottom">
-                        💻
-                        <span>Creative Student</span>
+                    <div class="image-sticker">
+                        🌻
                     </div>
                 </div>
 
-            </div>
+                <div class="about-content">
 
-            <div class="wave-bottom">
-                <svg viewBox="0 0 1440 180" preserveAspectRatio="none">
-                    <path d="M0,80 C240,180 480,0 720,80 C960,160 1200,20 1440,90 L1440,180 L0,180 Z"></path>
-                </svg>
-            </div>
-        </section>
+                    <span class="small-title">MY STORY 🌿</span>
 
-        <!-- Introduction -->
-        <section class="section ocean-section">
-            <div class="container">
+                    <h3>
+                        สวัสดีครับ ผมเมกาน
+                    </h3>
 
-                <div class="section-heading">
-                    <span class="section-label">01 — ABOUT ME</span>
-                    <h2>ทำความรู้จักกับ <span>เมกาน</span></h2>
                     <p>
-                        ทุกคนมีโลกของตัวเอง และนี่คือโลกเล็ก ๆ ของผม
+                        ผมเป็นนักเรียนชั้นมัธยมศึกษาปีที่ 3
+                        โรงเรียนจอมทอง จังหวัดเชียงใหม่
+                        ผมชอบเรียนรู้สิ่งใหม่ ๆ และสนใจเรื่องเทคโนโลยี
+                        ภาษา และกิจกรรมที่ช่วยให้ได้พัฒนาตัวเอง
                     </p>
-                </div>
 
-                <div class="intro-grid">
+                    <p>
+                        เว็บไซต์นี้เปรียบเสมือนสวนเล็ก ๆ
+                        ที่รวบรวมเรื่องราวเกี่ยวกับตัวผม
+                        ทั้งประวัติ การศึกษา งานอดิเรก
+                        และสิ่งที่ผมสนใจ
+                    </p>
 
-                    <div class="glass-card intro-main">
-                        <span class="big-icon">🐚</span>
-
-                        <h3>My Little Ocean</h3>
-
-                        <p>
-                            ผมเป็นนักเรียนชั้นมัธยมศึกษาปีที่ 3
-                            จากโรงเรียนจอมทอง จังหวัดเชียงใหม่
-                            เว็บไซต์นี้จัดทำขึ้นเพื่อเป็น Portfolio
-                            สำหรับโครงงานวิชาคอมพิวเตอร์
-                        </p>
-
-                        <a href="profile.html" class="text-link">
-                            อ่านเรื่องราวของฉัน →
-                        </a>
-                    </div>
-
-                    <div class="mini-card">
-                        <span>🎂</span>
-                        <h3>วันเกิด</h3>
-                        <p>1 สิงหาคม 2554</p>
-                    </div>
-
-                    <div class="mini-card">
-                        <span>📍</span>
-                        <h3>จังหวัด</h3>
-                        <p>เชียงใหม่</p>
-                    </div>
+                    <a href="profile.html" class="text-link">
+                        อ่านเรื่องราวของฉัน
+                        <span>→</span>
+                    </a>
 
                 </div>
+
             </div>
+
         </section>
+
+
+        <!-- Highlights -->
+        <section class="section highlights">
+
+            <div class="section-heading centered">
+                <span class="section-tag">MY WORLD</span>
+                <h2>สิ่งเล็ก ๆ ที่ทำให้ฉัน<br><span>เติบโตทุกวัน</span></h2>
+            </div>
+
+            <div class="highlight-grid">
+
+                <article class="highlight-card card-green">
+                    <div class="card-icon">📚</div>
+                    <h3>การเรียนรู้</h3>
+                    <p>
+                        สนุกกับการเรียนรู้สิ่งใหม่
+                        และพัฒนาตัวเองอยู่เสมอ
+                    </p>
+                    <a href="education.html">ดูการศึกษา →</a>
+                </article>
+
+                <article class="highlight-card card-pink">
+                    <div class="card-icon">🎮</div>
+                    <h3>งานอดิเรก</h3>
+                    <p>
+                        ใช้เวลาว่างกับสิ่งที่ชอบ
+                        และกิจกรรมที่ทำให้มีความสุข
+                    </p>
+                    <a href="hobby.html">ดูงานอดิเรก →</a>
+                </article>
+
+                <article class="highlight-card card-yellow">
+                    <div class="card-icon">🌱</div>
+                    <h3>อนาคต</h3>
+                    <p>
+                        ค่อย ๆ เติบโตและสร้างอนาคต
+                        จากความฝันของตัวเอง
+                    </p>
+                    <a href="contact.html">ติดต่อฉัน →</a>
+                </article>
+
+            </div>
+
+        </section>
+
 
         <!-- CTA -->
-        <section class="cta-section">
-            <div class="container cta-box">
-                <div>
-                    <span class="section-label">KEEP EXPLORING</span>
-                    <h2>พร้อมจะสำรวจโลกของผมหรือยัง? 🌊</h2>
-                    <p>
-                        ลองดำดิ่งไปดูเรื่องราวในแต่ละส่วนของ Portfolio กันเลย
-                    </p>
-                </div>
+        <section class="garden-cta">
 
-                <a href="contact.html" class="btn btn-white">
-                    ติดต่อฉัน →
-                </a>
+            <div class="cta-flower">🌸</div>
+
+            <div>
+                <span>LET'S EXPLORE MY GARDEN</span>
+                <h2>พร้อมทำความรู้จักกับฉันหรือยัง?</h2>
+                <p>
+                    ลองเดินชมสวนเล็ก ๆ ของฉัน
+                    แล้วมาทำความรู้จักกันมากขึ้น
+                </p>
             </div>
+
+            <a href="profile.html" class="btn btn-light">
+                เริ่มสำรวจสวนของฉัน →
+            </a>
+
         </section>
 
     </main>
 
+
+    <!-- Footer -->
     <footer class="footer">
-        <div class="container footer-grid">
 
-            <div>
-                <a href="index.html" class="footer-logo">🌊 MEGANE</a>
-                <p>Under The Sea Student Portfolio</p>
-            </div>
+        <div class="footer-main">
 
-            <div class="footer-info">
-                <p>เคไซยาห์ เมกาน ชินวรรธนวงศ์</p>
-                <p>นักเรียนชั้นมัธยมศึกษาปีที่ 3/2</p>
+            <div class="footer-brand">
+                <a href="index.html" class="logo footer-logo">
+                    <span>🌸</span>
+                    <span>Meggan.</span>
+                </a>
+
+                <p>
+                    My little spring garden 🌿<br>
+                    A portfolio by Meggan.
+                </p>
             </div>
 
             <div class="footer-links">
+                <h4>สำรวจเว็บไซต์</h4>
                 <a href="index.html">หน้าแรก</a>
                 <a href="profile.html">ประวัติส่วนตัว</a>
                 <a href="education.html">การศึกษา</a>
@@ -221,11 +321,19 @@
                 <a href="contact.html">ติดต่อ</a>
             </div>
 
+            <div class="footer-info">
+                <h4>เกี่ยวกับฉัน</h4>
+                <p>เคไซยาห์ เมกาน ชินวรรธนวงศ์</p>
+                <p>ชั้นมัธยมศึกษาปีที่ 3/2</p>
+                <p>โรงเรียนจอมทอง</p>
+            </div>
+
         </div>
 
-        <div class="copyright">
-            © 2026 Megane. Student Portfolio Project.
+        <div class="footer-bottom">
+            <p>© 2026 Meggan. Made with 🌱 and creativity.</p>
         </div>
+
     </footer>
 
 </body>
