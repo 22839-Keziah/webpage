@@ -6,45 +6,36 @@
 
     <meta name="description" content="ประวัติส่วนตัวของเคไซยาห์ เมกาน ชินวรรธนวงศ์">
 
-    <title>ประวัติส่วนตัว | Meggan</title>
+    <title>Profile | My Profile</title>
+
+    <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&family=Prompt:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- Loading Screen -->
     <div class="loading-screen">
-        <div class="loader-garden">
-            <div class="loader-flower">🌸</div>
-            <div class="loader-circle"></div>
-        </div>
-
-        <h2>กำลังเข้าสู่สวนของฉัน</h2>
-        <p>Welcome to my spring garden...</p>
-
-        <div class="loading-bar">
-            <span></span>
+        <div class="loader">
+            <div class="loader-ring"></div>
+            <span>MY PROFILE</span>
+            <small>Entering the Mystic Forest...</small>
         </div>
     </div>
 
+    <div class="rain" aria-hidden="true"></div>
 
-    <div class="floating-flower flower-1">🌸</div>
-    <div class="floating-flower flower-2">🌼</div>
-    <div class="floating-leaf leaf-1">🍃</div>
+    <div class="forest-glow glow-one"></div>
+    <div class="forest-glow glow-two"></div>
 
-
-    <!-- Navigation -->
     <header class="site-header">
-        <nav class="navbar">
+        <nav class="navbar container">
 
             <a href="index.html" class="logo">
-                <span>🌸</span>
-                <span>Meggan.</span>
+                <span class="logo-symbol">✦</span>
+                <span>MY PROFILE</span>
             </a>
 
             <div class="nav-links">
@@ -58,202 +49,146 @@
         </nav>
     </header>
 
-
     <main>
 
-        <!-- Page Hero -->
         <section class="page-hero">
+            <div class="container">
 
-            <span class="section-tag">ABOUT ME 🌿</span>
+                <span class="section-label">02 — PROFILE</span>
 
-            <h1>ประวัติส่วนตัว</h1>
+                <h1>
+                    About <span>Me</span>
+                </h1>
 
-            <p>
-                มาทำความรู้จักกับต้นไม้ต้นเล็ก ๆ
-                ที่กำลังเติบโตในสวนแห่งความฝัน
-            </p>
+                <p>
+                    ทำความรู้จักกับตัวตนของฉัน
+                </p>
 
+            </div>
         </section>
 
-
-        <!-- Profile -->
         <section class="section profile-section">
 
-            <div class="profile-large">
+            <div class="container">
 
-                <div class="profile-frame">
+                <div class="profile-main">
 
-                    <img
-                        src="https://placehold.co/600x700/FCE4EC/285943?text=MEGGAN"
-                        alt="รูปโปรไฟล์ของเคไซยาห์ เมกาน"
-                    >
+                    <div class="profile-photo-card">
+
+                        <div class="photo-decoration"></div>
+
+                        <img
+                            src="https://placehold.co/520x650/102F26/D9FFF4?text=ME"
+                            alt="รูปโปรไฟล์ของฉัน"
+                        >
+
+                        <div class="photo-caption">
+                            <span>MEGAN</span>
+                            <small>STUDENT • CREATOR • EXPLORER</small>
+                        </div>
+
+                    </div>
+
+                    <div class="profile-information">
+
+                        <span class="section-label">
+                            NICE TO MEET YOU
+                        </span>
+
+                        <h2>
+                            เคไซยาห์ เมกาน
+                            <span>ชินวรรธนวงศ์</span>
+                        </h2>
+
+                        <p class="profile-intro">
+                            สวัสดี! ฉันชื่อเมกาน เป็นนักเรียนชั้นมัธยมศึกษาปีที่ 3
+                            โรงเรียนจอมทอง ฉันสนใจการเรียนรู้สิ่งใหม่ ๆ
+                            และชอบค้นหาวิธีสร้างสรรค์ผลงานในแบบของตัวเอง
+                        </p>
+
+                        <div class="info-grid">
+
+                            <div class="info-item">
+                                <span>ชื่อเล่น</span>
+                                <strong>เมกาน</strong>
+                            </div>
+
+                            <div class="info-item">
+                                <span>อายุ</span>
+                                <strong>15 ปี</strong>
+                            </div>
+
+                            <div class="info-item">
+                                <span>วันเกิด</span>
+                                <strong>1 สิงหาคม 2554</strong>
+                            </div>
+
+                            <div class="info-item">
+                                <span>จังหวัด</span>
+                                <strong>เชียงใหม่</strong>
+                            </div>
+
+                            <div class="info-item">
+                                <span>โรงเรียน</span>
+                                <strong>โรงเรียนจอมทอง</strong>
+                            </div>
+
+                            <div class="info-item">
+                                <span>ระดับชั้น</span>
+                                <strong>ม.3/2</strong>
+                            </div>
+
+                        </div>
+
+                    </div>
 
                 </div>
 
-                <div class="profile-caption">
-                    <span>🌸</span>
+                <div class="about-card">
+
+                    <div class="about-icon">✦</div>
+
                     <div>
-                        <strong>Nice to meet you!</strong>
-                        <small>ยินดีที่ได้รู้จักครับ</small>
-                    </div>
-                </div>
+                        <span class="section-label">ABOUT ME</span>
 
-            </div>
+                        <h3>
+                            การเรียนรู้คือการผจญภัย
+                        </h3>
 
-
-            <div class="profile-information">
-
-                <span class="small-title">WHO AM I?</span>
-
-                <h2>
-                    เคไซยาห์ เมกาน<br>
-                    <span>ชินวรรธนวงศ์</span>
-                </h2>
-
-                <p class="profile-intro">
-                    ผมชื่อเมกาน เป็นนักเรียนชั้นมัธยมศึกษาปีที่ 3
-                    ที่ชอบเรียนรู้และค้นหาประสบการณ์ใหม่ ๆ
-                    เว็บไซต์นี้สร้างขึ้นเพื่อแนะนำตัวเอง
-                    และรวบรวมเรื่องราวต่าง ๆ ของผม
-                </p>
-
-
-                <div class="info-grid">
-
-                    <div class="info-item">
-                        <span>👤</span>
-                        <div>
-                            <small>ชื่อเล่น</small>
-                            <strong>เมกาน</strong>
-                        </div>
-                    </div>
-
-                    <div class="info-item">
-                        <span>🎂</span>
-                        <div>
-                            <small>อายุ</small>
-                            <strong>15 ปี</strong>
-                        </div>
-                    </div>
-
-                    <div class="info-item">
-                        <span>📅</span>
-                        <div>
-                            <small>วันเกิด</small>
-                            <strong>1 สิงหาคม 2554</strong>
-                        </div>
-                    </div>
-
-                    <div class="info-item">
-                        <span>📍</span>
-                        <div>
-                            <small>จังหวัด</small>
-                            <strong>เชียงใหม่</strong>
-                        </div>
-                    </div>
-
-                    <div class="info-item">
-                        <span>🏫</span>
-                        <div>
-                            <small>โรงเรียน</small>
-                            <strong>จอมทอง</strong>
-                        </div>
-                    </div>
-
-                    <div class="info-item">
-                        <span>🎓</span>
-                        <div>
-                            <small>ระดับชั้น</small>
-                            <strong>ม.3/2</strong>
-                        </div>
+                        <p>
+                            ฉันเชื่อว่าการเรียนรู้ไม่ได้เกิดขึ้นเฉพาะในห้องเรียน
+                            แต่เกิดขึ้นจากการทดลอง การตั้งคำถาม
+                            การค้นคว้า และการลงมือสร้างสิ่งต่าง ๆ ด้วยตัวเอง
+                        </p>
                     </div>
 
                 </div>
 
             </div>
-
-        </section>
-
-
-        <!-- About Me -->
-        <section class="section story-section">
-
-            <div class="story-content">
-
-                <span class="section-tag">MY STORY</span>
-
-                <h2>
-                    ทุกคนมีสวนของตัวเอง<br>
-                    <span>และนี่คือสวนของผม 🌱</span>
-                </h2>
-
-                <p>
-                    ผมเชื่อว่าการเติบโตไม่ได้หมายถึงการเก่งขึ้น
-                    เพียงอย่างเดียว แต่ยังหมายถึงการได้เรียนรู้
-                    จากสิ่งที่เกิดขึ้นรอบตัว
-                </p>
-
-                <p>
-                    ในแต่ละวันผมพยายามเรียนรู้สิ่งใหม่ ๆ
-                    ทดลองทำสิ่งที่ไม่เคยทำ
-                    และค้นหาสิ่งที่ตัวเองสนใจ
-                </p>
-
-                <p>
-                    เว็บไซต์ Portfolio นี้จึงเปรียบเสมือนสวน
-                    ที่รวบรวมเรื่องราวของผมเอาไว้
-                    และหวังว่าในอนาคตสวนแห่งนี้จะเติบโต
-                    ไปพร้อมกับตัวผม
-                </p>
-
-            </div>
-
-            <div class="story-visual">
-
-                <div class="tree-illustration">
-                    <div class="tree-sun">☀️</div>
-                    <div class="tree-crown">🌳</div>
-                    <div class="tree-ground">🌱 🌿 🌱 🌿</div>
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- Quote -->
-        <section class="quote-section">
-
-            <div class="quote-flower">🌷</div>
-
-            <blockquote>
-                “ทุกการเติบโต เริ่มต้นจากเมล็ดเล็ก ๆ
-                ที่เราเลือกจะปลูกในวันนี้”
-            </blockquote>
-
-            <span>— My Spring Garden</span>
 
         </section>
 
     </main>
 
-
-    <!-- Footer -->
     <footer class="footer">
 
-        <div class="footer-main">
+        <div class="container footer-grid">
 
-            <div class="footer-brand">
-                <a href="index.html" class="logo footer-logo">
-                    <span>🌸</span>
-                    <span>Meggan.</span>
+            <div>
+                <a href="index.html" class="footer-logo">
+                    ✦ MY PROFILE
                 </a>
 
-                <p>My little spring garden 🌿</p>
+                <p>Mystic Forest Student Portfolio</p>
+            </div>
+
+            <div class="footer-info">
+                <strong>เคไซยาห์ เมกาน ชินวรรธนวงศ์</strong>
+                <span>นักเรียนชั้น ม.3/2</span>
+                <span>โรงเรียนจอมทอง จังหวัดเชียงใหม่</span>
             </div>
 
             <div class="footer-links">
-                <h4>สำรวจเว็บไซต์</h4>
                 <a href="index.html">หน้าแรก</a>
                 <a href="profile.html">ประวัติส่วนตัว</a>
                 <a href="education.html">การศึกษา</a>
@@ -261,20 +196,24 @@
                 <a href="contact.html">ติดต่อ</a>
             </div>
 
-            <div class="footer-info">
-                <h4>ข้อมูล</h4>
-                <p>เมกาน</p>
-                <p>ม.3/2 โรงเรียนจอมทอง</p>
-                <p>เชียงใหม่</p>
-            </div>
-
         </div>
 
         <div class="footer-bottom">
-            <p>© 2026 Meggan. Made with 🌱 and creativity.</p>
+            © 2026 My Profile — Student Portfolio
         </div>
 
     </footer>
+
+    <script>
+        const mouseGlow = document.createElement("div");
+        mouseGlow.className = "mouse-glow";
+        document.body.appendChild(mouseGlow);
+
+        document.addEventListener("mousemove", (event) => {
+            mouseGlow.style.left = event.clientX + "px";
+            mouseGlow.style.top = event.clientY + "px";
+        });
+    </script>
 
 </body>
 </html>
