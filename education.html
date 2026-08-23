@@ -4,13 +4,17 @@
 
     <meta charset="UTF-8">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-    <meta name="description"
-          content="My Profile - ประวัติการศึกษาของเมกาน">
+    <title>Education | My Profile</title>
 
-    <title>My Profile | Education</title>
+    <meta
+        name="description"
+        content="ประวัติการศึกษาของเมกาน"
+    >
 
     <link rel="stylesheet" href="style.css">
 
@@ -18,19 +22,17 @@
 
 <body>
 
+    <!-- Loading Screen -->
     <div class="loading-screen">
 
-        <div class="loading-magic">
-            <div class="magic-ring"></div>
-            <div class="loading-star">✦</div>
+        <div class="loader-orbit">
+            <span></span>
         </div>
 
-        <p class="loading-title">
-            ENTERING THE FOREST
-        </p>
+        <p class="loading-title">MY PROFILE</p>
 
-        <p class="loading-subtitle">
-            กำลังค้นหาเส้นทางการเรียนรู้...
+        <p class="loading-text">
+            กำลังเปิดแผนที่การเดินทาง...
         </p>
 
         <div class="loading-bar">
@@ -40,32 +42,21 @@
     </div>
 
 
-    <div class="rain" aria-hidden="true"></div>
+    <div class="cursor-dot"></div>
 
 
-    <div class="magic-particles" aria-hidden="true">
-        <span>✦</span>
-        <span>·</span>
-        <span>✧</span>
-        <span>✦</span>
-        <span>·</span>
-    </div>
-
-
-    <!-- HEADER -->
+    <!-- Navigation -->
     <header class="site-header">
 
-        <nav class="navbar">
+        <nav class="navbar container">
 
             <a href="index.html" class="brand">
 
-                <span class="brand-symbol">
-                    ✦
-                </span>
+                <span class="brand-symbol">✦</span>
 
                 <span>
                     <strong>MY PROFILE</strong>
-                    <small>MYSTIC FOREST</small>
+                    <small>SKY ISLAND</small>
                 </span>
 
             </a>
@@ -73,25 +64,11 @@
 
             <div class="nav-links">
 
-                <a href="index.html">
-                    หน้าแรก
-                </a>
-
-                <a href="profile.html">
-                    ประวัติส่วนตัว
-                </a>
-
-                <a href="education.html" class="active">
-                    การศึกษา
-                </a>
-
-                <a href="hobby.html">
-                    งานอดิเรก
-                </a>
-
-                <a href="contact.html">
-                    ติดต่อ
-                </a>
+                <a href="index.html">หน้าแรก</a>
+                <a href="profile.html">ประวัติส่วนตัว</a>
+                <a href="education.html" class="active">การศึกษา</a>
+                <a href="hobby.html">งานอดิเรก</a>
+                <a href="contact.html">ติดต่อ</a>
 
             </div>
 
@@ -102,344 +79,319 @@
 
     <main>
 
-        <section class="page-hero">
+        <!-- Page Hero -->
+        <section class="page-hero education-banner">
 
-            <span>
-                02 / EDUCATION
-            </span>
+            <div class="container page-hero-content">
 
-            <h1>
-                MY <em>JOURNEY</em>
-            </h1>
+                <span class="section-label">
+                    02 / EDUCATION
+                </span>
 
-            <p>
-                เส้นทางแห่งการเรียนรู้
-                ที่ค่อย ๆ พาผมเติบโตขึ้น
-            </p>
+                <h1>
+                    My
+                    <span>Education</span>
+                </h1>
+
+                <p>
+                    เส้นทางการเรียนรู้
+                    ที่กำลังพาผมไปสู่อนาคต
+                </p>
+
+            </div>
 
         </section>
 
 
-        <!-- TIMELINE -->
-        <section class="section timeline-section">
+        <!-- Timeline -->
+        <section class="section education-section">
 
-            <div class="section-heading">
+            <div class="container">
 
-                <span>
-                    THE PATH OF KNOWLEDGE
-                </span>
+                <div class="section-heading center-heading">
 
-                <h2>
-                    เส้นทาง
-                    <em>การศึกษา</em>
-                </h2>
+                    <span class="section-label">
+                        MY JOURNEY
+                    </span>
 
-            </div>
+                    <h2>
+                        เส้นทาง
+                        <span>การศึกษา</span>
+                    </h2>
 
+                    <p>
+                        ทุกช่วงเวลาคืออีกหนึ่งก้าว
+                        ของการเรียนรู้
+                    </p>
 
-            <div class="timeline">
-
-                <article class="timeline-item">
-
-                    <div class="timeline-marker">
-                        ✦
-                    </div>
-
-                    <div class="timeline-content">
-
-                        <span>
-                            EARLY JOURNEY
-                        </span>
-
-                        <h3>
-                            ระดับประถมศึกษา
-                        </h3>
-
-                        <p>
-                            ช่วงแรกของการเรียนรู้
-                            เริ่มต้นจากการสร้างพื้นฐาน
-                            และค้นพบสิ่งต่าง ๆ รอบตัว
-                        </p>
-
-                    </div>
-
-                </article>
+                </div>
 
 
-                <article class="timeline-item">
+                <div class="timeline">
 
-                    <div class="timeline-marker">
-                        ✧
-                    </div>
+                    <div class="timeline-item">
 
-                    <div class="timeline-content">
+                        <div class="timeline-dot">
+                            01
+                        </div>
 
-                        <span>
-                            NEW ADVENTURE
-                        </span>
+                        <div class="timeline-content">
 
-                        <h3>
-                            มัธยมศึกษาตอนต้น
-                        </h3>
+                            <span class="timeline-year">
+                                PRIMARY SCHOOL
+                            </span>
 
-                        <p>
-                            เริ่มเรียนรู้สิ่งที่หลากหลายมากขึ้น
-                            ทั้งวิชาการ เทคโนโลยี
-                            และการค้นหาความสนใจของตัวเอง
-                        </p>
+                            <h3>ระดับประถมศึกษา</h3>
 
-                    </div>
+                            <p>
+                                ช่วงเวลาที่ได้เรียนรู้พื้นฐาน
+                                และค้นพบความสนใจ
+                                ในหลากหลายด้าน
+                            </p>
 
-                </article>
-
-
-                <article class="timeline-item current">
-
-                    <div class="timeline-marker">
-                        ◈
-                    </div>
-
-                    <div class="timeline-content">
-
-                        <span>
-                            CURRENT CHAPTER
-                        </span>
-
-                        <h3>
-                            ม.3/2 — โรงเรียนจอมทอง
-                        </h3>
-
-                        <p>
-                            ปัจจุบันกำลังศึกษาอยู่ชั้นมัธยมศึกษาปีที่ 3/2
-                            ที่โรงเรียนจอมทอง จังหวัดเชียงใหม่
-                        </p>
-
-                        <div class="current-badge">
-                            ● CURRENT
                         </div>
 
                     </div>
 
-                </article>
+
+                    <div class="timeline-item">
+
+                        <div class="timeline-dot">
+                            02
+                        </div>
+
+                        <div class="timeline-content">
+
+                            <span class="timeline-year">
+                                SECONDARY SCHOOL
+                            </span>
+
+                            <h3>มัธยมศึกษาตอนต้น</h3>
+
+                            <p>
+                                เริ่มค้นหาสิ่งที่ตัวเองสนใจ
+                                และได้เรียนรู้การทำงาน
+                                และการสร้างผลงานต่าง ๆ
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="timeline-item current">
+
+                        <div class="timeline-dot">
+                            ✦
+                        </div>
+
+                        <div class="timeline-content">
+
+                            <span class="timeline-year">
+                                CURRENT
+                            </span>
+
+                            <h3>มัธยมศึกษาปีที่ 3/2</h3>
+
+                            <p>
+                                ปัจจุบันกำลังศึกษาอยู่ที่
+                                <strong>โรงเรียนจอมทอง</strong>
+                                จังหวัดเชียงใหม่
+                            </p>
+
+                            <span class="current-badge">
+                                CURRENT JOURNEY
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
 
             </div>
 
         </section>
 
 
-        <!-- HIGHLIGHTS -->
-        <section class="section">
+        <!-- Education Highlights -->
+        <section class="section education-highlight">
 
-            <div class="section-heading left">
+            <div class="container">
 
-                <span>
-                    EDUCATION HIGHLIGHTS
-                </span>
+                <div class="education-panel">
 
-                <h2>
-                    สิ่งสำคัญ
-                    <em>ในเส้นทาง</em>
-                </h2>
+                    <div class="education-panel-content">
+
+                        <span class="section-label">
+                            SCHOOL HIGHLIGHT
+                        </span>
+
+                        <h2>
+                            My Learning
+                            <span>Space</span>
+                        </h2>
+
+                        <p>
+                            สถานที่ที่ผมได้พบเพื่อน
+                            เรียนรู้สิ่งใหม่
+                            และสร้างประสบการณ์
+                            ในแต่ละวัน
+                        </p>
+
+                    </div>
+
+
+                    <div class="school-orbit">
+
+                        <div class="school-core">
+                            <span>🏫</span>
+                            <strong>จอมทอง</strong>
+                            <small>CHIANG MAI</small>
+                        </div>
+
+                        <div class="orbit-ring ring-a"></div>
+                        <div class="orbit-ring ring-b"></div>
+
+                    </div>
+
+                </div>
 
             </div>
 
+        </section>
 
-            <div class="highlight-grid">
 
-                <article class="highlight-card">
+        <!-- Table -->
+        <section class="section">
 
-                    <span class="highlight-icon">
-                        🏫
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        EDUCATION DATA
                     </span>
 
-                    <span>
-                        SCHOOL
+                    <h2>
+                        ข้อมูล
+                        <span>การศึกษา</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="table-wrapper">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+                                <th>ช่วงการศึกษา</th>
+                                <th>สถานศึกษา</th>
+                                <th>ระดับ</th>
+                                <th>สถานะ</th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>ประถมศึกษา</td>
+                                <td>โรงเรียน</td>
+                                <td>ประถมศึกษา</td>
+                                <td>
+                                    <span class="status">สำเร็จ</span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>มัธยมศึกษาตอนต้น</td>
+                                <td>โรงเรียนจอมทอง</td>
+                                <td>ม.3</td>
+                                <td>
+                                    <span class="status current-status">
+                                        กำลังศึกษา
+                                    </span>
+                                </td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Favorite Subject -->
+        <section class="section subject-section">
+
+            <div class="container subject-card">
+
+                <div class="subject-icon">
+                    EN
+                </div>
+
+                <div>
+
+                    <span class="section-label">
+                        FAVORITE SUBJECT
                     </span>
 
-                    <h3>
-                        โรงเรียนจอมทอง
-                    </h3>
-
-                    <p>
-                        จังหวัดเชียงใหม่
-                    </p>
-
-                </article>
-
-
-                <article class="highlight-card">
-
-                    <span class="highlight-icon">
-                        📚
-                    </span>
-
-                    <span>
-                        CLASS
-                    </span>
-
-                    <h3>
-                        ม.3/2
-                    </h3>
-
-                    <p>
-                        ระดับชั้นปัจจุบัน
-                    </p>
-
-                </article>
-
-
-                <article class="highlight-card">
-
-                    <span class="highlight-icon">
-                        ✍️
-                    </span>
-
-                    <span>
-                        FAVORITE
-                    </span>
-
-                    <h3>
+                    <h2>
                         ภาษาอังกฤษ
-                    </h3>
+                    </h2>
 
                     <p>
-                        วิชาที่ชอบ
+                        เป็นวิชาที่ผมสนใจ
+                        เพราะช่วยให้สามารถสื่อสาร
+                        และเรียนรู้ข้อมูลจากทั่วโลกได้มากขึ้น
                     </p>
 
-                </article>
-
-
-                <article class="highlight-card">
-
-                    <span class="highlight-icon">
-                        ✦
-                    </span>
-
-                    <span>
-                        GOAL
-                    </span>
-
-                    <h3>
-                        Learn & Create
-                    </h3>
-
-                    <p>
-                        เรียนรู้และสร้างผลงาน
-                    </p>
-
-                </article>
+                </div>
 
             </div>
-
-        </section>
-
-
-        <!-- TABLE -->
-        <section class="section">
-
-            <div class="section-heading">
-
-                <span>
-                    EDUCATION RECORD
-                </span>
-
-                <h2>
-                    ตาราง
-                    <em>ประวัติการศึกษา</em>
-                </h2>
-
-            </div>
-
-
-            <div class="table-wrapper">
-
-                <table>
-
-                    <thead>
-
-                        <tr>
-                            <th>ระดับ</th>
-                            <th>สถานศึกษา</th>
-                            <th>สถานะ</th>
-                        </tr>
-
-                    </thead>
-
-                    <tbody>
-
-                        <tr>
-                            <td>ประถมศึกษา</td>
-                            <td>โรงเรียนเดิม</td>
-                            <td>สำเร็จการศึกษา</td>
-                        </tr>
-
-                        <tr>
-                            <td>มัธยมศึกษาตอนต้น</td>
-                            <td>โรงเรียนจอมทอง</td>
-                            <td>กำลังศึกษา</td>
-                        </tr>
-
-                        <tr>
-                            <td>ปัจจุบัน</td>
-                            <td>โรงเรียนจอมทอง</td>
-                            <td>ม.3/2</td>
-                        </tr>
-
-                    </tbody>
-
-                </table>
-
-            </div>
-
-        </section>
-
-
-        <section class="cta-section small-cta">
-
-            <span>
-                NEXT CHAPTER
-            </span>
-
-            <h2>
-                มาดูสิ่งที่ผมชอบ
-                <em>กันต่อ</em>
-            </h2>
-
-            <a href="hobby.html"
-               class="magic-button primary-button">
-
-                งานอดิเรกของฉัน
-                <span>→</span>
-
-            </a>
 
         </section>
 
     </main>
 
 
+    <!-- Footer -->
     <footer class="site-footer">
 
-        <div class="footer-content">
+        <div class="container footer-grid">
 
-            <div>
+            <div class="footer-brand">
 
-                <a href="index.html" class="footer-brand">
-                    ✦ MY PROFILE
+                <a href="index.html" class="brand">
+
+                    <span class="brand-symbol">✦</span>
+
+                    <span>
+                        <strong>MY PROFILE</strong>
+                        <small>SKY ISLAND</small>
+                    </span>
+
                 </a>
 
                 <p>
-                    Mystic Forest Portfolio
-                </p>
-
-                <p>
-                    เคไซยาห์ เมกาน ชินวรรธนวงศ์ • ม.3/2
+                    Student Portfolio ของ
+                    เคไซยาห์ เมกาน ชินวรรธนวงศ์
                 </p>
 
             </div>
 
 
             <div class="footer-links">
+
+                <h3>Navigation</h3>
 
                 <a href="index.html">หน้าแรก</a>
                 <a href="profile.html">ประวัติส่วนตัว</a>
@@ -449,18 +401,26 @@
 
             </div>
 
+
+            <div class="footer-info">
+
+                <h3>Student</h3>
+
+                <p>เมกาน</p>
+                <p>ชั้นมัธยมศึกษาปีที่ 3/2</p>
+                <p>โรงเรียนจอมทอง</p>
+                <p>เชียงใหม่</p>
+
+            </div>
+
         </div>
 
 
         <div class="footer-bottom">
 
-            <p>
-                © 2026 MEGAN • MY PROFILE
-            </p>
+            <p>© 2026 MY PROFILE — Created by Megan</p>
 
-            <span>
-                MADE WITH ✦ AND IMAGINATION
-            </span>
+            <span>Made with HTML & CSS ✦</span>
 
         </div>
 
