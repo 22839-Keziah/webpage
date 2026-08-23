@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="th">
-
 <head>
 
     <meta charset="UTF-8">
 
     <meta
         name="viewport"
-        content="width=device-width, initial-scale=1.0">
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Hobbies | My Profile</title>
 
     <meta
         name="description"
-        content="Hobbies - My Profile">
-
-    <title>Hobby | My Profile</title>
+        content="งานอดิเรกและความสนใจของเมกาน"
+    >
 
     <link rel="stylesheet" href="style.css">
 
@@ -24,85 +25,50 @@
     <!-- Loading -->
     <div class="loading-screen">
 
-        <div class="loading-cloud cloud-one"></div>
-        <div class="loading-cloud cloud-two"></div>
+        <div class="loader-orbit">
+            <span></span>
+        </div>
 
-        <div class="loading-content">
+        <p class="loading-title">MY PROFILE</p>
 
-            <div class="loading-logo">
-                MY PROFILE
-            </div>
+        <p class="loading-text">
+            กำลังเปิดห้องแห่งความสนใจ...
+        </p>
 
-            <div class="loading-cloud-icon">
-                ☁
-            </div>
-
-            <h2>
-                กำลังสำรวจโลกของฉัน...
-            </h2>
-
-            <div class="loading-bar">
-                <span></span>
-            </div>
-
-            <p>
-                Discover my interests
-            </p>
-
+        <div class="loading-bar">
+            <span></span>
         </div>
 
     </div>
 
-    <!-- Stars -->
-    <div class="stars">
 
-        <span>✦</span>
-        <span>✧</span>
-        <span>★</span>
-        <span>✦</span>
-        <span>✧</span>
-        <span>★</span>
-        <span>✦</span>
-        <span>✧</span>
-        <span>★</span>
+    <div class="cursor-dot"></div>
 
-    </div>
-
-    <div class="sky-cloud cloud-a"></div>
-    <div class="sky-cloud cloud-b"></div>
-    <div class="sky-cloud cloud-c"></div>
 
     <!-- Navigation -->
     <header class="site-header">
 
-        <nav class="navbar">
+        <nav class="navbar container">
 
-            <a href="index.html" class="logo">
-                <span>✦</span>
-                MY PROFILE
+            <a href="index.html" class="brand">
+
+                <span class="brand-symbol">✦</span>
+
+                <span>
+                    <strong>MY PROFILE</strong>
+                    <small>SKY ISLAND</small>
+                </span>
+
             </a>
+
 
             <div class="nav-links">
 
-                <a href="index.html">
-                    หน้าแรก
-                </a>
-
-                <a href="profile.html">
-                    ประวัติส่วนตัว
-                </a>
-
-                <a href="education.html">
-                    การศึกษา
-                </a>
-
-                <a href="hobby.html" class="active">
-                    งานอดิเรก
-                </a>
-
-                <a href="contact.html">
-                    ติดต่อ
-                </a>
+                <a href="index.html">หน้าแรก</a>
+                <a href="profile.html">ประวัติส่วนตัว</a>
+                <a href="education.html">การศึกษา</a>
+                <a href="hobby.html" class="active">งานอดิเรก</a>
+                <a href="contact.html">ติดต่อ</a>
 
             </div>
 
@@ -110,224 +76,284 @@
 
     </header>
 
+
     <main>
 
-        <section class="page-hero">
+        <!-- Hero -->
+        <section class="page-hero hobby-banner">
 
-            <span>✦ MY INTERESTS</span>
+            <div class="container page-hero-content">
 
-            <h1>
-                งาน<span>อดิเรก</span>
-            </h1>
+                <span class="section-label">
+                    03 / MY HOBBIES
+                </span>
 
-            <p>
-                สิ่งที่ทำให้เกาะลอยฟ้าของผมมีชีวิตชีวา
-            </p>
+                <h1>
+                    Things I
+                    <span>Love</span>
+                </h1>
+
+                <p>
+                    สิ่งที่ทำให้โลกของผม
+                    มีสีสันมากขึ้น
+                </p>
+
+            </div>
+
+            <div class="hobby-cloud cloud-hobby-one"></div>
+            <div class="hobby-cloud cloud-hobby-two"></div>
 
         </section>
 
-        <section class="hobby-section section">
 
-            <div class="hobby-grid">
+        <!-- Hobby Cards -->
+        <section class="section hobby-section">
 
-                <article class="hobby-card">
+            <div class="container">
 
-                    <div class="hobby-number">
-                        01
-                    </div>
+                <div class="section-heading center-heading">
 
-                    <div class="hobby-icon">
-                        🎮
-                    </div>
+                    <span class="section-label">
+                        EXPLORE MY INTERESTS
+                    </span>
 
                     <h2>
-                        เกม
+                        งานอดิเรกและ
+                        <span>ความสนใจ</span>
                     </h2>
 
                     <p>
-                        สนุกกับการเล่นเกม
-                        และเรียนรู้วิธีคิด
-                        การวางแผน และการแก้ปัญหา
+                        แต่ละสิ่งที่ผมสนใจ
+                        ช่วยเปิดมุมมองใหม่ ๆ
+                        ให้กับผม
                     </p>
 
-                    <span class="hobby-tag">
-                        PLAY
-                    </span>
+                </div>
 
-                </article>
 
-                <article class="hobby-card">
+                <div class="hobby-grid">
 
-                    <div class="hobby-number">
-                        02
-                    </div>
 
-                    <div class="hobby-icon">
-                        ⚽
-                    </div>
+                    <article class="hobby-card hobby-card-large">
 
-                    <h2>
-                        กีฬา
-                    </h2>
+                        <div class="hobby-card-top">
 
-                    <p>
-                        ชอบกิจกรรมที่ทำให้ได้เคลื่อนไหว
-                        และใช้เวลาร่วมกับเพื่อน ๆ
-                    </p>
+                            <span class="hobby-icon">🎮</span>
+                            <span class="hobby-number">01</span>
 
-                    <span class="hobby-tag">
-                        ACTIVE
-                    </span>
+                        </div>
 
-                </article>
+                        <h3>เกม</h3>
 
-                <article class="hobby-card">
+                        <p>
+                            ชอบเล่นเกมในเวลาว่าง
+                            เพราะเป็นทั้งความสนุก
+                            และช่วยฝึกการคิดแก้ปัญหา
+                        </p>
 
-                    <div class="hobby-number">
-                        03
-                    </div>
+                        <div class="hobby-line"></div>
 
-                    <div class="hobby-icon">
-                        🎵
-                    </div>
+                        <span class="hobby-tag">
+                            FUN / STRATEGY
+                        </span>
 
-                    <h2>
-                        เพลง
-                    </h2>
+                    </article>
 
-                    <p>
-                        ฟังเพลงเพื่อผ่อนคลาย
-                        และสร้างบรรยากาศในเวลาว่าง
-                    </p>
 
-                    <span class="hobby-tag">
-                        MUSIC
-                    </span>
+                    <article class="hobby-card">
 
-                </article>
+                        <div class="hobby-card-top">
 
-                <article class="hobby-card">
+                            <span class="hobby-icon">⚽</span>
+                            <span class="hobby-number">02</span>
 
-                    <div class="hobby-number">
-                        04
-                    </div>
+                        </div>
 
-                    <div class="hobby-icon">
-                        🎬
-                    </div>
+                        <h3>กีฬา</h3>
 
-                    <h2>
-                        ภาพยนตร์
-                    </h2>
+                        <p>
+                            กิจกรรมที่ช่วยให้ได้เคลื่อนไหว
+                            และใช้เวลาร่วมกับเพื่อน
+                        </p>
 
-                    <p>
-                        สนใจเรื่องราวและโลกจินตนาการ
-                        จากภาพยนตร์และแอนิเมชัน
-                    </p>
+                        <div class="hobby-line"></div>
 
-                    <span class="hobby-tag">
-                        STORY
-                    </span>
+                        <span class="hobby-tag">
+                            ACTIVE
+                        </span>
 
-                </article>
+                    </article>
 
-                <article class="hobby-card">
 
-                    <div class="hobby-number">
-                        05
-                    </div>
+                    <article class="hobby-card">
 
-                    <div class="hobby-icon">
-                        💻
-                    </div>
+                        <div class="hobby-card-top">
 
-                    <h2>
-                        เทคโนโลยี
-                    </h2>
+                            <span class="hobby-icon">🎵</span>
+                            <span class="hobby-number">03</span>
 
-                    <p>
-                        สนใจเว็บไซต์ คอมพิวเตอร์
-                        และการสร้างสิ่งต่าง ๆ
-                        ด้วยเทคโนโลยี
-                    </p>
+                        </div>
 
-                    <span class="hobby-tag">
-                        CREATE
-                    </span>
+                        <h3>เพลง</h3>
 
-                </article>
+                        <p>
+                            ฟังเพลงเพื่อผ่อนคลาย
+                            และสร้างบรรยากาศในเวลาว่าง
+                        </p>
 
-                <article class="hobby-card">
+                        <div class="hobby-line"></div>
 
-                    <div class="hobby-number">
-                        06
-                    </div>
+                        <span class="hobby-tag">
+                            MUSIC
+                        </span>
 
-                    <div class="hobby-icon">
-                        📷
-                    </div>
+                    </article>
 
-                    <h2>
-                        ความสนใจ
-                    </h2>
 
-                    <p>
-                        สนใจสิ่งใหม่ ๆ
-                        และชอบค้นหาความรู้
-                        จากสิ่งรอบตัว
-                    </p>
+                    <article class="hobby-card">
 
-                    <span class="hobby-tag">
-                        EXPLORE
-                    </span>
+                        <div class="hobby-card-top">
 
-                </article>
+                            <span class="hobby-icon">🎬</span>
+                            <span class="hobby-number">04</span>
+
+                        </div>
+
+                        <h3>ภาพยนตร์</h3>
+
+                        <p>
+                            ชอบดูเรื่องราวและจินตนาการ
+                            ที่แตกต่างจากชีวิตประจำวัน
+                        </p>
+
+                        <div class="hobby-line"></div>
+
+                        <span class="hobby-tag">
+                            STORIES
+                        </span>
+
+                    </article>
+
+
+                    <article class="hobby-card hobby-card-wide">
+
+                        <div class="hobby-card-top">
+
+                            <span class="hobby-icon">💻</span>
+                            <span class="hobby-number">05</span>
+
+                        </div>
+
+                        <h3>เทคโนโลยี</h3>
+
+                        <p>
+                            สนใจคอมพิวเตอร์ เว็บไซต์
+                            และการสร้างสรรค์ผลงานดิจิทัล
+                            เพราะสามารถเปลี่ยนไอเดีย
+                            ให้กลายเป็นผลงานจริงได้
+                        </p>
+
+                        <div class="hobby-line"></div>
+
+                        <span class="hobby-tag">
+                            DIGITAL / CREATIVE
+                        </span>
+
+                    </article>
+
+
+                    <article class="hobby-card">
+
+                        <div class="hobby-card-top">
+
+                            <span class="hobby-icon">📷</span>
+                            <span class="hobby-number">06</span>
+
+                        </div>
+
+                        <h3>ความสนใจ</h3>
+
+                        <p>
+                            สนใจการออกแบบ
+                            ความคิดสร้างสรรค์
+                            และการเรียนรู้สิ่งใหม่ ๆ
+                        </p>
+
+                        <div class="hobby-line"></div>
+
+                        <span class="hobby-tag">
+                            EXPLORE
+                        </span>
+
+                    </article>
+
+                </div>
 
             </div>
 
         </section>
 
-        <section class="quote-section section">
 
-            <div class="quote-box">
+        <!-- Interest Statement -->
+        <section class="section interest-section">
 
-                <span>✦</span>
+            <div class="container interest-panel">
+
+                <div class="interest-stars">
+                    ✦ ✧ ✦
+                </div>
+
+                <span class="section-label">
+                    MY MINDSET
+                </span>
 
                 <h2>
-                    "ทุกความสนใจเล็ก ๆ
-                    อาจกลายเป็นความฝันที่ยิ่งใหญ่"
+                    Stay Curious.
+                    <span>Keep Exploring.</span>
                 </h2>
 
                 <p>
-                    Keep learning. Keep exploring.
+                    ผมเชื่อว่าการลองทำสิ่งใหม่ ๆ
+                    ทำให้เราได้ค้นพบความสามารถ
+                    และความสนใจของตัวเอง
                 </p>
 
             </div>
 
         </section>
 
-        <section class="forest-strip">
-
-            <div class="tree">🌲</div>
-            <div class="tree">🌳</div>
-            <div class="tree">🌲</div>
-            <div class="tree">🌳</div>
-            <div class="tree">🌲</div>
-
-        </section>
-
     </main>
 
-    <footer class="footer">
 
-        <div class="footer-content">
+    <!-- Footer -->
+    <footer class="site-footer">
 
-            <div>
-                <h3>MY PROFILE</h3>
-                <p>Sky Island Portfolio</p>
+        <div class="container footer-grid">
+
+            <div class="footer-brand">
+
+                <a href="index.html" class="brand">
+
+                    <span class="brand-symbol">✦</span>
+
+                    <span>
+                        <strong>MY PROFILE</strong>
+                        <small>SKY ISLAND</small>
+                    </span>
+
+                </a>
+
+                <p>
+                    Student Portfolio ของ
+                    เคไซยาห์ เมกาน ชินวรรธนวงศ์
+                </p>
+
             </div>
 
+
             <div class="footer-links">
+
+                <h3>Navigation</h3>
 
                 <a href="index.html">หน้าแรก</a>
                 <a href="profile.html">ประวัติส่วนตัว</a>
@@ -337,10 +363,27 @@
 
             </div>
 
+
+            <div class="footer-info">
+
+                <h3>Student</h3>
+
+                <p>เมกาน</p>
+                <p>ชั้นมัธยมศึกษาปีที่ 3/2</p>
+                <p>โรงเรียนจอมทอง</p>
+                <p>เชียงใหม่</p>
+
+            </div>
+
         </div>
 
-        <div class="copyright">
-            © 2026 เคไซยาห์ เมกาน ชินวรรธนวงศ์ | ม.3/2
+
+        <div class="footer-bottom">
+
+            <p>© 2026 MY PROFILE — Created by Megan</p>
+
+            <span>Made with HTML & CSS ✦</span>
+
         </div>
 
     </footer>
