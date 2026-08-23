@@ -4,243 +4,416 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="My Profile - Portfolio ของเคไซยาห์ เมกาน ชินวรรธนวงศ์">
+    <meta name="description"
+          content="My Profile - Mystic Forest Portfolio ของ เคไซยาห์ เมกาน ชินวรรธนวงศ์">
 
     <title>My Profile | Mystic Forest</title>
 
     <link rel="stylesheet" href="style.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- Loading Screen -->
+    <!-- =========================
+         LOADING SCREEN
+    ========================== -->
     <div class="loading-screen">
-        <div class="loader">
-            <div class="loader-ring"></div>
-            <span>MY PROFILE</span>
-            <small>Entering the Mystic Forest...</small>
+        <div class="loading-magic">
+            <div class="magic-ring"></div>
+            <div class="loading-star">✦</div>
+        </div>
+
+        <p class="loading-title">ENTERING THE FOREST</p>
+        <p class="loading-subtitle">กำลังเปิดประตูสู่ป่าเวทมนตร์...</p>
+
+        <div class="loading-bar">
+            <span></span>
         </div>
     </div>
 
-    <!-- Rain -->
+
+    <!-- =========================
+         RAIN EFFECT
+    ========================== -->
     <div class="rain" aria-hidden="true"></div>
 
-    <!-- Decorative Glow -->
-    <div class="forest-glow glow-one"></div>
-    <div class="forest-glow glow-two"></div>
 
-    <!-- Navigation -->
+    <!-- =========================
+         MAGIC PARTICLES
+    ========================== -->
+    <div class="magic-particles" aria-hidden="true">
+        <span>✦</span>
+        <span>✧</span>
+        <span>✦</span>
+        <span>·</span>
+        <span>✧</span>
+        <span>✦</span>
+        <span>·</span>
+        <span>✧</span>
+    </div>
+
+
+    <!-- =========================
+         HEADER
+    ========================== -->
     <header class="site-header">
-        <nav class="navbar container">
 
-            <a href="index.html" class="logo">
-                <span class="logo-symbol">✦</span>
-                <span>MY PROFILE</span>
+        <nav class="navbar">
+
+            <a href="index.html" class="brand">
+                <span class="brand-symbol">✦</span>
+
+                <span>
+                    <strong>MY PROFILE</strong>
+                    <small>MYSTIC FOREST</small>
+                </span>
             </a>
 
+
             <div class="nav-links">
-                <a href="index.html" class="active">หน้าแรก</a>
-                <a href="profile.html">ประวัติส่วนตัว</a>
-                <a href="education.html">การศึกษา</a>
-                <a href="hobby.html">งานอดิเรก</a>
-                <a href="contact.html">ติดต่อ</a>
+
+                <a href="index.html" class="active">
+                    หน้าแรก
+                </a>
+
+                <a href="profile.html">
+                    ประวัติส่วนตัว
+                </a>
+
+                <a href="education.html">
+                    การศึกษา
+                </a>
+
+                <a href="hobby.html">
+                    งานอดิเรก
+                </a>
+
+                <a href="contact.html">
+                    ติดต่อ
+                </a>
+
             </div>
 
         </nav>
+
     </header>
 
+
+    <!-- =========================
+         MAIN
+    ========================== -->
     <main>
 
-        <!-- Hero -->
+        <!-- HERO -->
         <section class="hero">
 
-            <div class="hero-particles">
-                <span>✦</span>
-                <span>✧</span>
-                <span>✦</span>
-                <span>✧</span>
-                <span>✦</span>
-            </div>
+            <div class="hero-content">
 
-            <div class="container hero-grid">
+                <div class="eyebrow">
+                    <span class="eyebrow-line"></span>
+                    WELCOME TO MY WORLD
+                </div>
 
-                <div class="hero-content reveal">
+                <h1>
+                    MY
+                    <span>PROFILE</span>
+                </h1>
 
-                    <div class="eyebrow">
-                        <span class="eyebrow-line"></span>
-                        STUDENT PORTFOLIO
+                <h2>
+                    เคไซยาห์ เมกาน ชินวรรธนวงศ์
+                </h2>
+
+                <p class="hero-description">
+                    สวัสดีครับ ผมชื่อเมกาน นักเรียนชั้นมัธยมศึกษาปีที่ 3
+                    ผู้กำลังเรียนรู้สิ่งใหม่ ๆ และค้นหาความสนใจของตัวเอง
+                    ผ่านโลกแห่งเทคโนโลยี ความคิดสร้างสรรค์
+                    และจินตนาการ
+                </p>
+
+
+                <div class="hero-buttons">
+
+                    <a href="profile.html" class="magic-button primary-button">
+                        <span>รู้จักฉันมากขึ้น</span>
+                        <span>→</span>
+                    </a>
+
+                    <a href="hobby.html" class="magic-button secondary-button">
+                        ดูงานอดิเรกของฉัน
+                    </a>
+
+                </div>
+
+
+                <div class="hero-stats">
+
+                    <div>
+                        <strong>15</strong>
+                        <span>อายุ</span>
                     </div>
 
-                    <h1>
-                        Welcome to
-                        <span>My Profile</span>
-                    </h1>
-
-                    <p class="hero-name">
-                        เคไซยาห์ เมกาน ชินวรรธนวงศ์
-                    </p>
-
-                    <p class="hero-description">
-                        นักเรียนชั้นมัธยมศึกษาปีที่ 3
-                        ผู้ชื่นชอบการเรียนรู้ การสร้างสรรค์
-                        และการค้นหาสิ่งใหม่ ๆ ในโลกแห่งเทคโนโลยี
-                    </p>
-
-                    <div class="hero-buttons">
-                        <a href="profile.html" class="btn btn-primary">
-                            รู้จักฉันมากขึ้น
-                            <span>→</span>
-                        </a>
-
-                        <a href="hobby.html" class="btn btn-outline">
-                            ดูงานอดิเรกของฉัน
-                        </a>
+                    <div>
+                        <strong>ม.3/2</strong>
+                        <span>ระดับชั้น</span>
                     </div>
 
-                    <div class="hero-stats">
-
-                        <div class="stat">
-                            <strong>15</strong>
-                            <span>อายุ</span>
-                        </div>
-
-                        <div class="stat-divider"></div>
-
-                        <div class="stat">
-                            <strong>ม.3/2</strong>
-                            <span>ระดับชั้น</span>
-                        </div>
-
-                        <div class="stat-divider"></div>
-
-                        <div class="stat">
-                            <strong>CT</strong>
-                            <span>โรงเรียนจอมทอง</span>
-                        </div>
-
+                    <div>
+                        <strong>CMI</strong>
+                        <span>เชียงใหม่</span>
                     </div>
 
                 </div>
 
-                <!-- Profile Visual -->
-                <div class="hero-visual reveal">
+            </div>
 
-                    <div class="magic-circle circle-one"></div>
-                    <div class="magic-circle circle-two"></div>
 
-                    <div class="profile-orb">
+            <!-- HERO VISUAL -->
+            <div class="hero-visual">
 
-                        <div class="orb-glow"></div>
+                <div class="moon-glow"></div>
+
+                <div class="forest-orbit orbit-one"></div>
+                <div class="forest-orbit orbit-two"></div>
+
+
+                <div class="profile-3d-card">
+
+                    <div class="card-glow"></div>
+
+                    <div class="profile-image-wrapper">
 
                         <img
-                            src="https://placehold.co/520x620/102F26/D9FFF4?text=MY+PROFILE"
-                            alt="รูปโปรไฟล์ของฉัน"
+                            src="https://placehold.co/520x620/0d3028/d9fff5?text=MEGAN"
+                            alt="รูปโปรไฟล์ของเมกาน"
+                            class="profile-image"
                         >
 
-                        <div class="floating-badge badge-top">
-                            ✦ Explorer
-                        </div>
+                    </div>
 
-                        <div class="floating-badge badge-bottom">
-                            🌿 Creative Student
-                        </div>
+
+                    <div class="profile-card-info">
+
+                        <span>THE EXPLORER</span>
+
+                        <h3>MEGAN</h3>
+
+                        <p>
+                            Student • Creator • Dreamer
+                        </p>
 
                     </div>
 
                 </div>
 
-            </div>
 
-            <div class="scroll-indicator">
-                <span>SCROLL TO EXPLORE</span>
-                <div class="scroll-line"></div>
+                <div class="floating-symbol symbol-one">
+                    ✦
+                </div>
+
+                <div class="floating-symbol symbol-two">
+                    ✧
+                </div>
+
+                <div class="floating-symbol symbol-three">
+                    ❋
+                </div>
+
             </div>
 
         </section>
 
-        <!-- Intro -->
+
+        <!-- FOREST DIVIDER -->
+        <div class="forest-divider">
+            <span>✦</span>
+            <span>🌲</span>
+            <span>✧</span>
+            <span>🌲</span>
+            <span>✦</span>
+        </div>
+
+
+        <!-- INTRO SECTION -->
         <section class="section intro-section">
 
-            <div class="container intro-grid">
+            <div class="section-heading">
 
-                <div>
-                    <span class="section-label">01 — ABOUT</span>
+                <span>01 / INTRODUCTION</span>
 
-                    <h2>
-                        ทุกคนมีเรื่องราว
-                        <span>เป็นของตัวเอง</span>
-                    </h2>
-                </div>
+                <h2>
+                    ยินดีต้อนรับ
+                    <em>นักเดินทาง</em>
+                </h2>
 
-                <div>
-                    <p class="large-text">
-                        เว็บไซต์นี้คือพื้นที่เล็ก ๆ ที่รวบรวมตัวตน
-                        ความสนใจ การศึกษา และสิ่งที่ฉันกำลังเรียนรู้
+                <p>
+                    นี่คือพื้นที่เล็ก ๆ ที่รวบรวมเรื่องราว
+                    ตัวตน การศึกษา งานอดิเรก
+                    และสิ่งที่ผมสนใจ
+                </p>
+
+            </div>
+
+
+            <div class="intro-grid">
+
+                <article class="glass-card large-card">
+
+                    <div class="card-icon">
+                        ✦
+                    </div>
+
+                    <span class="card-label">
+                        ABOUT ME
+                    </span>
+
+                    <h3>
+                        โลกของผม
+                    </h3>
+
+                    <p>
+                        ผมเป็นนักเรียนที่ชอบเรียนรู้สิ่งใหม่
+                        และสนใจการใช้เทคโนโลยีในการสร้างสรรค์ผลงาน
+                        เว็บไซต์นี้จึงถูกออกแบบให้เป็นเหมือน
+                        “ป่าเวทมนตร์” ที่รวบรวมเรื่องราวของผมไว้
                     </p>
 
                     <a href="profile.html" class="text-link">
-                        สำรวจเรื่องราวของฉัน →
+                        อ่านเรื่องราวของฉัน →
                     </a>
-                </div>
+
+                </article>
+
+
+                <article class="glass-card">
+
+                    <div class="card-icon">
+                        ◈
+                    </div>
+
+                    <span class="card-label">
+                        EDUCATION
+                    </span>
+
+                    <h3>
+                        นักเรียน ม.3/2
+                    </h3>
+
+                    <p>
+                        โรงเรียนจอมทอง
+                        จังหวัดเชียงใหม่
+                    </p>
+
+                    <a href="education.html" class="text-link">
+                        ดูเส้นทางการศึกษา →
+                    </a>
+
+                </article>
+
+
+                <article class="glass-card">
+
+                    <div class="card-icon">
+                        ☽
+                    </div>
+
+                    <span class="card-label">
+                        INTEREST
+                    </span>
+
+                    <h3>
+                        English & Technology
+                    </h3>
+
+                    <p>
+                        ภาษาอังกฤษและเทคโนโลยี
+                        เป็นสิ่งที่ผมสนใจและอยากพัฒนาต่อไป
+                    </p>
+
+                    <a href="hobby.html" class="text-link">
+                        สำรวจความสนใจ →
+                    </a>
+
+                </article>
 
             </div>
+
+        </section>
+
+
+        <!-- CTA -->
+        <section class="cta-section">
+
+            <div class="cta-glow"></div>
+
+            <span>THE JOURNEY HAS JUST BEGUN</span>
+
+            <h2>
+                พร้อมออกเดินทาง
+                <br>
+                <em>ไปด้วยกันหรือยัง?</em>
+            </h2>
+
+            <a href="contact.html" class="magic-button primary-button">
+                ติดต่อฉัน
+                <span>→</span>
+            </a>
 
         </section>
 
     </main>
 
-    <!-- Footer -->
-    <footer class="footer">
 
-        <div class="container footer-grid">
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer class="site-footer">
+
+        <div class="footer-content">
 
             <div>
-                <a href="index.html" class="footer-logo">
+
+                <a href="index.html" class="footer-brand">
                     ✦ MY PROFILE
                 </a>
 
                 <p>
-                    Mystic Forest Student Portfolio
+                    Mystic Forest Portfolio
                 </p>
+
+                <p>
+                    เคไซยาห์ เมกาน ชินวรรธนวงศ์
+                    • ม.3/2
+                </p>
+
             </div>
 
-            <div class="footer-info">
-                <strong>เคไซยาห์ เมกาน ชินวรรธนวงศ์</strong>
-                <span>นักเรียนชั้น ม.3/2</span>
-                <span>โรงเรียนจอมทอง จังหวัดเชียงใหม่</span>
-            </div>
 
             <div class="footer-links">
+
                 <a href="index.html">หน้าแรก</a>
                 <a href="profile.html">ประวัติส่วนตัว</a>
                 <a href="education.html">การศึกษา</a>
                 <a href="hobby.html">งานอดิเรก</a>
                 <a href="contact.html">ติดต่อ</a>
+
             </div>
 
         </div>
 
+
         <div class="footer-bottom">
-            © 2026 My Profile — Student Portfolio
+
+            <p>
+                © 2026 MEGAN • MY PROFILE
+            </p>
+
+            <span>
+                MADE WITH ✦ AND IMAGINATION
+            </span>
+
         </div>
 
     </footer>
-
-    <!-- Tiny mouse glow effect -->
-    <script>
-        const mouseGlow = document.createElement("div");
-        mouseGlow.className = "mouse-glow";
-        document.body.appendChild(mouseGlow);
-
-        document.addEventListener("mousemove", (event) => {
-            mouseGlow.style.left = event.clientX + "px";
-            mouseGlow.style.top = event.clientY + "px";
-        });
-    </script>
 
 </body>
 </html>
