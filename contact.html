@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="th">
-
 <head>
 
     <meta charset="UTF-8">
 
     <meta
         name="viewport"
-        content="width=device-width, initial-scale=1.0">
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Contact | My Profile</title>
 
     <meta
         name="description"
-        content="Contact - My Profile">
-
-    <title>Contact | My Profile</title>
+        content="ช่องทางการติดต่อของเมกาน"
+    >
 
     <link rel="stylesheet" href="style.css">
 
@@ -24,83 +25,50 @@
     <!-- Loading -->
     <div class="loading-screen">
 
-        <div class="loading-cloud cloud-one"></div>
-        <div class="loading-cloud cloud-two"></div>
+        <div class="loader-orbit">
+            <span></span>
+        </div>
 
-        <div class="loading-content">
+        <p class="loading-title">MY PROFILE</p>
 
-            <div class="loading-logo">
-                MY PROFILE
-            </div>
+        <p class="loading-text">
+            กำลังเปิดประตูสู่โลกของผม...
+        </p>
 
-            <div class="loading-cloud-icon">
-                ☁
-            </div>
-
-            <h2>
-                กำลังเปิดประตูสู่เกาะของฉัน...
-            </h2>
-
-            <div class="loading-bar">
-                <span></span>
-            </div>
-
-            <p>
-                Let's connect
-            </p>
-
+        <div class="loading-bar">
+            <span></span>
         </div>
 
     </div>
 
-    <!-- Stars -->
-    <div class="stars">
 
-        <span>✦</span>
-        <span>✧</span>
-        <span>★</span>
-        <span>✦</span>
-        <span>✧</span>
-        <span>★</span>
-        <span>✦</span>
-        <span>✧</span>
+    <div class="cursor-dot"></div>
 
-    </div>
-
-    <div class="sky-cloud cloud-a"></div>
-    <div class="sky-cloud cloud-c"></div>
 
     <!-- Navigation -->
     <header class="site-header">
 
-        <nav class="navbar">
+        <nav class="navbar container">
 
-            <a href="index.html" class="logo">
-                <span>✦</span>
-                MY PROFILE
+            <a href="index.html" class="brand">
+
+                <span class="brand-symbol">✦</span>
+
+                <span>
+                    <strong>MY PROFILE</strong>
+                    <small>SKY ISLAND</small>
+                </span>
+
             </a>
+
 
             <div class="nav-links">
 
-                <a href="index.html">
-                    หน้าแรก
-                </a>
-
-                <a href="profile.html">
-                    ประวัติส่วนตัว
-                </a>
-
-                <a href="education.html">
-                    การศึกษา
-                </a>
-
-                <a href="hobby.html">
-                    งานอดิเรก
-                </a>
-
-                <a href="contact.html" class="active">
-                    ติดต่อ
-                </a>
+                <a href="index.html">หน้าแรก</a>
+                <a href="profile.html">ประวัติส่วนตัว</a>
+                <a href="education.html">การศึกษา</a>
+                <a href="hobby.html">งานอดิเรก</a>
+                <a href="contact.html" class="active">ติดต่อ</a>
 
             </div>
 
@@ -108,226 +76,285 @@
 
     </header>
 
+
     <main>
 
-        <section class="page-hero">
+        <!-- Contact Hero -->
+        <section class="page-hero contact-banner">
 
-            <span>✦ CONTACT ME</span>
+            <div class="container page-hero-content">
 
-            <h1>
-                ติดต่อ<span>ฉัน</span>
-            </h1>
-
-            <p>
-                ถ้าอยากพูดคุยหรือแลกเปลี่ยนความคิดเห็น
-                สามารถติดต่อฉันได้
-            </p>
-
-        </section>
-
-        <section class="contact-section section">
-
-            <div class="contact-intro">
-
-                <span class="small-title">
-                    LET'S CONNECT
+                <span class="section-label">
+                    04 / CONTACT
                 </span>
 
-                <h2>
-                    สามารถติดต่อ
-                    <span>ฉันได้ที่</span>
-                </h2>
+                <h1>
+                    Let's
+                    <span>Connect</span>
+                </h1>
 
                 <p>
-                    ยินดีต้อนรับทุกคนเข้าสู่โลกเล็ก ๆ
-                    ของผม หากต้องการพูดคุย
-                    หรือสอบถามข้อมูล
-                    สามารถเลือกช่องทางด้านล่างได้เลย
+                    หากต้องการพูดคุย
+                    สามารถติดต่อผมได้ผ่านช่องทางต่าง ๆ
                 </p>
 
             </div>
 
-            <div class="contact-grid">
+        </section>
 
-                <article class="contact-card">
 
-                    <div class="contact-icon">
-                        ✉
-                    </div>
+        <!-- Contact -->
+        <section class="section contact-section">
 
-                    <span>
-                        EMAIL
+            <div class="container contact-layout">
+
+                <div class="contact-intro">
+
+                    <span class="section-label">
+                        GET IN TOUCH
                     </span>
 
-                    <h3>
-                        อีเมล
-                    </h3>
+                    <h2>
+                        สามารถ
+                        <span>ติดต่อฉันได้ที่</span>
+                    </h2>
 
                     <p>
-                        student@example.com
+                        ขอบคุณที่เข้ามาเยี่ยมชม
+                        My Profile ของผม
+                        หากต้องการติดต่อหรือพูดคุย
+                        สามารถเลือกช่องทางด้านข้างได้เลย
                     </p>
 
-                    <a
-                        href="mailto:student@example.com"
-                        class="contact-link">
 
-                        ส่งอีเมล →
+                    <div class="contact-mini-card">
 
-                    </a>
+                        <span>✦</span>
 
-                </article>
+                        <div>
+                            <strong>MEGAN</strong>
+                            <small>Student / Creator</small>
+                        </div>
 
-                <article class="contact-card">
-
-                    <div class="contact-icon">
-                        🌐
                     </div>
 
-                    <span>
-                        WEBSITE
-                    </span>
+                </div>
 
-                    <h3>
-                        My Website
-                    </h3>
+
+                <div class="contact-cards">
+
+
+                    <article class="contact-card">
+
+                        <div class="contact-card-icon">
+                            ✉
+                        </div>
+
+                        <div>
+
+                            <span>EMAIL</span>
+
+                            <h3>
+                                อีเมล
+                            </h3>
+
+                            <p>
+                                ใส่อีเมลของคุณที่นี่
+                            </p>
+
+                            <a
+                                href="mailto:your-email@example.com"
+                                class="contact-link"
+                            >
+                                ส่งอีเมล →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="contact-card">
+
+                        <div class="contact-card-icon">
+                            🌐
+                        </div>
+
+                        <div>
+
+                            <span>WEBSITE</span>
+
+                            <h3>
+                                My Portfolio
+                            </h3>
+
+                            <p>
+                                เว็บไซต์แนะนำตัวของผม
+                            </p>
+
+                            <a
+                                href="index.html"
+                                class="contact-link"
+                            >
+                                กลับหน้าแรก →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="contact-card">
+
+                        <div class="contact-card-icon">
+                            📍
+                        </div>
+
+                        <div>
+
+                            <span>LOCATION</span>
+
+                            <h3>
+                                เชียงใหม่
+                            </h3>
+
+                            <p>
+                                โรงเรียนจอมทอง
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="contact-card">
+
+                        <div class="contact-card-icon">
+                            ✦
+                        </div>
+
+                        <div>
+
+                            <span>SOCIAL</span>
+
+                            <h3>
+                                Social / Contact
+                            </h3>
+
+                            <p>
+                                เพิ่มช่องทาง Social Media
+                                ของคุณได้ในส่วนนี้
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CTA -->
+        <section class="section">
+
+            <div class="container">
+
+                <div class="contact-cta">
+
+                    <div class="cta-stars">
+                        ✦ ✧ ✦ ✧ ✦
+                    </div>
+
+                    <h2>
+                        Thank you for
+                        <span>visiting my world.</span>
+                    </h2>
 
                     <p>
-                        My Profile Portfolio
+                        แล้วพบกันใหม่บนเกาะลอยฟ้าแห่งนี้
                     </p>
 
                     <a
                         href="index.html"
-                        class="contact-link">
-
-                        เข้าชมเว็บไซต์ →
-
+                        class="btn btn-primary"
+                    >
+                        กลับหน้าแรก →
                     </a>
-
-                </article>
-
-                <article class="contact-card">
-
-                    <div class="contact-icon">
-                        💬
-                    </div>
-
-                    <span>
-                        SOCIAL
-                    </span>
-
-                    <h3>
-                        Social Contact
-                    </h3>
-
-                    <p>
-                        สามารถเพิ่ม Social Media
-                        ของฉันได้ภายหลัง
-                    </p>
-
-                    <a
-                        href="mailto:student@example.com"
-                        class="contact-link">
-
-                        ติดต่อ →
-
-                    </a>
-
-                </article>
-
-            </div>
-
-        </section>
-
-        <section class="cta-section section">
-
-            <div class="cta-box">
-
-                <div>
-
-                    <span>
-                        ✦ THANK YOU
-                    </span>
-
-                    <h2>
-                        ขอบคุณที่เข้ามาเยี่ยมชม
-                    </h2>
-
-                    <p>
-                        หวังว่าเว็บไซต์เล็ก ๆ
-                        แห่งนี้จะทำให้คุณรู้จักผมมากขึ้น
-                    </p>
 
                 </div>
 
-                <a
-                    href="index.html"
-                    class="btn btn-primary">
-
-                    กลับสู่เกาะลอยฟ้า →
-
-                </a>
-
             </div>
-
-        </section>
-
-        <section class="forest-strip">
-
-            <div class="tree">🌲</div>
-            <div class="tree">🌳</div>
-            <div class="tree">🌲</div>
-            <div class="tree">🌲</div>
-            <div class="tree">🌳</div>
 
         </section>
 
     </main>
 
-    <footer class="footer">
 
-        <div class="footer-content">
+    <!-- Footer -->
+    <footer class="site-footer">
 
-            <div>
+        <div class="container footer-grid">
 
-                <h3>
-                    MY PROFILE
-                </h3>
+            <div class="footer-brand">
+
+                <a href="index.html" class="brand">
+
+                    <span class="brand-symbol">✦</span>
+
+                    <span>
+                        <strong>MY PROFILE</strong>
+                        <small>SKY ISLAND</small>
+                    </span>
+
+                </a>
 
                 <p>
-                    Sky Island Portfolio
+                    Student Portfolio ของ
+                    เคไซยาห์ เมกาน ชินวรรธนวงศ์
                 </p>
 
             </div>
 
+
             <div class="footer-links">
 
-                <a href="index.html">
-                    หน้าแรก
-                </a>
+                <h3>Navigation</h3>
 
-                <a href="profile.html">
-                    ประวัติส่วนตัว
-                </a>
+                <a href="index.html">หน้าแรก</a>
+                <a href="profile.html">ประวัติส่วนตัว</a>
+                <a href="education.html">การศึกษา</a>
+                <a href="hobby.html">งานอดิเรก</a>
+                <a href="contact.html">ติดต่อ</a>
 
-                <a href="education.html">
-                    การศึกษา
-                </a>
+            </div>
 
-                <a href="hobby.html">
-                    งานอดิเรก
-                </a>
 
-                <a href="contact.html">
-                    ติดต่อ
-                </a>
+            <div class="footer-info">
+
+                <h3>Student</h3>
+
+                <p>เมกาน</p>
+                <p>ชั้นมัธยมศึกษาปีที่ 3/2</p>
+                <p>โรงเรียนจอมทอง</p>
+                <p>เชียงใหม่</p>
 
             </div>
 
         </div>
 
-        <div class="copyright">
 
-            © 2026 เคไซยาห์ เมกาน ชินวรรธนวงศ์ | ม.3/2
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 MY PROFILE — Created by Megan
+            </p>
+
+            <span>
+                Made with HTML & CSS ✦
+            </span>
 
         </div>
 
