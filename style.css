@@ -4412,3 +4412,313 @@ td {
     }
 
 }
+
+
+/* =========================================
+   CLOUD LOADING SCREEN
+========================================= */
+
+.loading-screen {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            180deg,
+            #071b36 0%,
+            #123f6b 45%,
+            #5fa9d8 100%
+        );
+
+    animation: loadingFadeOut 1s ease 4s forwards;
+}
+
+/* แสงด้านหลัง */
+.loading-screen::before {
+    content: "";
+    position: absolute;
+    width: 450px;
+    height: 450px;
+
+    border-radius: 50%;
+
+    background: radial-gradient(
+        circle,
+        rgba(255, 255, 255, 0.25),
+        transparent 70%
+    );
+
+    filter: blur(20px);
+}
+
+/* กลุ่มเมฆ */
+.cloud-loader {
+    position: relative;
+
+    width: 420px;
+    height: 180px;
+
+    margin-bottom: 20px;
+}
+
+/* เมฆแต่ละก้อน */
+.cloud {
+    position: absolute;
+
+    width: 150px;
+    height: 55px;
+
+    border-radius: 50px;
+
+    background: rgba(255, 255, 255, 0.9);
+
+    filter: blur(1px);
+
+    box-shadow:
+        0 10px 30px rgba(255, 255, 255, 0.25);
+
+    animation: cloudFloat 3s ease-in-out infinite;
+}
+
+/* ส่วนโค้งของเมฆ */
+.cloud::before,
+.cloud::after {
+    content: "";
+
+    position: absolute;
+
+    border-radius: 50%;
+
+    background: inherit;
+}
+
+.cloud::before {
+    width: 70px;
+    height: 70px;
+
+    left: 25px;
+    bottom: 20px;
+}
+
+.cloud::after {
+    width: 90px;
+    height: 90px;
+
+    right: 20px;
+    bottom: 15px;
+}
+
+/* เมฆก้อนที่ 1 */
+.cloud-1 {
+    left: 20px;
+    top: 60px;
+
+    animation:
+        cloudMove1 4s ease-in-out infinite,
+        cloudFloat 3s ease-in-out infinite;
+}
+
+/* เมฆก้อนที่ 2 */
+.cloud-2 {
+    left: 140px;
+    top: 20px;
+
+    transform: scale(1.35);
+
+    opacity: 0.8;
+
+    animation:
+        cloudMove2 5s ease-in-out infinite,
+        cloudFloat 4s ease-in-out infinite;
+}
+
+/* เมฆก้อนที่ 3 */
+.cloud-3 {
+    right: 10px;
+    top: 90px;
+
+    transform: scale(0.8);
+
+    opacity: 0.65;
+
+    animation:
+        cloudMove3 6s ease-in-out infinite,
+        cloudFloat 3.5s ease-in-out infinite;
+}
+
+
+/* =========================================
+   LOADING TEXT
+========================================= */
+
+.loading-text {
+    position: relative;
+
+    z-index: 2;
+
+    text-align: center;
+
+    color: white;
+
+    letter-spacing: 4px;
+
+    animation: textAppear 1.5s ease;
+}
+
+.loading-text span {
+    display: block;
+
+    font-size: 30px;
+    font-weight: 800;
+
+    text-shadow:
+        0 0 15px rgba(255,255,255,0.6),
+        0 0 30px rgba(144,202,249,0.6);
+}
+
+.loading-text small {
+    display: block;
+
+    margin-top: 10px;
+
+    font-size: 13px;
+
+    letter-spacing: 2px;
+
+    opacity: 0.8;
+}
+
+
+/* =========================================
+   CLOUD ANIMATION
+========================================= */
+
+@keyframes cloudMove1 {
+
+    0% {
+        transform: translateX(-40px);
+    }
+
+    50% {
+        transform: translateX(40px);
+    }
+
+    100% {
+        transform: translateX(-40px);
+    }
+}
+
+@keyframes cloudMove2 {
+
+    0% {
+        transform: translateX(30px) scale(1.35);
+    }
+
+    50% {
+        transform: translateX(-40px) scale(1.35);
+    }
+
+    100% {
+        transform: translateX(30px) scale(1.35);
+    }
+}
+
+@keyframes cloudMove3 {
+
+    0% {
+        transform: translateX(20px) scale(0.8);
+    }
+
+    50% {
+        transform: translateX(-50px) scale(0.8);
+    }
+
+    100% {
+        transform: translateX(20px) scale(0.8);
+    }
+}
+
+@keyframes cloudFloat {
+
+    0% {
+        margin-top: 0;
+    }
+
+    50% {
+        margin-top: -12px;
+    }
+
+    100% {
+        margin-top: 0;
+    }
+}
+
+
+/* =========================================
+   LOADING TEXT ANIMATION
+========================================= */
+
+@keyframes textAppear {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =========================================
+   FADE OUT
+========================================= */
+
+@keyframes loadingFadeOut {
+
+    0% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .cloud-loader {
+        width: 300px;
+        transform: scale(0.8);
+    }
+
+    .loading-text span {
+        font-size: 23px;
+    }
+
+    .loading-text small {
+        font-size: 11px;
+    }
+}
