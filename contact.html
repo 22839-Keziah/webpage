@@ -5,123 +5,116 @@
 
     <meta charset="UTF-8">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-    <meta name="description"
-          content="Contact - My Profile">
-
-    <title>Contact | My Profile</title>
+    <title>Contact | Megan</title>
 
     <link rel="stylesheet" href="style.css">
 
 </head>
 
+
 <body>
 
-    <div class="forest-background">
+    <!-- LOADING -->
+    <div class="loading-screen" id="loadingScreen">
 
-        <div class="moon"></div>
+        <div class="loading-cloud cloud-1"></div>
+        <div class="loading-cloud cloud-2"></div>
 
-        <div class="stars">
-            <span>✦</span>
-            <span>✧</span>
-            <span>✦</span>
-            <span>✧</span>
-            <span>✦</span>
-            <span>✧</span>
-            <span>✦</span>
-            <span>✧</span>
-        </div>
+        <div class="loading-magic">
 
-        <div class="fog fog-one"></div>
-        <div class="fog fog-two"></div>
+            <div class="magic-orb"></div>
 
-        <div class="mountain mountain-back"></div>
-        <div class="mountain mountain-front"></div>
-
-        <div class="giant-mushroom mushroom-one">
-
-            <div class="mushroom-cap">
-                <i></i>
-                <i></i>
-                <i></i>
+            <div class="loading-stars">
+                ✦ ✧ ✦
             </div>
 
-            <div class="mushroom-stem"></div>
+            <h1>CONTACT ME</h1>
 
-        </div>
+            <p>
+                กำลังเปิดประตูสำหรับการติดต่อ...
+            </p>
 
-        <div class="giant-mushroom mushroom-two">
-
-            <div class="mushroom-cap">
-                <i></i>
-                <i></i>
+            <div class="loading-bar">
+                <span></span>
             </div>
-
-            <div class="mushroom-stem"></div>
-
-        </div>
-
-        <div class="vine vine-left"></div>
-        <div class="vine vine-right"></div>
-
-        <div class="forest-tree tree-left">🌲</div>
-        <div class="forest-tree tree-right">🌲</div>
-
-        <div class="forest-tree tree-small-left">🌳</div>
-        <div class="forest-tree tree-small-right">🌳</div>
-
-        <div class="rain"></div>
-
-        <div class="fairy fairy-one">
-
-            <img
-                src="https://placehold.co/140x140/173524/B8E0A8?text=FAIRY"
-                alt="รูป Fairy ตกแต่งพื้นหลัง">
 
         </div>
 
     </div>
 
 
+    <div class="mouse-glow"></div>
+
+
+    <img
+        class="flying-fairy"
+        src="https://placehold.co/180x100/png?text=FAIRY"
+        alt="Fairy decoration"
+    >
+
+
+    <div class="sparkle sparkle-1">✦</div>
+    <div class="sparkle sparkle-2">✧</div>
+    <div class="sparkle sparkle-3">✦</div>
+
+
+    <div class="forest-background">
+
+        <div class="moon"></div>
+
+        <div class="mountain mountain-back"></div>
+        <div class="mountain mountain-middle"></div>
+        <div class="mountain mountain-front"></div>
+
+        <div class="forest-trees">
+
+            <span>🌲</span>
+            <span>🌲</span>
+            <span>🌲</span>
+            <span>🌲</span>
+            <span>🌲</span>
+
+        </div>
+
+    </div>
+
+
+    <div class="rain"></div>
+
+
+    <!-- NAV -->
     <header class="site-header">
 
         <nav class="navbar">
 
             <a href="index.html" class="logo">
-
-                <span class="logo-symbol">✦</span>
-
-                <span>MY PROFILE</span>
-
+                <span>✦</span> MEGAN
             </a>
 
             <div class="nav-links">
 
-                <a href="index.html">
-                    <span>⌂</span>
-                    หน้าแรก
-                </a>
+                <a href="index.html">Home</a>
 
                 <a href="profile.html">
-                    <span>♧</span>
-                    ประวัติส่วนตัว
+                    Profile
                 </a>
 
                 <a href="education.html">
-                    <span>✎</span>
-                    การศึกษา
+                    Education
                 </a>
 
                 <a href="hobby.html">
-                    <span>✦</span>
-                    งานอดิเรก
+                    Hobby
                 </a>
 
-                <a href="contact.html" class="active">
-                    <span>☽</span>
-                    ติดต่อ
+                <a href="contact.html"
+                   class="active">
+                    Contact
                 </a>
 
             </div>
@@ -131,14 +124,16 @@
     </header>
 
 
-    <main class="page-main">
+    <main>
 
         <section class="page-title">
 
-            <span>✦ SEND A MESSAGE ✦</span>
+            <div class="magic-label">
+                ✦ GET IN TOUCH ✦
+            </div>
 
             <h1>
-                ติดต่อ<span>ฉัน</span>
+                Contact <span>Me</span>
             </h1>
 
             <p>
@@ -148,130 +143,101 @@
         </section>
 
 
-        <section class="contact-section">
+        <section class="contact-grid">
 
-            <div class="contact-intro">
 
-                <span class="section-kicker">
-                    LET'S CONNECT
+            <div class="contact-card">
+
+                <div class="contact-icon">
+                    📧
+                </div>
+
+                <h2>
+                    Email
+                </h2>
+
+                <p>
+                    สามารถเพิ่มอีเมลของคุณ
+                    ได้ที่นี่
+                </p>
+
+                <span class="contact-arrow">
+                    ✦
+                </span>
+
+            </div>
+
+
+            <div class="contact-card">
+
+                <div class="contact-icon">
+                    🌐
+                </div>
+
+                <h2>
+                    Website
+                </h2>
+
+                <p>
+                    My Mystic Portfolio
+                </p>
+
+                <span class="contact-arrow">
+                    ✦
+                </span>
+
+            </div>
+
+
+            <div class="contact-card">
+
+                <div class="contact-icon">
+                    💬
+                </div>
+
+                <h2>
+                    Social
+                </h2>
+
+                <p>
+                    เพิ่มช่องทาง Social
+                    ของคุณได้ที่นี่
+                </p>
+
+                <span class="contact-arrow">
+                    ✦
+                </span>
+
+            </div>
+
+
+        </section>
+
+
+        <section class="contact-cta">
+
+            <div class="cta-glow"></div>
+
+            <div class="cta-content">
+
+                <span>
+                    ✨
                 </span>
 
                 <h2>
-                    พบกันที่ปลายทางของ
-                    <span>ป่าเวทมนตร์</span>
+                    Let's Connect
                 </h2>
 
                 <p>
-                    หากต้องการติดต่อหรือพูดคุย
-                    สามารถเลือกช่องทางด้านล่างได้เลย
+                    ขอบคุณที่เข้ามาเยี่ยมชม
+                    โลกเวทมนตร์ของฉัน
                 </p>
 
-                <div class="contact-symbol">
-                    ✦
-                </div>
-
-            </div>
-
-
-            <div class="contact-grid">
-
-
-                <article class="contact-card">
-
-                    <div class="contact-icon">
-                        ✉
-                    </div>
-
-                    <span>
-                        EMAIL
-                    </span>
-
-                    <h3>
-                        อีเมล
-                    </h3>
-
-                    <p>
-                        เพิ่มอีเมลของคุณที่นี่
-                    </p>
-
-                    <a href="mailto:your-email@example.com">
-                        ติดต่อทางอีเมล →
-                    </a>
-
-                </article>
-
-
-                <article class="contact-card featured-contact">
-
-                    <div class="contact-icon">
-                        🌐
-                    </div>
-
-                    <span>
-                        WEBSITE
-                    </span>
-
-                    <h3>
-                        My Portfolio
-                    </h3>
-
-                    <p>
-                        เว็บไซต์ Portfolio ส่วนตัว
-                    </p>
-
-                    <a href="index.html">
-                        กลับสู่ Portfolio →
-                    </a>
-
-                </article>
-
-
-                <article class="contact-card">
-
-                    <div class="contact-icon">
-                        ☘
-                    </div>
-
-                    <span>
-                        SCHOOL
-                    </span>
-
-                    <h3>
-                        โรงเรียน
-                    </h3>
-
-                    <p>
-                        โรงเรียนจอมทอง
-                        จังหวัดเชียงใหม่
-                    </p>
-
-                    <a href="education.html">
-                        ดูข้อมูลการศึกษา →
-                    </a>
-
-                </article>
-
-
-            </div>
-
-
-            <div class="contact-cta">
-
-                <div class="cta-stars">
-                    ✦ ✧ ✦
-                </div>
-
-                <h2>
-                    Thank you for visiting my world
-                </h2>
-
-                <p>
-                    ขอบคุณที่แวะเข้ามาทำความรู้จักกับผม
-                </p>
-
-                <a href="index.html" class="magic-button primary-button">
-                    <span>✦</span>
-                    กลับหน้าแรก
+                <a
+                    href="index.html"
+                    class="magic-button"
+                >
+                    กลับสู่หน้าแรก ✦
                 </a>
 
             </div>
@@ -281,53 +247,108 @@
     </main>
 
 
-    <footer class="site-footer">
+    <footer class="footer">
 
         <div class="footer-content">
 
-            <div class="footer-brand">
+            <div>
+                <h3>✦ MEGAN</h3>
+                <p>Mystic Purple Portfolio</p>
+            </div>
 
-                <div class="footer-logo">
-                    ✦ MY PROFILE
-                </div>
-
+            <div>
                 <p>
-                    Enchanted Forest Student Portfolio
+                    เคไซยาห์ เมกาน ชินวรรธนวงศ์
                 </p>
 
-            </div>
-
-            <div class="footer-student">
-
-                <strong>
-                    เคไซยาห์ เมกาน ชินวรรธนวงศ์
-                </strong>
-
-                <span>
-                    นักเรียนชั้น ม.3/2
-                </span>
-
-            </div>
-
-            <div class="footer-links">
-
-                <a href="index.html">หน้าแรก</a>
-                <a href="profile.html">ประวัติส่วนตัว</a>
-                <a href="education.html">การศึกษา</a>
-                <a href="hobby.html">งานอดิเรก</a>
-                <a href="contact.html">ติดต่อ</a>
-
+                <p>
+                    ม.3/2
+                </p>
             </div>
 
         </div>
 
-        <div class="footer-bottom">
-
-            © 2026 My Profile | Created for Computer Project
-
-        </div>
+        <p class="copyright">
+            © 2026 Megan Portfolio
+        </p>
 
     </footer>
+
+
+    <script>
+
+        window.addEventListener("load", () => {
+
+            setTimeout(() => {
+
+                document
+                    .getElementById("loadingScreen")
+                    .classList.add("loaded");
+
+            }, 2200);
+
+        });
+
+
+        const mouseGlow =
+            document.querySelector(".mouse-glow");
+
+
+        document.addEventListener("mousemove", (e) => {
+
+            mouseGlow.style.left =
+                e.clientX + "px";
+
+            mouseGlow.style.top =
+                e.clientY + "px";
+
+        });
+
+
+        document.addEventListener("click", (e) => {
+
+            const sparkle =
+                document.createElement("div");
+
+            sparkle.className =
+                "click-spark";
+
+            sparkle.style.left =
+                e.clientX + "px";
+
+            sparkle.style.top =
+                e.clientY + "px";
+
+            sparkle.innerHTML = "✦";
+
+            document.body.appendChild(sparkle);
+
+
+            const ripple =
+                document.createElement("div");
+
+            ripple.className =
+                "mouse-ripple";
+
+            ripple.style.left =
+                e.clientX + "px";
+
+            ripple.style.top =
+                e.clientY + "px";
+
+            document.body.appendChild(ripple);
+
+
+            setTimeout(() => {
+
+                sparkle.remove();
+                ripple.remove();
+
+            }, 800);
+
+        });
+
+    </script>
 
 </body>
 </html>
