@@ -1,64 +1,124 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="My Profile - ประวัติส่วนตัวของเมกาน">
 
     <title>Profile | My Profile</title>
 
-    <meta
-        name="description"
-        content="ประวัติส่วนตัวของ เคไซยาห์ เมกาน ชินวรรธนวงศ์"
-    >
-
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-    <!-- Loading Screen -->
-    <div class="loading-screen">
+    <!-- BACKGROUND -->
 
-        <div class="loader-orbit">
-            <span></span>
+    <div class="forest-background">
+
+        <div class="moon"></div>
+
+        <div class="stars">
+            <span>✦</span>
+            <span>✧</span>
+            <span>✦</span>
+            <span>✧</span>
+            <span>✦</span>
+            <span>✧</span>
+            <span>✦</span>
+            <span>✧</span>
         </div>
 
-        <p class="loading-title">MY PROFILE</p>
-        <p class="loading-text">กำลังเปิดสมุดบันทึก...</p>
+        <div class="fog fog-one"></div>
+        <div class="fog fog-two"></div>
 
-        <div class="loading-bar">
-            <span></span>
+        <div class="mountain mountain-back"></div>
+        <div class="mountain mountain-front"></div>
+
+        <div class="giant-mushroom mushroom-one">
+            <div class="mushroom-cap">
+                <i></i>
+                <i></i>
+                <i></i>
+            </div>
+            <div class="mushroom-stem"></div>
+        </div>
+
+        <div class="giant-mushroom mushroom-two">
+            <div class="mushroom-cap">
+                <i></i>
+                <i></i>
+            </div>
+            <div class="mushroom-stem"></div>
+        </div>
+
+        <div class="vine vine-left"></div>
+        <div class="vine vine-right"></div>
+
+        <div class="forest-tree tree-left">🌲</div>
+        <div class="forest-tree tree-right">🌲</div>
+        <div class="forest-tree tree-small-left">🌳</div>
+        <div class="forest-tree tree-small-right">🌳</div>
+
+        <div class="rain"></div>
+
+        <div class="fairy fairy-one">
+
+            <img
+                src="https://placehold.co/140x140/173524/B8E0A8?text=FAIRY"
+                alt="รูป Fairy ตกแต่งพื้นหลัง">
+
         </div>
 
     </div>
 
-    <div class="cursor-dot"></div>
 
+    <!-- NAVIGATION -->
 
-    <!-- Navigation -->
     <header class="site-header">
 
-        <nav class="navbar container">
+        <nav class="navbar">
 
-            <a href="index.html" class="brand">
+            <a href="index.html" class="logo">
 
-                <span class="brand-symbol">✦</span>
+                <span class="logo-symbol">✦</span>
 
-                <span>
-                    <strong>MY PROFILE</strong>
-                    <small>SKY ISLAND</small>
-                </span>
+                <span>MY PROFILE</span>
 
             </a>
 
-
             <div class="nav-links">
 
-                <a href="index.html">หน้าแรก</a>
-                <a href="profile.html" class="active">ประวัติส่วนตัว</a>
-                <a href="education.html">การศึกษา</a>
-                <a href="hobby.html">งานอดิเรก</a>
-                <a href="contact.html">ติดต่อ</a>
+                <a href="index.html">
+                    <span>⌂</span>
+                    หน้าแรก
+                </a>
+
+                <a href="profile.html" class="active">
+                    <span>♧</span>
+                    ประวัติส่วนตัว
+                </a>
+
+                <a href="education.html">
+                    <span>✎</span>
+                    การศึกษา
+                </a>
+
+                <a href="hobby.html">
+                    <span>✦</span>
+                    งานอดิเรก
+                </a>
+
+                <a href="contact.html">
+                    <span>☽</span>
+                    ติดต่อ
+                </a>
 
             </div>
 
@@ -67,218 +127,171 @@
     </header>
 
 
-    <main>
+    <main class="page-main">
 
-        <!-- Page Hero -->
-        <section class="page-hero">
+        <!-- PAGE TITLE -->
 
-            <div class="page-cloud page-cloud-one"></div>
-            <div class="page-cloud page-cloud-two"></div>
+        <section class="page-title">
 
-            <div class="container page-hero-content">
+            <span>✦ MY STORY ✦</span>
 
-                <span class="section-label">01 / PROFILE</span>
+            <h1>
+                ประวัติ<span>ส่วนตัว</span>
+            </h1>
 
-                <h1>
-                    About
-                    <span>Me</span>
-                </h1>
+            <p>
+                มาทำความรู้จักกับตัวตนของผม
+            </p>
 
-                <p>
-                    ทำความรู้จักกับตัวตน
-                    และเรื่องราวของฉัน
+        </section>
+
+
+        <!-- PROFILE -->
+
+        <section class="profile-section">
+
+            <div class="profile-large">
+
+                <div class="profile-frame">
+
+                    <div class="profile-glow"></div>
+
+                    <img
+                        src="https://placehold.co/600x800/173524/B8E0A8?text=MY+PHOTO"
+                        alt="รูปโปรไฟล์ของเมกาน"
+                        class="profile-image">
+
+                    <div class="image-tag">
+                        ✦ MEGAN
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="profile-information">
+
+                <span class="small-label">
+                    HELLO, I'M
+                </span>
+
+                <h2>
+                    เคไซยาห์ เมกาน
+                    <span>ชินวรรธนวงศ์</span>
+                </h2>
+
+                <p class="nickname">
+                    ชื่อเล่น : <strong>เมกาน</strong>
                 </p>
 
-            </div>
+                <p class="profile-description">
 
-        </section>
+                    สวัสดีครับ ผมชื่อเมกาน
+                    ปัจจุบันกำลังศึกษาอยู่ในระดับมัธยมศึกษาปีที่ 3
+                    ผมสนใจการเรียนรู้สิ่งใหม่ ๆ
+                    และอยากพัฒนาความสามารถของตัวเองอยู่เสมอ
+
+                </p>
 
 
-        <!-- Profile -->
-        <section class="section profile-section">
+                <div class="info-grid">
 
-            <div class="container profile-layout">
-
-                <div class="profile-image-wrapper">
-
-                    <div class="image-decoration image-decoration-one"></div>
-                    <div class="image-decoration image-decoration-two"></div>
-
-                    <div class="large-profile-card">
-
-                        <div class="large-profile-top">
-                            <span>PROFILE</span>
-                            <span>✦</span>
-                        </div>
-
-                        <img
-                            src="images/face.jpg"
-                            alt="รูปโปรไฟล์ของเคไซยาห์ เมกาน ชินวรรธนวงศ์"
-                        >
-
-                        <div class="large-profile-caption">
-
-                            <div>
-                                <span>STUDENT</span>
-                                <strong>MAEGAN</strong>
-                            </div>
-
-                            <div class="age-circle">
-                                15
-                            </div>
-
-                        </div>
-
+                    <div class="info-item">
+                        <span>อายุ</span>
+                        <strong>15 ปี</strong>
                     </div>
 
-                </div>
-
-
-                <div class="profile-content">
-
-                    <span class="section-label">NICE TO MEET YOU</span>
-
-                    <h2>
-                        สวัสดีค่ะ
-                        <span>ฉันชื่อเมกาน</span>
-                    </h2>
-
-                    <p class="lead-text">
-                        ผมเป็นนักเรียนชั้นมัธยมศึกษาปีที่ 3/2
-                        ที่ชอบเรียนรู้สิ่งใหม่ ๆ
-                        และสนใจการสร้างผลงานผ่านเทคโนโลยี
-                    </p>
-
-
-                    <div class="info-grid">
-
-                        <div class="info-item">
-                            <span>ชื่อ-นามสกุล</span>
-                            <strong>เคไซยาห์ เมกาน ชินวรรธนวงศ์</strong>
-                        </div>
-
-                        <div class="info-item">
-                            <span>ชื่อเล่น</span>
-                            <strong>เมกาน</strong>
-                        </div>
-
-                        <div class="info-item">
-                            <span>อายุ</span>
-                            <strong>15 ปี</strong>
-                        </div>
-
-                        <div class="info-item">
-                            <span>วันเกิด</span>
-                            <strong>1 สิงหาคม 2554</strong>
-                        </div>
-
-                        <div class="info-item">
-                            <span>โรงเรียน</span>
-                            <strong>โรงเรียนจอมทอง</strong>
-                        </div>
-
-                        <div class="info-item">
-                            <span>จังหวัด</span>
-                            <strong>เชียงใหม่</strong>
-                        </div>
-
+                    <div class="info-item">
+                        <span>วันเกิด</span>
+                        <strong>1 สิงหาคม 2554</strong>
                     </div>
 
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- About Me -->
-        <section class="section about-section">
-
-            <div class="container about-grid">
-
-                <div>
-
-                    <span class="section-label">MY STORY</span>
-
-                    <h2>
-                        เกี่ยวกับ
-                        <span>ฉัน</span>
-                    </h2>
-
-                </div>
-
-                <div class="about-text">
-
-                    <p>
-                        สำหรับฉัน การเรียนไม่ได้หมายถึงการนั่งอยู่ในห้องเรียน
-                        เพียงอย่างเดียว แต่ยังหมายถึงการได้ลองทำสิ่งใหม่
-                        และค้นหาว่าเราชอบอะไร
-                    </p>
-
-                    <p>
-                        ฉันจึงอยากใช้เว็บไซต์นี้เป็นพื้นที่สำหรับแนะนำตัวเอง
-                        และเก็บรวบรวมเรื่องราวเกี่ยวกับการเรียน
-                        ความสนใจ งานอดิเรก และสิ่งต่าง ๆ
-                        ที่กำลังเรียนรู้
-                    </p>
-
-                    <div class="quote-box">
-                        <span>“</span>
-                        <p>
-                            Every new idea is another island
-                            waiting to be explored.
-                        </p>
+                    <div class="info-item">
+                        <span>โรงเรียน</span>
+                        <strong>จอมทอง</strong>
                     </div>
 
-                </div>
+                    <div class="info-item">
+                        <span>ระดับชั้น</span>
+                        <strong>ม.3/2</strong>
+                    </div>
 
-            </div>
+                    <div class="info-item">
+                        <span>จังหวัด</span>
+                        <strong>เชียงใหม่</strong>
+                    </div>
 
-        </section>
-
-
-        <!-- Quick Facts -->
-        <section class="section">
-
-            <div class="container">
-
-                <div class="section-heading">
-
-                    <span class="section-label">QUICK FACTS</span>
-
-                    <h2>
-                        เรื่องเล็ก ๆ
-                        <span>เกี่ยวกับฉัน</span>
-                    </h2>
-
-                </div>
-
-
-                <div class="facts-grid">
-
-                    <div class="fact-card">
-                        <span class="fact-icon">📚</span>
+                    <div class="info-item">
+                        <span>วิชาที่ชอบ</span>
                         <strong>ภาษาอังกฤษ</strong>
-                        <p>วิชาที่ชอบ</p>
                     </div>
 
-                    <div class="fact-card">
-                        <span class="fact-icon">🎯</span>
-                        <strong>Learning</strong>
-                        <p>ชอบเรียนรู้สิ่งใหม่</p>
-                    </div>
+                </div>
 
-                    <div class="fact-card">
-                        <span class="fact-icon">🎨</span>
-                        <strong>ART</strong>
-                        <p>สนใจศิลปะ</p>
-                    </div>
+            </div>
 
-                    <div class="fact-card">
-                        <span class="fact-icon">☁️</span>
-                        <strong>Creative</strong>
-                        <p>ชอบสร้างสรรค์ผลงาน</p>
-                    </div>
+        </section>
+
+
+        <!-- ABOUT ME -->
+
+        <section class="about-section">
+
+            <div class="about-heading">
+
+                <span class="section-kicker">
+                    ABOUT ME
+                </span>
+
+                <h2>
+                    เกี่ยวกับ<span>ฉัน</span>
+                </h2>
+
+            </div>
+
+            <div class="about-content">
+
+                <div class="about-card large">
+
+                    <span class="about-number">01</span>
+
+                    <h3>ตัวตนของฉัน</h3>
+
+                    <p>
+                        ผมเป็นนักเรียนที่กำลังค้นหาความสนใจ
+                        และสิ่งที่ตัวเองชื่นชอบ
+                        ผมเชื่อว่าการลองทำสิ่งใหม่ ๆ
+                        ทำให้เราได้ค้นพบความสามารถของตัวเอง
+                    </p>
+
+                </div>
+
+
+                <div class="about-card">
+
+                    <span class="about-number">02</span>
+
+                    <h3>สิ่งที่กำลังเรียนรู้</h3>
+
+                    <p>
+                        การสร้างเว็บไซต์ เทคโนโลยี
+                        และการออกแบบสิ่งต่าง ๆ
+                    </p>
+
+                </div>
+
+
+                <div class="about-card">
+
+                    <span class="about-number">03</span>
+
+                    <h3>เป้าหมาย</h3>
+
+                    <p>
+                        พัฒนาตัวเองให้เก่งขึ้น
+                        และสร้างผลงานที่ภูมิใจได้
+                    </p>
 
                 </div>
 
@@ -289,35 +302,35 @@
     </main>
 
 
-    <!-- Footer -->
     <footer class="site-footer">
 
-        <div class="container footer-grid">
+        <div class="footer-content">
 
             <div class="footer-brand">
 
-                <a href="index.html" class="brand">
-
-                    <span class="brand-symbol">✦</span>
-
-                    <span>
-                        <strong>MY PROFILE</strong>
-                        <small>SKY ISLAND</small>
-                    </span>
-
-                </a>
+                <div class="footer-logo">
+                    ✦ MY PROFILE
+                </div>
 
                 <p>
-                    Student Portfolio ของ
-                    เคไซยาห์ เมกาน ชินวรรธนวงศ์
+                    Enchanted Forest Student Portfolio
                 </p>
 
             </div>
 
+            <div class="footer-student">
+
+                <strong>
+                    เคไซยาห์ เมกาน ชินวรรธนวงศ์
+                </strong>
+
+                <span>
+                    นักเรียนชั้น ม.3/2
+                </span>
+
+            </div>
 
             <div class="footer-links">
-
-                <h3>Navigation</h3>
 
                 <a href="index.html">หน้าแรก</a>
                 <a href="profile.html">ประวัติส่วนตัว</a>
@@ -327,26 +340,11 @@
 
             </div>
 
-
-            <div class="footer-info">
-
-                <h3>Student</h3>
-
-                <p>เมกาน</p>
-                <p>ชั้นมัธยมศึกษาปีที่ 3/2</p>
-                <p>โรงเรียนจอมทอง</p>
-                <p>เชียงใหม่</p>
-
-            </div>
-
         </div>
-
 
         <div class="footer-bottom">
 
-            <p>© 2026 MY PROFILE — Created by Maegan</p>
-
-            <span>Made with HTML & CSS ✦</span>
+            © 2026 My Profile | Created for Computer Project
 
         </div>
 
