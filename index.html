@@ -1,423 +1,4276 @@
-<!DOCTYPE html>
-<html lang="th">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+/* =========================================================
+   ENCHANTED FOREST
+   MY PROFILE PORTFOLIO
+   HTML5 + CSS3
+========================================================= */
 
-    <meta name="description" content="My Profile - Enchanted Forest Student Portfolio">
 
-    <title>My Profile | Enchanted Forest</title>
+/* =========================================================
+   ROOT
+========================================================= */
 
-    <link rel="stylesheet" href="style.css">
-</head>
+:root {
 
-<body class="home-page">
+    --forest-black: #07140F;
+    --forest-dark: #0D2419;
+    --forest: #163D2A;
+    --forest-light: #245C3C;
 
-    <!-- ==============================
-         LOADING SCREEN
-    =============================== -->
-    <div class="loading-screen">
+    --magic-green: #6FAF7B;
+    --glow-green: #B8E0A8;
+    --moon: #E8F7DF;
+    --white: #FFFFFF;
 
-        <div class="loading-moon"></div>
+    --glass: rgba(11, 34, 23, 0.72);
+    --glass-light: rgba(120, 180, 130, 0.10);
 
-        <div class="loading-cloud cloud-one">☁</div>
-        <div class="loading-cloud cloud-two">☁</div>
+    --border: rgba(184, 224, 168, 0.25);
 
-        <div class="loading-content">
+    --shadow:
+        0 25px 70px rgba(0, 0, 0, 0.55);
 
-            <div class="loading-tree">🌲</div>
+    --glow:
+        0 0 25px rgba(184, 224, 168, 0.35);
 
-            <h1>ENCHANTED FOREST</h1>
+}
 
-            <p>กำลังเปิดประตูสู่โลกของฉัน...</p>
 
-            <div class="loading-bar">
-                <span></span>
-            </div>
+/* =========================================================
+   RESET
+========================================================= */
 
-            <div class="loading-stars">
-                ✦ ✧ ✦ ✧ ✦
-            </div>
+* {
 
-        </div>
-    </div>
+    margin: 0;
+    padding: 0;
 
+    box-sizing: border-box;
 
-    <!-- ==============================
-         BACKGROUND EFFECTS
-    =============================== -->
+}
 
-    <div class="forest-background">
+html {
 
-        <div class="moon"></div>
+    scroll-behavior: smooth;
 
-        <div class="stars">
-            <span>✦</span>
-            <span>✧</span>
-            <span>✦</span>
-            <span>✧</span>
-            <span>✦</span>
-            <span>✧</span>
-            <span>✦</span>
-            <span>✧</span>
-        </div>
+}
 
-        <div class="fog fog-one"></div>
-        <div class="fog fog-two"></div>
+body {
 
-        <div class="mountain mountain-back"></div>
-        <div class="mountain mountain-front"></div>
+    font-family:
+        "Segoe UI",
+        "Noto Sans Thai",
+        Tahoma,
+        sans-serif;
 
-        <!-- เห็ดใหญ่ -->
-        <div class="giant-mushroom mushroom-one">
-            <div class="mushroom-cap">
-                <i></i>
-                <i></i>
-                <i></i>
-            </div>
-            <div class="mushroom-stem"></div>
-        </div>
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            #1d5036 0%,
+            var(--forest-dark) 38%,
+            var(--forest-black) 100%
+        );
 
-        <div class="giant-mushroom mushroom-two">
-            <div class="mushroom-cap">
-                <i></i>
-                <i></i>
-            </div>
-            <div class="mushroom-stem"></div>
-        </div>
+    color: var(--white);
 
-        <!-- เถาวัลย์ -->
-        <div class="vine vine-left"></div>
-        <div class="vine vine-right"></div>
+    min-height: 100vh;
 
-        <!-- ต้นไม้ -->
-        <div class="forest-tree tree-left">🌲</div>
-        <div class="forest-tree tree-right">🌲</div>
-        <div class="forest-tree tree-small-left">🌳</div>
-        <div class="forest-tree tree-small-right">🌳</div>
+    overflow-x: hidden;
 
-        <!-- ฝน -->
-        <div class="rain"></div>
+}
 
-        <!-- Fairy -->
-        <div class="fairy fairy-one">
 
-            <!-- เปลี่ยน URL ตรงนี้เป็นรูป Fairy ของคุณ -->
-            <img
-                src="https://placehold.co/140x140/173524/B8E0A8?text=FAIRY"
-                alt="รูป Fairy ตกแต่งพื้นหลัง">
+/* =========================================================
+   PAGE LOADING SCREEN
+========================================================= */
 
-        </div>
+.loading-screen {
 
-    </div>
+    position: fixed;
 
+    inset: 0;
 
-    <!-- ==============================
-         NAVIGATION
-    =============================== -->
+    z-index: 9999;
 
-    <header class="site-header">
+    background:
+        radial-gradient(
+            circle at center,
+            #1b4c32 0%,
+            #0b2418 45%,
+            #030b07 100%
+        );
 
-        <nav class="navbar">
+    display: flex;
 
-            <a href="index.html" class="logo">
-                <span class="logo-symbol">✦</span>
-                <span>MY PROFILE</span>
-            </a>
+    align-items: center;
 
-            <div class="nav-links">
+    justify-content: center;
 
-                <a href="index.html" class="active">
-                    <span>⌂</span>
-                    หน้าแรก
-                </a>
+    animation:
+        loading-fade 1.5s ease 3s forwards;
 
-                <a href="profile.html">
-                    <span>♧</span>
-                    ประวัติส่วนตัว
-                </a>
+    pointer-events: none;
 
-                <a href="education.html">
-                    <span>✎</span>
-                    การศึกษา
-                </a>
+}
 
-                <a href="hobby.html">
-                    <span>✦</span>
-                    งานอดิเรก
-                </a>
 
-                <a href="contact.html">
-                    <span>☽</span>
-                    ติดต่อ
-                </a>
+.loading-content {
 
-            </div>
+    text-align: center;
 
-        </nav>
+    position: relative;
 
-    </header>
+    z-index: 5;
 
+    animation:
+        loading-rise 1.2s ease;
 
-    <!-- ==============================
-         MAIN
-    =============================== -->
+}
 
-    <main>
 
-        <section class="hero">
+.loading-tree {
 
-            <div class="hero-content reveal">
+    font-size: 70px;
 
-                <div class="magic-label">
-                    <span class="sparkle">✦</span>
-                    WELCOME TO MY WORLD
-                    <span class="sparkle">✦</span>
-                </div>
+    margin-bottom: 10px;
 
-                <p class="hero-small-title">
-                    MY PROFILE
-                </p>
+    filter:
+        drop-shadow(
+            0 0 20px
+            rgba(184,224,168,.7)
+        );
 
-                <h1>
-                    เคไซยาห์ เมกาน
-                    <span>ชินวรรธนวงศ์</span>
-                </h1>
+    animation:
+        loading-tree 2s ease-in-out infinite;
 
-                <p class="hero-description">
+}
 
-                    สวัสดีครับ ผมชื่อ <strong>เมกาน</strong>
-                    นักเรียนชั้นมัธยมศึกษาปีที่ 3
-                    ผู้กำลังเรียนรู้สิ่งใหม่ ๆ
-                    และค้นหาสิ่งที่ตัวเองชื่นชอบ
 
-                </p>
+.loading-content h1 {
 
-                <p class="hero-quote">
+    font-size: clamp(
+        1.5rem,
+        4vw,
+        3rem
+    );
 
-                    “ทุกการเดินทาง เริ่มต้นจากก้าวเล็ก ๆ
-                    ในป่าแห่งความฝัน”
+    letter-spacing: 7px;
 
-                </p>
+    color: var(--glow-green);
 
-                <div class="hero-buttons">
+    text-shadow:
+        0 0 15px rgba(184,224,168,.8),
+        0 0 40px rgba(111,175,123,.4);
 
-                    <a href="profile.html" class="magic-button primary-button">
-                        <span>✦</span>
-                        รู้จักฉันมากขึ้น
-                    </a>
+}
 
-                    <a href="hobby.html" class="magic-button secondary-button">
-                        ดูงานอดิเรกของฉัน
-                        <span>→</span>
-                    </a>
 
-                </div>
+.loading-content p {
 
-                <div class="hero-info">
+    margin-top: 15px;
 
-                    <div>
-                        <strong>15</strong>
-                        <span>อายุ</span>
-                    </div>
+    color: rgba(255,255,255,.7);
 
-                    <div>
-                        <strong>ม.3/2</strong>
-                        <span>ระดับชั้น</span>
-                    </div>
+}
 
-                    <div>
-                        <strong>จอมทอง</strong>
-                        <span>โรงเรียน</span>
-                    </div>
 
-                </div>
+.loading-bar {
 
-            </div>
+    width: 240px;
 
+    height: 4px;
 
-            <!-- ==============================
-                 PROFILE IMAGE
-            =============================== -->
+    margin:
+        30px auto 15px;
 
-            <div class="hero-visual reveal-delay">
+    background:
+        rgba(255,255,255,.12);
 
-                <div class="magic-circle circle-one"></div>
-                <div class="magic-circle circle-two"></div>
+    border-radius: 100px;
 
-                <div class="profile-orbit orbit-one"></div>
-                <div class="profile-orbit orbit-two"></div>
+    overflow: hidden;
 
-                <div class="profile-frame">
+}
 
-                    <div class="profile-glow"></div>
 
-                    <img
-                        src="https://placehold.co/600x800/173524/B8E0A8?text=MY+PHOTO"
-                        alt="รูปโปรไฟล์ของเมกาน"
-                        class="profile-image">
+.loading-bar span {
 
-                    <div class="image-tag">
-                        <span>✦</span>
-                        MEGAN
-                    </div>
+    display: block;
 
-                </div>
+    width: 0;
 
-                <div class="floating-card card-top">
-                    <span>✦</span>
-                    Dreamer
-                </div>
+    height: 100%;
 
-                <div class="floating-card card-bottom">
-                    <span>🌿</span>
-                    Explorer
-                </div>
+    background:
+        linear-gradient(
+            90deg,
+            var(--magic-green),
+            var(--glow-green),
+            white
+        );
 
-            </div>
+    box-shadow:
+        0 0 15px var(--glow-green);
 
-        </section>
+    animation:
+        loading-bar 2.8s ease forwards;
 
+}
 
-        <!-- ==============================
-             INTRO SECTION
-        =============================== -->
 
-        <section class="intro-section">
+.loading-stars {
 
-            <div class="section-heading">
+    letter-spacing: 12px;
 
-                <span class="section-kicker">
-                    THE MAGIC BEGINS
-                </span>
+    color: var(--glow-green);
 
-                <h2>
-                    ยินดีต้อนรับสู่
-                    <span>โลกของฉัน</span>
-                </h2>
+    animation:
+        sparkle 1.5s ease-in-out infinite;
 
-                <p>
-                    เว็บไซต์ Portfolio เล็ก ๆ ที่สร้างขึ้นเพื่อแนะนำตัวตน
-                    ความสนใจ การศึกษา และสิ่งที่ผมกำลังเรียนรู้
-                </p>
+}
 
-            </div>
 
-            <div class="feature-grid">
+.loading-cloud {
 
-                <article class="feature-card">
+    position: absolute;
 
-                    <div class="feature-icon">♧</div>
+    color: rgba(255,255,255,.13);
 
-                    <h3>About Me</h3>
+    font-size: 100px;
 
-                    <p>
-                        ทำความรู้จักกับตัวตน
-                        บุคลิก และเรื่องราวของผม
-                    </p>
+    filter:
+        blur(2px);
 
-                    <a href="profile.html">
-                        สำรวจเพิ่มเติม →
-                    </a>
+}
 
-                </article>
 
+.cloud-one {
 
-                <article class="feature-card featured">
+    top: 20%;
 
-                    <div class="feature-icon">✦</div>
+    left: 10%;
 
-                    <h3>My Journey</h3>
+    animation:
+        cloud-float 8s ease-in-out infinite;
 
-                    <p>
-                        เส้นทางการศึกษา
-                        และประสบการณ์ที่ค่อย ๆ เติบโต
-                    </p>
+}
 
-                    <a href="education.html">
-                        ดูเส้นทาง →
-                    </a>
 
-                </article>
+.cloud-two {
 
+    bottom: 18%;
 
-                <article class="feature-card">
+    right: 8%;
 
-                    <div class="feature-icon">☽</div>
+    font-size: 150px;
 
-                    <h3>My World</h3>
+    animation:
+        cloud-float 10s ease-in-out infinite reverse;
 
-                    <p>
-                        สิ่งที่ผมชอบ งานอดิเรก
-                        และความสนใจต่าง ๆ
-                    </p>
+}
 
-                    <a href="hobby.html">
-                        ค้นพบเพิ่มเติม →
-                    </a>
 
-                </article>
+/* =========================================================
+   BACKGROUND
+========================================================= */
 
-            </div>
+.forest-background {
 
-        </section>
+    position: fixed;
 
-    </main>
+    inset: 0;
 
+    z-index: -10;
 
-    <!-- ==============================
-         FOOTER
-    =============================== -->
+    overflow: hidden;
 
-    <footer class="site-footer">
+    pointer-events: none;
 
-        <div class="footer-glow"></div>
+    background:
+        linear-gradient(
+            180deg,
+            rgba(3,15,10,.05),
+            rgba(3,15,10,.55)
+        );
 
-        <div class="footer-content">
+}
 
-            <div class="footer-brand">
 
-                <div class="footer-logo">
-                    ✦ MY PROFILE
-                </div>
+/* =========================================================
+   MOON
+========================================================= */
 
-                <p>
-                    Enchanted Forest Student Portfolio
-                </p>
+.moon {
 
-            </div>
+    position: absolute;
 
-            <div class="footer-student">
+    width: 130px;
 
-                <strong>
-                    เคไซยาห์ เมกาน ชินวรรธนวงศ์
-                </strong>
+    height: 130px;
 
-                <span>
-                    นักเรียนชั้น ม.3/2
-                </span>
+    top: 9%;
 
-            </div>
+    right: 12%;
 
-            <div class="footer-links">
+    border-radius: 50%;
 
-                <a href="index.html">หน้าแรก</a>
-                <a href="profile.html">ประวัติส่วนตัว</a>
-                <a href="education.html">การศึกษา</a>
-                <a href="hobby.html">งานอดิเรก</a>
-                <a href="contact.html">ติดต่อ</a>
+    background:
+        radial-gradient(
+            circle at 35% 30%,
+            #ffffff,
+            var(--moon) 50%,
+            #9bc68e 100%
+        );
 
-            </div>
+    box-shadow:
+        0 0 25px #d8f5c8,
+        0 0 70px rgba(184,224,168,.4);
 
-        </div>
+    opacity: .8;
 
-        <div class="footer-bottom">
+}
 
-            © 2026 My Profile | Created for Computer Project
 
-        </div>
+.moon::after {
 
-    </footer>
+    content: "";
 
-</body>
-</html>
+    position: absolute;
+
+    width: 130px;
+
+    height: 130px;
+
+    border-radius: 50%;
+
+    background:
+        var(--forest-dark);
+
+    transform:
+        translate(35px,-15px);
+
+}
+
+
+/* =========================================================
+   STARS
+========================================================= */
+
+.stars span {
+
+    position: absolute;
+
+    color: var(--glow-green);
+
+    text-shadow:
+        0 0 8px var(--glow-green),
+        0 0 20px var(--magic-green);
+
+    animation:
+        star-twinkle
+        2s
+        ease-in-out
+        infinite;
+
+}
+
+
+.stars span:nth-child(1) {
+
+    top: 13%;
+    left: 17%;
+
+}
+
+.stars span:nth-child(2) {
+
+    top: 25%;
+    left: 35%;
+
+    animation-delay: .4s;
+
+}
+
+.stars span:nth-child(3) {
+
+    top: 18%;
+    right: 35%;
+
+    animation-delay: .8s;
+
+}
+
+.stars span:nth-child(4) {
+
+    top: 37%;
+    right: 15%;
+
+    animation-delay: 1.2s;
+
+}
+
+.stars span:nth-child(5) {
+
+    top: 50%;
+    left: 12%;
+
+    animation-delay: .5s;
+
+}
+
+.stars span:nth-child(6) {
+
+    top: 63%;
+    right: 25%;
+
+    animation-delay: 1s;
+
+}
+
+.stars span:nth-child(7) {
+
+    top: 70%;
+    left: 35%;
+
+    animation-delay: 1.5s;
+
+}
+
+.stars span:nth-child(8) {
+
+    top: 80%;
+    right: 45%;
+
+    animation-delay: .7s;
+
+}
+
+
+/* =========================================================
+   FOG
+========================================================= */
+
+.fog {
+
+    position: absolute;
+
+    width: 900px;
+
+    height: 180px;
+
+    background:
+        radial-gradient(
+            ellipse,
+            rgba(190,230,195,.13),
+            transparent 70%
+        );
+
+    filter:
+        blur(18px);
+
+}
+
+
+.fog-one {
+
+    bottom: 15%;
+
+    left: -20%;
+
+    animation:
+        fog-move 16s ease-in-out infinite;
+
+}
+
+
+.fog-two {
+
+    bottom: 28%;
+
+    right: -30%;
+
+    animation:
+        fog-move 20s ease-in-out infinite reverse;
+
+}
+
+
+/* =========================================================
+   MOUNTAINS
+========================================================= */
+
+.mountain {
+
+    position: absolute;
+
+    bottom: 0;
+
+    width: 0;
+
+    height: 0;
+
+    border-left:
+        350px solid transparent;
+
+    border-right:
+        350px solid transparent;
+
+}
+
+
+.mountain-back {
+
+    left: 5%;
+
+    border-bottom:
+        380px solid #0c2519;
+
+    opacity: .7;
+
+}
+
+
+.mountain-front {
+
+    right: -5%;
+
+    border-left-width: 450px;
+
+    border-right-width: 450px;
+
+    border-bottom:
+        330px solid #071910;
+
+}
+
+
+/* =========================================================
+   GIANT MUSHROOM
+========================================================= */
+
+.giant-mushroom {
+
+    position: absolute;
+
+    bottom: 3%;
+
+    filter:
+        drop-shadow(
+            0 0 20px
+            rgba(111,175,123,.35)
+        );
+
+    animation:
+        mushroom-breathe
+        5s
+        ease-in-out
+        infinite;
+
+}
+
+
+.mushroom-one {
+
+    left: 2%;
+
+    transform:
+        scale(1.15);
+
+}
+
+
+.mushroom-two {
+
+    right: 3%;
+
+    transform:
+        scale(.9);
+
+    animation-delay: 1s;
+
+}
+
+
+.mushroom-cap {
+
+    width: 170px;
+
+    height: 90px;
+
+    background:
+        radial-gradient(
+            circle at 50% 10%,
+            #a7d99a,
+            #407a4b 55%,
+            #173d27 100%
+        );
+
+    border-radius:
+        90px 90px 30px 30px;
+
+    position: relative;
+
+    box-shadow:
+        0 0 25px rgba(184,224,168,.35);
+
+}
+
+
+.mushroom-cap i {
+
+    position: absolute;
+
+    width: 18px;
+
+    height: 18px;
+
+    border-radius: 50%;
+
+    background: #d9f5c8;
+
+    box-shadow:
+        0 0 15px #d9f5c8;
+
+}
+
+
+.mushroom-cap i:nth-child(1) {
+
+    left: 35px;
+
+    top: 30px;
+
+}
+
+.mushroom-cap i:nth-child(2) {
+
+    right: 40px;
+
+    top: 20px;
+
+}
+
+.mushroom-cap i:nth-child(3) {
+
+    left: 75px;
+
+    top: 12px;
+
+}
+
+
+.mushroom-stem {
+
+    width: 55px;
+
+    height: 130px;
+
+    margin: auto;
+
+    background:
+        linear-gradient(
+            90deg,
+            #9fc28c,
+            #d8edc8,
+            #759f6d
+        );
+
+    border-radius:
+        0 0 25px 25px;
+
+    box-shadow:
+        0 0 25px rgba(184,224,168,.2);
+
+}
+
+
+/* =========================================================
+   VINES
+========================================================= */
+
+.vine {
+
+    position: absolute;
+
+    top: -20px;
+
+    width: 150px;
+
+    height: 650px;
+
+    border:
+        5px solid
+        rgba(111,175,123,.65);
+
+    border-top: 0;
+
+    border-left-color: transparent;
+
+    border-radius:
+        0 0 80px 80px;
+
+    filter:
+        drop-shadow(
+            0 0 10px
+            rgba(184,224,168,.4)
+        );
+
+}
+
+
+.vine-left {
+
+    left: -80px;
+
+    transform:
+        rotate(8deg);
+
+}
+
+
+.vine-right {
+
+    right: -80px;
+
+    transform:
+        rotate(-8deg);
+
+}
+
+
+/* =========================================================
+   TREES
+========================================================= */
+
+.forest-tree {
+
+    position: absolute;
+
+    bottom: 0;
+
+    font-size: 170px;
+
+    opacity: .75;
+
+    filter:
+        drop-shadow(
+            0 0 20px
+            rgba(0,0,0,.8)
+        );
+
+}
+
+
+.tree-left {
+
+    left: 8%;
+
+}
+
+
+.tree-right {
+
+    right: 8%;
+
+}
+
+
+.tree-small-left {
+
+    left: 22%;
+
+    font-size: 110px;
+
+    opacity: .5;
+
+}
+
+
+.tree-small-right {
+
+    right: 22%;
+
+    font-size: 110px;
+
+    opacity: .5;
+
+}
+
+
+/* =========================================================
+   RAIN
+========================================================= */
+
+.rain {
+
+    position: absolute;
+
+    inset: 0;
+
+    opacity: .25;
+
+    background-image:
+        linear-gradient(
+            110deg,
+            transparent 48%,
+            rgba(190,230,255,.7) 50%,
+            transparent 52%
+        );
+
+    background-size:
+        4px 28px;
+
+    animation:
+        rain-fall
+        .8s
+        linear
+        infinite;
+
+}
+
+
+/* =========================================================
+   FAIRY
+========================================================= */
+
+.fairy {
+
+    position: absolute;
+
+    width: 120px;
+
+    height: 120px;
+
+    animation:
+        fairy-fly
+        8s
+        ease-in-out
+        infinite;
+
+}
+
+
+.fairy img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    opacity: .85;
+
+    filter:
+        drop-shadow(
+            0 0 18px
+            var(--glow-green)
+        );
+
+}
+
+
+.fairy-one {
+
+    top: 28%;
+
+    left: 12%;
+
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.site-header {
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    padding:
+        18px 5%;
+
+}
+
+
+.navbar {
+
+    max-width: 1250px;
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 25px;
+
+    padding:
+        13px 18px;
+
+    border:
+        1px solid
+        var(--border);
+
+    background:
+        rgba(6,24,15,.68);
+
+    backdrop-filter:
+        blur(20px);
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.35);
+
+}
+
+
+.logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+}
+
+
+.logo-symbol {
+
+    width: 36px;
+
+    height: 36px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--magic-green),
+            var(--forest-light)
+        );
+
+    color: var(--glow-green);
+
+    box-shadow:
+        0 0 18px rgba(184,224,168,.3);
+
+}
+
+
+.nav-links {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+}
+
+
+.nav-links a {
+
+    color:
+        rgba(255,255,255,.72);
+
+    text-decoration: none;
+
+    padding:
+        10px 13px;
+
+    border-radius: 14px;
+
+    font-size: .9rem;
+
+    transition:
+        .3s ease;
+
+}
+
+
+.nav-links a span {
+
+    margin-right: 5px;
+
+}
+
+
+.nav-links a:hover,
+.nav-links a.active {
+
+    color: var(--glow-green);
+
+    background:
+        rgba(111,175,123,.12);
+
+    box-shadow:
+        inset 0 0 20px
+        rgba(184,224,168,.04),
+        0 0 18px
+        rgba(184,224,168,.08);
+
+    transform:
+        translateY(-2px);
+
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+
+    min-height:
+        calc(100vh - 90px);
+
+    max-width: 1250px;
+
+    margin: auto;
+
+    padding:
+        60px 5% 100px;
+
+    display: grid;
+
+    grid-template-columns:
+        1.1fr .9fr;
+
+    align-items: center;
+
+    gap: 60px;
+
+}
+
+
+.hero-content {
+
+    position: relative;
+
+    z-index: 5;
+
+}
+
+
+.magic-label {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    color: var(--glow-green);
+
+    font-size: .75rem;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.sparkle {
+
+    animation:
+        sparkle
+        1.5s
+        infinite;
+
+}
+
+
+.hero-small-title {
+
+    color:
+        rgba(255,255,255,.55);
+
+    letter-spacing: 7px;
+
+    font-size: .85rem;
+
+}
+
+
+.hero h1 {
+
+    font-size:
+        clamp(
+            2.5rem,
+            6vw,
+            5.5rem
+        );
+
+    line-height: 1.05;
+
+    margin:
+        15px 0 25px;
+
+    font-weight: 800;
+
+    letter-spacing: -2px;
+
+    text-shadow:
+        0 15px 35px rgba(0,0,0,.5);
+
+}
+
+
+.hero h1 span {
+
+    display: block;
+
+    color: var(--glow-green);
+
+    text-shadow:
+        0 0 20px
+        rgba(184,224,168,.35);
+
+}
+
+
+.hero-description {
+
+    max-width: 650px;
+
+    color:
+        rgba(255,255,255,.72);
+
+    font-size: 1.05rem;
+
+    line-height: 1.9;
+
+}
+
+
+.hero-description strong {
+
+    color: var(--glow-green);
+
+}
+
+
+.hero-quote {
+
+    margin:
+        25px 0;
+
+    padding-left: 18px;
+
+    border-left:
+        2px solid
+        var(--magic-green);
+
+    color:
+        rgba(255,255,255,.55);
+
+    font-style: italic;
+
+}
+
+
+.hero-buttons {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 14px;
+
+    margin-top: 30px;
+
+}
+
+
+.magic-button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    min-height: 52px;
+
+    padding:
+        0 23px;
+
+    border-radius: 16px;
+
+    text-decoration: none;
+
+    font-weight: 700;
+
+    transition:
+        .35s ease;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+.magic-button::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            110deg,
+            transparent,
+            rgba(255,255,255,.18),
+            transparent
+        );
+
+    transform:
+        translateX(-120%);
+
+    transition:
+        .5s ease;
+
+}
+
+
+.magic-button:hover::before {
+
+    transform:
+        translateX(120%);
+
+}
+
+
+.magic-button:hover {
+
+    transform:
+        translateY(-5px)
+        scale(1.02);
+
+}
+
+
+.primary-button {
+
+    color: #102418;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--glow-green),
+            var(--magic-green)
+        );
+
+    box-shadow:
+        0 10px 35px
+        rgba(111,175,123,.3);
+
+}
+
+
+.secondary-button {
+
+    color: var(--glow-green);
+
+    border:
+        1px solid
+        var(--border);
+
+    background:
+        rgba(255,255,255,.04);
+
+    backdrop-filter:
+        blur(10px);
+
+}
+
+
+.secondary-button:hover {
+
+    background:
+        rgba(111,175,123,.12);
+
+}
+
+
+.hero-info {
+
+    display: flex;
+
+    gap: 35px;
+
+    margin-top: 40px;
+
+}
+
+
+.hero-info div {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3px;
+
+}
+
+
+.hero-info strong {
+
+    color: var(--glow-green);
+
+    font-size: 1.2rem;
+
+}
+
+
+.hero-info span {
+
+    color:
+        rgba(255,255,255,.45);
+
+    font-size: .75rem;
+
+}
+
+
+/* =========================================================
+   PROFILE VISUAL
+========================================================= */
+
+.hero-visual {
+
+    position: relative;
+
+    min-height: 560px;
+
+    display: grid;
+
+    place-items: center;
+
+    perspective: 1200px;
+
+}
+
+
+.profile-frame {
+
+    width: min(360px, 80vw);
+
+    height: 500px;
+
+    position: relative;
+
+    z-index: 5;
+
+    padding: 10px;
+
+    border:
+        1px solid
+        rgba(184,224,168,.4);
+
+    background:
+        rgba(255,255,255,.06);
+
+    backdrop-filter:
+        blur(15px);
+
+    border-radius:
+        50% 50% 45% 45% /
+        40% 40% 60% 60%;
+
+    box-shadow:
+        0 35px 80px
+        rgba(0,0,0,.55),
+        inset 0 0 35px
+        rgba(184,224,168,.06);
+
+    transform:
+        rotateY(-5deg)
+        rotateX(3deg);
+
+    transition:
+        .6s ease;
+
+    animation:
+        profile-float
+        5s
+        ease-in-out
+        infinite;
+
+}
+
+
+.profile-frame:hover {
+
+    transform:
+        rotateY(10deg)
+        rotateX(-6deg)
+        scale(1.04);
+
+    box-shadow:
+        0 45px 90px
+        rgba(0,0,0,.65),
+        0 0 45px
+        rgba(184,224,168,.2);
+
+}
+
+
+.profile-image {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius:
+        50% 50% 45% 45% /
+        40% 40% 60% 60%;
+
+    display: block;
+
+    transition:
+        .6s ease;
+
+}
+
+
+.profile-frame:hover .profile-image {
+
+    transform:
+        scale(1.04);
+
+}
+
+
+.profile-glow {
+
+    position: absolute;
+
+    inset: -35px;
+
+    z-index: -1;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(111,175,123,.32),
+            transparent 65%
+        );
+
+    animation:
+        glow-pulse
+        3s
+        ease-in-out
+        infinite;
+
+}
+
+
+.image-tag {
+
+    position: absolute;
+
+    bottom: 25px;
+
+    left: 50%;
+
+    transform:
+        translateX(-50%);
+
+    padding:
+        10px 22px;
+
+    border-radius: 100px;
+
+    background:
+        rgba(6,24,15,.82);
+
+    border:
+        1px solid
+        var(--border);
+
+    color: var(--glow-green);
+
+    backdrop-filter:
+        blur(15px);
+
+    letter-spacing: 3px;
+
+    font-size: .75rem;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.4);
+
+}
+
+
+.magic-circle {
+
+    position: absolute;
+
+    border:
+        1px solid
+        rgba(184,224,168,.2);
+
+    border-radius: 50%;
+
+}
+
+
+.circle-one {
+
+    width: 480px;
+
+    height: 480px;
+
+    animation:
+        rotate-circle
+        20s
+        linear
+        infinite;
+
+}
+
+
+.circle-two {
+
+    width: 570px;
+
+    height: 570px;
+
+    border-style: dashed;
+
+    animation:
+        rotate-circle
+        28s
+        linear
+        infinite reverse;
+
+}
+
+
+.profile-orbit {
+
+    position: absolute;
+
+    border:
+        1px solid
+        rgba(184,224,168,.25);
+
+    border-radius: 50%;
+
+}
+
+
+.orbit-one {
+
+    width: 430px;
+
+    height: 150px;
+
+    transform:
+        rotate(35deg);
+
+    animation:
+        orbit
+        10s
+        linear
+        infinite;
+
+}
+
+
+.orbit-two {
+
+    width: 430px;
+
+    height: 150px;
+
+    transform:
+        rotate(-35deg);
+
+    animation:
+        orbit
+        14s
+        linear
+        infinite reverse;
+
+}
+
+
+.floating-card {
+
+    position: absolute;
+
+    z-index: 10;
+
+    padding:
+        12px 17px;
+
+    border:
+        1px solid
+        var(--border);
+
+    background:
+        rgba(6,24,15,.75);
+
+    backdrop-filter:
+        blur(15px);
+
+    border-radius: 15px;
+
+    color:
+        rgba(255,255,255,.8);
+
+    font-size: .8rem;
+
+    box-shadow:
+        0 15px 35px
+        rgba(0,0,0,.35);
+
+}
+
+
+.floating-card span {
+
+    color: var(--glow-green);
+
+    margin-right: 5px;
+
+}
+
+
+.card-top {
+
+    top: 14%;
+
+    right: 5%;
+
+    animation:
+        float-card
+        4s
+        ease-in-out
+        infinite;
+
+}
+
+
+.card-bottom {
+
+    bottom: 15%;
+
+    left: 5%;
+
+    animation:
+        float-card
+        5s
+        ease-in-out
+        infinite reverse;
+
+}
+
+
+/* =========================================================
+   SECTIONS
+========================================================= */
+
+.intro-section,
+.about-section,
+.education-highlight,
+.hobby-section,
+.contact-section {
+
+    max-width: 1250px;
+
+    margin: auto;
+
+    padding:
+        100px 5%;
+
+}
+
+
+.section-heading {
+
+    max-width: 700px;
+
+    margin:
+        0 auto 50px;
+
+    text-align: center;
+
+}
+
+
+.section-kicker {
+
+    color:
+        var(--magic-green);
+
+    letter-spacing: 4px;
+
+    font-size: .7rem;
+
+    font-weight: 800;
+
+}
+
+
+.section-heading h2 {
+
+    font-size:
+        clamp(
+            2rem,
+            5vw,
+            3.5rem
+        );
+
+    margin:
+        12px 0;
+
+}
+
+
+.section-heading h2 span {
+
+    color: var(--glow-green);
+
+}
+
+
+.section-heading p {
+
+    color:
+        rgba(255,255,255,.58);
+
+    line-height: 1.8;
+
+}
+
+
+/* =========================================================
+   FEATURE CARDS
+========================================================= */
+
+.feature-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 22px;
+
+}
+
+
+.feature-card {
+
+    position: relative;
+
+    padding:
+        35px;
+
+    min-height: 260px;
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius:
+        28px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.06),
+            rgba(255,255,255,.02)
+        );
+
+    backdrop-filter:
+        blur(15px);
+
+    box-shadow:
+        0 20px 50px
+        rgba(0,0,0,.25);
+
+    transition:
+        .45s ease;
+
+    overflow: hidden;
+
+}
+
+
+.feature-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 180px;
+
+    height: 180px;
+
+    border-radius: 50%;
+
+    top: -100px;
+
+    right: -80px;
+
+    background:
+        rgba(184,224,168,.08);
+
+    filter:
+        blur(5px);
+
+}
+
+
+.feature-card:hover {
+
+    transform:
+        translateY(-12px)
+        perspective(700px)
+        rotateX(3deg)
+        rotateY(-3deg);
+
+    border-color:
+        rgba(184,224,168,.45);
+
+    box-shadow:
+        0 35px 70px
+        rgba(0,0,0,.45),
+        0 0 30px
+        rgba(184,224,168,.08);
+
+}
+
+
+.feature-card.featured {
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(111,175,123,.18),
+            rgba(255,255,255,.03)
+        );
+
+}
+
+
+.feature-icon {
+
+    font-size: 2rem;
+
+    color: var(--glow-green);
+
+    margin-bottom: 20px;
+
+    text-shadow:
+        0 0 15px
+        rgba(184,224,168,.5);
+
+}
+
+
+.feature-card h3 {
+
+    font-size: 1.4rem;
+
+    margin-bottom: 12px;
+
+}
+
+
+.feature-card p {
+
+    color:
+        rgba(255,255,255,.55);
+
+    line-height: 1.7;
+
+}
+
+
+.feature-card a {
+
+    position: absolute;
+
+    bottom: 30px;
+
+    color:
+        var(--glow-green);
+
+    text-decoration: none;
+
+    font-size: .85rem;
+
+}
+
+
+/* =========================================================
+   PAGE TITLE
+========================================================= */
+
+.page-main {
+
+    position: relative;
+
+    z-index: 5;
+
+}
+
+
+.page-title {
+
+    max-width: 1000px;
+
+    margin: auto;
+
+    text-align: center;
+
+    padding:
+        110px 5% 50px;
+
+}
+
+
+.page-title > span {
+
+    color:
+        var(--magic-green);
+
+    font-size: .75rem;
+
+    letter-spacing: 5px;
+
+}
+
+
+.page-title h1 {
+
+    font-size:
+        clamp(
+            3rem,
+            7vw,
+            5.5rem
+        );
+
+    margin:
+        18px 0;
+
+}
+
+
+.page-title h1 span {
+
+    color:
+        var(--glow-green);
+
+    text-shadow:
+        0 0 25px
+        rgba(184,224,168,.3);
+
+}
+
+
+.page-title p {
+
+    color:
+        rgba(255,255,255,.55);
+
+}
+
+
+/* =========================================================
+   PROFILE PAGE
+========================================================= */
+
+.profile-section {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding:
+        50px 5% 100px;
+
+    display: grid;
+
+    grid-template-columns:
+        .8fr 1.2fr;
+
+    align-items: center;
+
+    gap: 80px;
+
+}
+
+
+.profile-large {
+
+    display: flex;
+
+    justify-content: center;
+
+}
+
+
+.profile-large .profile-frame {
+
+    width: 300px;
+
+    height: 430px;
+
+}
+
+
+.small-label {
+
+    color:
+        var(--magic-green);
+
+    letter-spacing: 4px;
+
+    font-size: .75rem;
+
+}
+
+
+.profile-information h2 {
+
+    font-size:
+        clamp(
+            2.3rem,
+            5vw,
+            4.2rem
+        );
+
+    margin:
+        15px 0;
+
+    line-height: 1.1;
+
+}
+
+
+.profile-information h2 span {
+
+    display: block;
+
+    color:
+        var(--glow-green);
+
+}
+
+
+.nickname {
+
+    color:
+        rgba(255,255,255,.6);
+
+}
+
+
+.nickname strong {
+
+    color:
+        var(--glow-green);
+
+}
+
+
+.profile-description {
+
+    color:
+        rgba(255,255,255,.65);
+
+    line-height: 1.9;
+
+    margin:
+        25px 0;
+
+    max-width: 650px;
+
+}
+
+
+.info-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 12px;
+
+}
+
+
+.info-item {
+
+    padding:
+        18px;
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius: 18px;
+
+    background:
+        rgba(255,255,255,.04);
+
+    transition:
+        .3s ease;
+
+}
+
+
+.info-item:hover {
+
+    transform:
+        translateY(-5px);
+
+    background:
+        rgba(111,175,123,.08);
+
+}
+
+
+.info-item span {
+
+    display: block;
+
+    color:
+        rgba(255,255,255,.4);
+
+    font-size: .75rem;
+
+    margin-bottom: 5px;
+
+}
+
+
+.info-item strong {
+
+    color:
+        var(--glow-green);
+
+}
+
+
+.about-content {
+
+    display: grid;
+
+    grid-template-columns:
+        1.3fr 1fr 1fr;
+
+    gap: 20px;
+
+}
+
+
+.about-card {
+
+    position: relative;
+
+    min-height: 230px;
+
+    padding:
+        32px;
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius: 25px;
+
+    background:
+        rgba(255,255,255,.04);
+
+    backdrop-filter:
+        blur(15px);
+
+    transition:
+        .4s ease;
+
+    overflow: hidden;
+
+}
+
+
+.about-card:hover {
+
+    transform:
+        translateY(-10px);
+
+    box-shadow:
+        0 30px 60px
+        rgba(0,0,0,.35);
+
+}
+
+
+.about-card.large {
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(111,175,123,.16),
+            rgba(255,255,255,.03)
+        );
+
+}
+
+
+.about-number {
+
+    color:
+        rgba(184,224,168,.3);
+
+    font-size: 3rem;
+
+    font-weight: 900;
+
+}
+
+
+.about-card h3 {
+
+    margin:
+        15px 0 10px;
+
+}
+
+
+.about-card p {
+
+    color:
+        rgba(255,255,255,.58);
+
+    line-height: 1.8;
+
+}
+
+
+/* =========================================================
+   TIMELINE
+========================================================= */
+
+.timeline-section {
+
+    max-width: 1000px;
+
+    margin: auto;
+
+    padding:
+        30px 5% 100px;
+
+}
+
+
+.timeline {
+
+    position: relative;
+
+}
+
+
+.timeline::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    bottom: 0;
+
+    left: 50%;
+
+    width: 2px;
+
+    background:
+        linear-gradient(
+            var(--magic-green),
+            rgba(184,224,168,.05)
+        );
+
+}
+
+
+.timeline-item {
+
+    position: relative;
+
+    width: 50%;
+
+    padding:
+        0 40px 60px 0;
+
+}
+
+
+.timeline-item:nth-child(even) {
+
+    margin-left: 50%;
+
+    padding:
+        0 0 60px 40px;
+
+}
+
+
+.timeline-dot {
+
+    position: absolute;
+
+    right: -14px;
+
+    top: 5px;
+
+    width: 28px;
+
+    height: 28px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 50%;
+
+    color:
+        #13251a;
+
+    background:
+        var(--glow-green);
+
+    box-shadow:
+        0 0 20px
+        rgba(184,224,168,.7);
+
+}
+
+
+.timeline-item:nth-child(even) .timeline-dot {
+
+    left: -14px;
+
+    right: auto;
+
+}
+
+
+.timeline-card {
+
+    padding:
+        30px;
+
+    border:
+        1px solid
+        var(--border);
+
+    background:
+        rgba(255,255,255,.04);
+
+    border-radius:
+        25px;
+
+    backdrop-filter:
+        blur(15px);
+
+    transition:
+        .4s ease;
+
+}
+
+
+.timeline-card:hover {
+
+    transform:
+        translateY(-8px)
+        rotateX(2deg);
+
+    border-color:
+        rgba(184,224,168,.4);
+
+}
+
+
+.timeline-year {
+
+    color:
+        var(--magic-green);
+
+    font-size: .7rem;
+
+    letter-spacing: 3px;
+
+}
+
+
+.timeline-card h2 {
+
+    margin:
+        12px 0;
+
+    color:
+        var(--glow-green);
+
+}
+
+
+.timeline-card p {
+
+    color:
+        rgba(255,255,255,.58);
+
+    line-height: 1.8;
+
+}
+
+
+.timeline-tag {
+
+    display: inline-block;
+
+    margin-top: 18px;
+
+    padding:
+        7px 12px;
+
+    border-radius: 100px;
+
+    background:
+        rgba(111,175,123,.1);
+
+    color:
+        var(--glow-green);
+
+    font-size: .75rem;
+
+}
+
+
+.highlight-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 15px;
+
+    margin-bottom: 30px;
+
+}
+
+
+.highlight-card {
+
+    padding:
+        25px 20px;
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius: 22px;
+
+    background:
+        rgba(255,255,255,.04);
+
+    text-align: center;
+
+    transition:
+        .35s ease;
+
+}
+
+
+.highlight-card:hover {
+
+    transform:
+        translateY(-8px);
+
+    background:
+        rgba(111,175,123,.1);
+
+}
+
+
+.highlight-card span {
+
+    display: block;
+
+    font-size: 2rem;
+
+    margin-bottom: 10px;
+
+}
+
+
+.highlight-card small {
+
+    display: block;
+
+    color:
+        rgba(255,255,255,.4);
+
+}
+
+
+.highlight-card strong {
+
+    display: block;
+
+    color:
+        var(--glow-green);
+
+    margin-top: 6px;
+
+}
+
+
+.education-table-wrapper {
+
+    overflow-x: auto;
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius: 20px;
+
+}
+
+
+.education-table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    min-width: 650px;
+
+    background:
+        rgba(255,255,255,.03);
+
+}
+
+
+.education-table th,
+.education-table td {
+
+    padding:
+        18px;
+
+    text-align: left;
+
+    border-bottom:
+        1px solid
+        rgba(184,224,168,.1);
+
+}
+
+
+.education-table th {
+
+    color:
+        var(--glow-green);
+
+    background:
+        rgba(111,175,123,.08);
+
+}
+
+
+.education-table td {
+
+    color:
+        rgba(255,255,255,.6);
+
+}
+
+
+/* =========================================================
+   HOBBY
+========================================================= */
+
+.hobby-intro {
+
+    max-width: 750px;
+
+    margin:
+        0 auto 50px;
+
+    text-align: center;
+
+}
+
+
+.hobby-intro h2 {
+
+    font-size:
+        clamp(
+            2.5rem,
+            6vw,
+            4.5rem
+        );
+
+    margin:
+        15px 0;
+
+}
+
+
+.hobby-intro h2 span {
+
+    color:
+        var(--glow-green);
+
+}
+
+
+.hobby-intro p {
+
+    color:
+        rgba(255,255,255,.58);
+
+    line-height: 1.8;
+
+}
+
+
+.hobby-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+
+}
+
+
+.hobby-card {
+
+    min-height: 330px;
+
+    padding:
+        32px;
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius:
+        30px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.07),
+            rgba(255,255,255,.02)
+        );
+
+    position: relative;
+
+    overflow: hidden;
+
+    transition:
+        .5s cubic-bezier(.2,.8,.2,1);
+
+}
+
+
+.hobby-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 250px;
+
+    height: 250px;
+
+    border-radius: 50%;
+
+    right: -120px;
+
+    bottom: -130px;
+
+    background:
+        rgba(111,175,123,.13);
+
+    filter:
+        blur(15px);
+
+    transition:
+        .5s ease;
+
+}
+
+
+.hobby-card:hover {
+
+    transform:
+        translateY(-15px)
+        rotateX(4deg)
+        rotateY(-3deg);
+
+    border-color:
+        rgba(184,224,168,.45);
+
+    box-shadow:
+        0 35px 70px
+        rgba(0,0,0,.45),
+        0 0 30px
+        rgba(184,224,168,.08);
+
+}
+
+
+.hobby-card:hover::before {
+
+    transform:
+        scale(1.5);
+
+}
+
+
+.hobby-icon {
+
+    font-size: 3rem;
+
+    margin-bottom: 20px;
+
+    filter:
+        drop-shadow(
+            0 0 10px
+            rgba(184,224,168,.2)
+        );
+
+}
+
+
+.hobby-number {
+
+    position: absolute;
+
+    top: 25px;
+
+    right: 28px;
+
+    color:
+        rgba(184,224,168,.25);
+
+    font-weight: 900;
+
+    font-size: 1.5rem;
+
+}
+
+
+.hobby-card h3 {
+
+    font-size: 1.6rem;
+
+    color:
+        var(--glow-green);
+
+    margin-bottom: 12px;
+
+}
+
+
+.hobby-card p {
+
+    color:
+        rgba(255,255,255,.55);
+
+    line-height: 1.8;
+
+}
+
+
+.card-magic-line {
+
+    position: absolute;
+
+    bottom: 0;
+
+    left: 0;
+
+    width: 0;
+
+    height: 3px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            var(--glow-green),
+            transparent
+        );
+
+    transition:
+        .5s ease;
+
+}
+
+
+.hobby-card:hover .card-magic-line {
+
+    width: 100%;
+
+}
+
+
+/* =========================================================
+   CONTACT
+========================================================= */
+
+.contact-intro {
+
+    text-align: center;
+
+    max-width: 750px;
+
+    margin:
+        0 auto 50px;
+
+}
+
+
+.contact-intro h2 {
+
+    font-size:
+        clamp(
+            2.2rem,
+            5vw,
+            4rem
+        );
+
+    margin:
+        15px 0;
+
+}
+
+
+.contact-intro h2 span {
+
+    color:
+        var(--glow-green);
+
+}
+
+
+.contact-intro p {
+
+    color:
+        rgba(255,255,255,.58);
+
+    line-height: 1.8;
+
+}
+
+
+.contact-symbol {
+
+    margin-top: 25px;
+
+    font-size: 2rem;
+
+    color:
+        var(--glow-green);
+
+    animation:
+        sparkle 2s infinite;
+
+}
+
+
+.contact-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+
+}
+
+
+.contact-card {
+
+    padding:
+        35px;
+
+    min-height: 300px;
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius:
+        28px;
+
+    background:
+        rgba(255,255,255,.04);
+
+    backdrop-filter:
+        blur(15px);
+
+    transition:
+        .4s ease;
+
+}
+
+
+.contact-card:hover {
+
+    transform:
+        translateY(-12px)
+        perspective(800px)
+        rotateX(3deg);
+
+    box-shadow:
+        0 35px 70px
+        rgba(0,0,0,.4);
+
+}
+
+
+.contact-card.featured-contact {
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(111,175,123,.18),
+            rgba(255,255,255,.03)
+        );
+
+}
+
+
+.contact-icon {
+
+    width: 65px;
+
+    height: 65px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 20px;
+
+    background:
+        rgba(111,175,123,.1);
+
+    color:
+        var(--glow-green);
+
+    font-size: 1.8rem;
+
+    margin-bottom: 25px;
+
+}
+
+
+.contact-card > span {
+
+    color:
+        var(--magic-green);
+
+    font-size: .7rem;
+
+    letter-spacing: 3px;
+
+}
+
+
+.contact-card h3 {
+
+    margin:
+        10px 0;
+
+    font-size: 1.5rem;
+
+}
+
+
+.contact-card p {
+
+    color:
+        rgba(255,255,255,.55);
+
+    line-height: 1.7;
+
+    margin-bottom: 25px;
+
+}
+
+
+.contact-card a {
+
+    color:
+        var(--glow-green);
+
+    text-decoration: none;
+
+    font-size: .85rem;
+
+}
+
+
+.contact-cta {
+
+    margin-top: 30px;
+
+    padding:
+        60px 30px;
+
+    text-align: center;
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius:
+        30px;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(111,175,123,.13),
+            rgba(255,255,255,.02)
+        );
+
+}
+
+
+.cta-stars {
+
+    color:
+        var(--glow-green);
+
+    letter-spacing: 10px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.contact-cta h2 {
+
+    font-size:
+        clamp(
+            1.8rem,
+            4vw,
+            3rem
+        );
+
+    margin-bottom: 10px;
+
+}
+
+
+.contact-cta p {
+
+    color:
+        rgba(255,255,255,.55);
+
+    margin-bottom: 25px;
+
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.site-footer {
+
+    position: relative;
+
+    margin-top: 80px;
+
+    padding:
+        55px 5% 25px;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(5,20,13,.3),
+            #030b07
+        );
+
+    border-top:
+        1px solid
+        rgba(184,224,168,.12);
+
+}
+
+
+.footer-content {
+
+    max-width: 1250px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        1.2fr 1fr 1fr;
+
+    gap: 40px;
+
+    align-items: center;
+
+}
+
+
+.footer-logo {
+
+    color:
+        var(--glow-green);
+
+    font-weight: 900;
+
+    letter-spacing: 3px;
+
+}
+
+
+.footer-brand p {
+
+    margin-top: 10px;
+
+    color:
+        rgba(255,255,255,.4);
+
+    font-size: .8rem;
+
+}
+
+
+.footer-student {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+
+}
+
+
+.footer-student strong {
+
+    color:
+        rgba(255,255,255,.8);
+
+}
+
+
+.footer-student span {
+
+    color:
+        rgba(255,255,255,.4);
+
+    font-size: .8rem;
+
+}
+
+
+.footer-links {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+}
+
+
+.footer-links a {
+
+    color:
+        rgba(255,255,255,.45);
+
+    text-decoration: none;
+
+    font-size: .78rem;
+
+    transition:
+        .3s ease;
+
+}
+
+
+.footer-links a:hover {
+
+    color:
+        var(--glow-green);
+
+}
+
+
+.footer-bottom {
+
+    max-width: 1250px;
+
+    margin:
+        40px auto 0;
+
+    padding-top:
+        20px;
+
+    border-top:
+        1px solid
+        rgba(184,224,168,.08);
+
+    color:
+        rgba(255,255,255,.3);
+
+    font-size: .72rem;
+
+    text-align: center;
+
+}
+
+
+/* =========================================================
+   REVEAL ANIMATION
+========================================================= */
+
+.reveal {
+
+    animation:
+        reveal-up
+        1s
+        ease
+        both;
+
+}
+
+
+.reveal-delay {
+
+    animation:
+        reveal-up
+        1.2s
+        .2s
+        ease
+        both;
+
+}
+
+
+/* =========================================================
+   KEYFRAMES
+========================================================= */
+
+@keyframes loading-bar {
+
+    to {
+        width: 100%;
+    }
+
+}
+
+
+@keyframes loading-fade {
+
+    to {
+
+        opacity: 0;
+
+        visibility: hidden;
+
+    }
+
+}
+
+
+@keyframes loading-rise {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(25px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0);
+
+    }
+
+}
+
+
+@keyframes loading-tree {
+
+    0%,
+    100% {
+
+        transform:
+            translateY(0)
+            scale(1);
+
+    }
+
+    50% {
+
+        transform:
+            translateY(-8px)
+            scale(1.05);
+
+    }
+
+}
+
+
+@keyframes cloud-float {
+
+    0%,
+    100% {
+
+        transform:
+            translateX(0);
+
+    }
+
+    50% {
+
+        transform:
+            translateX(60px);
+
+    }
+
+}
+
+
+@keyframes star-twinkle {
+
+    0%,
+    100% {
+
+        opacity: .25;
+
+        transform:
+            scale(.7)
+            rotate(0deg);
+
+    }
+
+    50% {
+
+        opacity: 1;
+
+        transform:
+            scale(1.4)
+            rotate(45deg);
+
+    }
+
+}
+
+
+@keyframes sparkle {
+
+    0%,
+    100% {
+
+        opacity: .4;
+
+        transform:
+            scale(.8);
+
+    }
+
+    50% {
+
+        opacity: 1;
+
+        transform:
+            scale(1.15);
+
+    }
+
+}
+
+
+@keyframes fog-move {
+
+    0%,
+    100% {
+
+        transform:
+            translateX(0);
+
+    }
+
+    50% {
+
+        transform:
+            translateX(160px);
+
+    }
+
+}
+
+
+@keyframes mushroom-breathe {
+
+    0%,
+    100% {
+
+        transform:
+            translateY(0);
+
+    }
+
+    50% {
+
+        transform:
+            translateY(-7px);
+
+    }
+
+}
+
+
+@keyframes rain-fall {
+
+    from {
+
+        background-position:
+            0 0;
+
+    }
+
+    to {
+
+        background-position:
+            -20px 60px;
+
+    }
+
+}
+
+
+@keyframes fairy-fly {
+
+    0% {
+
+        transform:
+            translate(0,0)
+            rotate(-5deg);
+
+    }
+
+    25% {
+
+        transform:
+            translate(120px,-40px)
+            rotate(5deg);
+
+    }
+
+    50% {
+
+        transform:
+            translate(220px,40px)
+            rotate(-3deg);
+
+    }
+
+    75% {
+
+        transform:
+            translate(90px,80px)
+            rotate(5deg);
+
+    }
+
+    100% {
+
+        transform:
+            translate(0,0)
+            rotate(-5deg);
+
+    }
+
+}
+
+
+@keyframes profile-float {
+
+    0%,
+    100% {
+
+        transform:
+            translateY(0)
+            rotateY(-5deg)
+            rotateX(3deg);
+
+    }
+
+    50% {
+
+        transform:
+            translateY(-15px)
+            rotateY(5deg)
+            rotateX(-2deg);
+
+    }
+
+}
+
+
+@keyframes glow-pulse {
+
+    0%,
+    100% {
+
+        opacity: .5;
+
+        transform:
+            scale(.95);
+
+    }
+
+    50% {
+
+        opacity: 1;
+
+        transform:
+            scale(1.08);
+
+    }
+
+}
+
+
+@keyframes rotate-circle {
+
+    to {
+
+        transform:
+            rotate(360deg);
+
+    }
+
+}
+
+
+@keyframes orbit {
+
+    to {
+
+        transform:
+            rotate(360deg);
+
+    }
+
+}
+
+
+@keyframes float-card {
+
+    0%,
+    100% {
+
+        transform:
+            translateY(0);
+
+    }
+
+    50% {
+
+        transform:
+            translateY(-12px);
+
+    }
+
+}
+
+
+@keyframes reveal-up {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(35px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0);
+
+    }
+
+}
+
+
+/* =========================================================
+   CLICK / ACTIVE EFFECT
+========================================================= */
+
+.magic-button:active {
+
+    transform:
+        scale(.94);
+
+}
+
+
+.feature-card:active,
+.hobby-card:active,
+.contact-card:active {
+
+    transform:
+        scale(.97);
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .navbar {
+
+        flex-direction: column;
+
+        gap: 10px;
+
+    }
+
+
+    .hero {
+
+        grid-template-columns:
+            1fr;
+
+        text-align: center;
+
+    }
+
+
+    .hero-description {
+
+        margin: auto;
+
+    }
+
+
+    .hero-quote {
+
+        max-width: 650px;
+
+        margin:
+            25px auto;
+
+        text-align: left;
+
+    }
+
+
+    .hero-buttons {
+
+        justify-content: center;
+
+    }
+
+
+    .hero-info {
+
+        justify-content: center;
+
+    }
+
+
+    .hero-visual {
+
+        min-height: 530px;
+
+    }
+
+
+    .feature-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+    .profile-section {
+
+        grid-template-columns:
+            1fr;
+
+        text-align: center;
+
+    }
+
+
+    .profile-large {
+
+        order: 1;
+
+    }
+
+
+    .profile-information {
+
+        order: 2;
+
+    }
+
+
+    .info-grid {
+
+        max-width: 700px;
+
+        margin: auto;
+
+        text-align: left;
+
+    }
+
+
+    .about-content {
+
+        grid-template-columns:
+            1fr 1fr;
+
+    }
+
+
+    .about-card.large {
+
+        grid-column:
+            span 2;
+
+    }
+
+
+    .hobby-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+    .contact-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+    .footer-content {
+
+        grid-template-columns:
+            1fr 1fr;
+
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+    body {
+
+        font-size: 15px;
+
+    }
+
+
+    .site-header {
+
+        padding:
+            10px 3%;
+
+    }
+
+
+    .navbar {
+
+        border-radius:
+            18px;
+
+        padding:
+            12px;
+
+    }
+
+
+    .logo {
+
+        font-size: .85rem;
+
+    }
+
+
+    .nav-links {
+
+        width: 100%;
+
+        overflow-x: auto;
+
+        justify-content:
+            flex-start;
+
+        padding-bottom: 2px;
+
+        scrollbar-width: none;
+
+    }
+
+
+    .nav-links::-webkit-scrollbar {
+
+        display: none;
+
+    }
+
+
+    .nav-links a {
+
+        white-space: nowrap;
+
+        padding:
+            9px 10px;
+
+        font-size: .72rem;
+
+    }
+
+
+    .nav-links a span {
+
+        display: none;
+
+    }
+
+
+    .hero {
+
+        padding:
+            50px 6% 80px;
+
+        gap: 20px;
+
+    }
+
+
+    .hero h1 {
+
+        font-size:
+            clamp(
+                2.5rem,
+                12vw,
+                4rem
+            );
+
+    }
+
+
+    .hero-description {
+
+        font-size: .9rem;
+
+    }
+
+
+    .hero-info {
+
+        gap: 20px;
+
+    }
+
+
+    .hero-info strong {
+
+        font-size: 1rem;
+
+    }
+
+
+    .hero-visual {
+
+        min-height: 450px;
+
+    }
+
+
+    .profile-frame {
+
+        width: 250px;
+
+        height: 360px;
+
+    }
+
+
+    .circle-one {
+
+        width: 330px;
+
+        height: 330px;
+
+    }
+
+
+    .circle-two {
+
+        width: 390px;
+
+        height: 390px;
+
+    }
+
+
+    .profile-orbit {
+
+        display: none;
+
+    }
+
+
+    .floating-card {
+
+        font-size: .7rem;
+
+    }
+
+
+    .card-top {
+
+        right: 0;
+
+    }
+
+
+    .card-bottom {
+
+        left: 0;
+
+    }
+
+
+    .feature-grid,
+    .hobby-grid,
+    .contact-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .intro-section,
+    .about-section,
+    .education-highlight,
+    .hobby-section,
+    .contact-section {
+
+        padding:
+            75px 6%;
+
+    }
+
+
+    .feature-card {
+
+        min-height: 230px;
+
+    }
+
+
+    .page-title {
+
+        padding:
+            80px 6% 35px;
+
+    }
+
+
+    .page-title h1 {
+
+        font-size:
+            3rem;
+
+    }
+
+
+    .profile-large .profile-frame {
+
+        width: 250px;
+
+        height: 360px;
+
+    }
+
+
+    .info-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .about-content {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .about-card.large {
+
+        grid-column:
+            auto;
+
+    }
+
+
+    .timeline::before {
+
+        left: 12px;
+
+    }
+
+
+    .timeline-item,
+    .timeline-item:nth-child(even) {
+
+        width: 100%;
+
+        margin-left: 0;
+
+        padding:
+            0 0 45px 45px;
+
+    }
+
+
+    .timeline-dot,
+    .timeline-item:nth-child(even) .timeline-dot {
+
+        left: -2px;
+
+        right: auto;
+
+    }
+
+
+    .highlight-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+    .education-table-wrapper {
+
+        border-radius: 15px;
+
+    }
+
+
+    .hobby-card {
+
+        min-height: 280px;
+
+    }
+
+
+    .contact-card {
+
+        min-height: 250px;
+
+    }
+
+
+    .footer-content {
+
+        grid-template-columns:
+            1fr;
+
+        text-align: center;
+
+        gap: 25px;
+
+    }
+
+
+    .footer-links {
+
+        justify-content: center;
+
+    }
+
+
+    .forest-tree {
+
+        font-size: 100px;
+
+    }
+
+
+    .tree-small-left,
+    .tree-small-right {
+
+        display: none;
+
+    }
+
+
+    .giant-mushroom {
+
+        transform:
+            scale(.65);
+
+        bottom: -10px;
+
+    }
+
+
+    .mushroom-two {
+
+        transform:
+            scale(.55);
+
+    }
+
+
+    .moon {
+
+        width: 90px;
+
+        height: 90px;
+
+        right: 8%;
+
+    }
+
+
+    .moon::after {
+
+        width: 90px;
+
+        height: 90px;
+
+    }
+
+
+    .fairy {
+
+        width: 75px;
+
+        height: 75px;
+
+    }
+
+
+    .fairy-one {
+
+        left: 5%;
+
+    }
+
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+
+        animation-duration:
+            .01ms !important;
+
+        animation-iteration-count:
+            1 !important;
+
+        scroll-behavior:
+            auto !important;
+
+    }
+
+}
