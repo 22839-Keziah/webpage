@@ -5,123 +5,117 @@
 
     <meta charset="UTF-8">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-    <meta name="description"
-          content="Hobbies - My Profile">
-
-    <title>Hobby | My Profile</title>
+    <title>Hobby | Megan</title>
 
     <link rel="stylesheet" href="style.css">
 
 </head>
 
+
 <body>
 
-    <div class="forest-background">
+    <!-- LOADING -->
+    <div class="loading-screen" id="loadingScreen">
 
-        <div class="moon"></div>
+        <div class="loading-cloud cloud-1"></div>
+        <div class="loading-cloud cloud-2"></div>
 
-        <div class="stars">
-            <span>✦</span>
-            <span>✧</span>
-            <span>✦</span>
-            <span>✧</span>
-            <span>✦</span>
-            <span>✧</span>
-            <span>✦</span>
-            <span>✧</span>
-        </div>
+        <div class="loading-magic">
 
-        <div class="fog fog-one"></div>
-        <div class="fog fog-two"></div>
+            <div class="magic-orb"></div>
 
-        <div class="mountain mountain-back"></div>
-        <div class="mountain mountain-front"></div>
-
-        <div class="giant-mushroom mushroom-one">
-
-            <div class="mushroom-cap">
-                <i></i>
-                <i></i>
-                <i></i>
+            <div class="loading-stars">
+                ✦ ✧ ✦
             </div>
 
-            <div class="mushroom-stem"></div>
+            <h1>MY HOBBY</h1>
 
-        </div>
+            <p>
+                กำลังเปิดโลกแห่งความสนใจ...
+            </p>
 
-        <div class="giant-mushroom mushroom-two">
-
-            <div class="mushroom-cap">
-                <i></i>
-                <i></i>
+            <div class="loading-bar">
+                <span></span>
             </div>
-
-            <div class="mushroom-stem"></div>
-
-        </div>
-
-        <div class="vine vine-left"></div>
-        <div class="vine vine-right"></div>
-
-        <div class="forest-tree tree-left">🌲</div>
-        <div class="forest-tree tree-right">🌲</div>
-
-        <div class="forest-tree tree-small-left">🌳</div>
-        <div class="forest-tree tree-small-right">🌳</div>
-
-        <div class="rain"></div>
-
-        <div class="fairy fairy-one">
-
-            <img
-                src="https://placehold.co/140x140/173524/B8E0A8?text=FAIRY"
-                alt="รูป Fairy ตกแต่งพื้นหลัง">
 
         </div>
 
     </div>
 
 
+    <div class="mouse-glow"></div>
+
+
+    <img
+        class="flying-fairy"
+        src="https://placehold.co/180x100/png?text=FAIRY"
+        alt="Fairy decoration"
+    >
+
+
+    <div class="sparkle sparkle-1">✦</div>
+    <div class="sparkle sparkle-2">✧</div>
+    <div class="sparkle sparkle-3">✦</div>
+
+
+    <div class="forest-background">
+
+        <div class="moon"></div>
+
+        <div class="mountain mountain-back"></div>
+        <div class="mountain mountain-middle"></div>
+        <div class="mountain mountain-front"></div>
+
+        <div class="forest-trees">
+
+            <span>🌲</span>
+            <span>🌲</span>
+            <span>🌲</span>
+            <span>🌲</span>
+            <span>🌲</span>
+            <span>🌲</span>
+
+        </div>
+
+    </div>
+
+
+    <div class="rain"></div>
+
+
+    <!-- NAVIGATION -->
     <header class="site-header">
 
         <nav class="navbar">
 
             <a href="index.html" class="logo">
-
-                <span class="logo-symbol">✦</span>
-
-                <span>MY PROFILE</span>
-
+                <span>✦</span> MEGAN
             </a>
 
             <div class="nav-links">
 
-                <a href="index.html">
-                    <span>⌂</span>
-                    หน้าแรก
-                </a>
+                <a href="index.html">Home</a>
 
                 <a href="profile.html">
-                    <span>♧</span>
-                    ประวัติส่วนตัว
+                    Profile
                 </a>
 
                 <a href="education.html">
-                    <span>✎</span>
-                    การศึกษา
+                    Education
                 </a>
 
-                <a href="hobby.html" class="active">
-                    <span>✦</span>
-                    งานอดิเรก
+                <a href="hobby.html"
+                   class="active">
+                    Hobby
                 </a>
 
                 <a href="contact.html">
-                    <span>☽</span>
-                    ติดต่อ
+                    Contact
                 </a>
 
             </div>
@@ -131,245 +125,265 @@
     </header>
 
 
-    <main class="page-main">
+    <main>
 
         <section class="page-title">
 
-            <span>✦ MY MAGICAL WORLD ✦</span>
+            <div class="magic-label">
+                ✦ MY INTERESTS ✦
+            </div>
 
             <h1>
-                งาน<span>อดิเรก</span>
+                My <span>Hobby</span>
             </h1>
 
             <p>
-                สิ่งที่ทำให้โลกของผมเต็มไปด้วยสีสัน
+                สิ่งที่ฉันสนใจและอยากเรียนรู้
             </p>
 
         </section>
 
 
-        <section class="hobby-section">
+        <section class="hobby-grid">
 
-            <div class="hobby-intro">
 
-                <span class="magic-label">
-                    ✦ EXPLORE MY INTERESTS ✦
-                </span>
+            <div class="hobby-card">
+
+                <div class="hobby-icon">
+                    🎮
+                </div>
 
                 <h2>
-                    สิ่งที่ผม
-                    <span>ชื่นชอบ</span>
+                    เกม
                 </h2>
 
                 <p>
-                    ในเวลาว่างผมชอบใช้เวลาไปกับสิ่งต่าง ๆ
-                    ที่ช่วยให้ผ่อนคลาย สนุก และได้เรียนรู้
+                    กิจกรรมที่ช่วยผ่อนคลาย
+                    และเปิดโลกจินตนาการ
                 </p>
 
+                <div class="emoji-pop">
+                    🎮 ✨
+                </div>
+
+            </div>
+
+
+            <div class="hobby-card">
+
+                <div class="hobby-icon">
+                    ⚽
+                </div>
+
+                <h2>
+                    กีฬา
+                </h2>
+
+                <p>
+                    กิจกรรมที่ช่วยให้ได้เคลื่อนไหว
+                    และใช้เวลาว่างอย่างสนุก
+                </p>
+
+                <div class="emoji-pop">
+                    ⚽ ⭐
+                </div>
+
             </div>
 
 
-            <div class="hobby-grid">
+            <div class="hobby-card">
 
+                <div class="hobby-icon">
+                    🎵
+                </div>
 
-                <article class="hobby-card hobby-game">
+                <h2>
+                    เพลง
+                </h2>
 
-                    <div class="hobby-icon">
-                        🎮
-                    </div>
+                <p>
+                    เสียงเพลงที่ช่วยสร้างบรรยากาศ
+                    และแรงบันดาลใจ
+                </p>
 
-                    <span class="hobby-number">
-                        01
-                    </span>
-
-                    <h3>
-                        เกม
-                    </h3>
-
-                    <p>
-                        ชอบเล่นเกมเพื่อความสนุก
-                        และใช้เวลาว่างอย่างเพลิดเพลิน
-                    </p>
-
-                    <div class="card-magic-line"></div>
-
-                </article>
-
-
-                <article class="hobby-card hobby-sport">
-
-                    <div class="hobby-icon">
-                        ⚽
-                    </div>
-
-                    <span class="hobby-number">
-                        02
-                    </span>
-
-                    <h3>
-                        กีฬา
-                    </h3>
-
-                    <p>
-                        สนใจกิจกรรมที่ได้เคลื่อนไหว
-                        และช่วยสร้างความสนุก
-                    </p>
-
-                    <div class="card-magic-line"></div>
-
-                </article>
-
-
-                <article class="hobby-card hobby-music">
-
-                    <div class="hobby-icon">
-                        🎵
-                    </div>
-
-                    <span class="hobby-number">
-                        03
-                    </span>
-
-                    <h3>
-                        เพลง
-                    </h3>
-
-                    <p>
-                        ฟังเพลงในเวลาว่าง
-                        เพื่อสร้างบรรยากาศและผ่อนคลาย
-                    </p>
-
-                    <div class="card-magic-line"></div>
-
-                </article>
-
-
-                <article class="hobby-card hobby-movie">
-
-                    <div class="hobby-icon">
-                        🎬
-                    </div>
-
-                    <span class="hobby-number">
-                        04
-                    </span>
-
-                    <h3>
-                        ภาพยนตร์
-                    </h3>
-
-                    <p>
-                        ชอบชมภาพยนตร์และเรื่องราวต่าง ๆ
-                        เพื่อความสนุกและแรงบันดาลใจ
-                    </p>
-
-                    <div class="card-magic-line"></div>
-
-                </article>
-
-
-                <article class="hobby-card hobby-tech">
-
-                    <div class="hobby-icon">
-                        💻
-                    </div>
-
-                    <span class="hobby-number">
-                        05
-                    </span>
-
-                    <h3>
-                        เทคโนโลยี
-                    </h3>
-
-                    <p>
-                        สนใจคอมพิวเตอร์ เว็บไซต์
-                        และการเรียนรู้เทคโนโลยีใหม่ ๆ
-                    </p>
-
-                    <div class="card-magic-line"></div>
-
-                </article>
-
-
-                <article class="hobby-card hobby-camera">
-
-                    <div class="hobby-icon">
-                        📷
-                    </div>
-
-                    <span class="hobby-number">
-                        06
-                    </span>
-
-                    <h3>
-                        ความสนใจ
-                    </h3>
-
-                    <p>
-                        ชอบค้นหาสิ่งใหม่ ๆ
-                        และเปิดรับประสบการณ์ที่น่าสนใจ
-                    </p>
-
-                    <div class="card-magic-line"></div>
-
-                </article>
-
+                <div class="emoji-pop">
+                    🎵 ✦
+                </div>
 
             </div>
+
+
+            <div class="hobby-card">
+
+                <div class="hobby-icon">
+                    🎬
+                </div>
+
+                <h2>
+                    ภาพยนตร์
+                </h2>
+
+                <p>
+                    เรื่องราวและโลกต่าง ๆ
+                    ที่เต็มไปด้วยจินตนาการ
+                </p>
+
+                <div class="emoji-pop">
+                    🎬 ✨
+                </div>
+
+            </div>
+
+
+            <div class="hobby-card">
+
+                <div class="hobby-icon">
+                    💻
+                </div>
+
+                <h2>
+                    เทคโนโลยี
+                </h2>
+
+                <p>
+                    สนใจการสร้างเว็บไซต์
+                    และเรียนรู้เทคโนโลยีใหม่
+                </p>
+
+                <div class="emoji-pop">
+                    💻 💜
+                </div>
+
+            </div>
+
+
+            <div class="hobby-card">
+
+                <div class="hobby-icon">
+                    📷
+                </div>
+
+                <h2>
+                    ความสนใจ
+                </h2>
+
+                <p>
+                    พื้นที่สำหรับเพิ่มสิ่งที่สนใจ
+                    และงานอดิเรกของตัวเอง
+                </p>
+
+                <div class="emoji-pop">
+                    📷 ✦
+                </div>
+
+            </div>
+
 
         </section>
 
     </main>
 
 
-    <footer class="site-footer">
+    <footer class="footer">
 
         <div class="footer-content">
 
-            <div class="footer-brand">
+            <div>
+                <h3>✦ MEGAN</h3>
+                <p>Mystic Purple Portfolio</p>
+            </div>
 
-                <div class="footer-logo">
-                    ✦ MY PROFILE
-                </div>
-
+            <div>
                 <p>
-                    Enchanted Forest Student Portfolio
+                    เคไซยาห์ เมกาน ชินวรรธนวงศ์
                 </p>
 
-            </div>
-
-            <div class="footer-student">
-
-                <strong>
-                    เคไซยาห์ เมกาน ชินวรรธนวงศ์
-                </strong>
-
-                <span>
-                    นักเรียนชั้น ม.3/2
-                </span>
-
-            </div>
-
-            <div class="footer-links">
-
-                <a href="index.html">หน้าแรก</a>
-                <a href="profile.html">ประวัติส่วนตัว</a>
-                <a href="education.html">การศึกษา</a>
-                <a href="hobby.html">งานอดิเรก</a>
-                <a href="contact.html">ติดต่อ</a>
-
+                <p>ม.3/2</p>
             </div>
 
         </div>
 
-        <div class="footer-bottom">
-
-            © 2026 My Profile | Created for Computer Project
-
-        </div>
+        <p class="copyright">
+            © 2026 Megan Portfolio
+        </p>
 
     </footer>
+
+
+    <script>
+
+        window.addEventListener("load", () => {
+
+            setTimeout(() => {
+
+                document
+                    .getElementById("loadingScreen")
+                    .classList.add("loaded");
+
+            }, 2200);
+
+        });
+
+
+        const mouseGlow =
+            document.querySelector(".mouse-glow");
+
+
+        document.addEventListener("mousemove", (e) => {
+
+            mouseGlow.style.left =
+                e.clientX + "px";
+
+            mouseGlow.style.top =
+                e.clientY + "px";
+
+        });
+
+
+        document.addEventListener("click", (e) => {
+
+            const sparkle =
+                document.createElement("div");
+
+            sparkle.className =
+                "click-spark";
+
+            sparkle.style.left =
+                e.clientX + "px";
+
+            sparkle.style.top =
+                e.clientY + "px";
+
+            sparkle.innerHTML = "✦";
+
+            document.body.appendChild(sparkle);
+
+
+            const ripple =
+                document.createElement("div");
+
+            ripple.className =
+                "mouse-ripple";
+
+            ripple.style.left =
+                e.clientX + "px";
+
+            ripple.style.top =
+                e.clientY + "px";
+
+            document.body.appendChild(ripple);
+
+
+            setTimeout(() => {
+
+                sparkle.remove();
+                ripple.remove();
+
+            }, 800);
+
+        });
+
+    </script>
 
 </body>
 </html>
