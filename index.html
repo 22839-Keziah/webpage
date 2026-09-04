@@ -2,7 +2,6 @@
 <html lang="th">
 
 <head>
-
     <meta charset="UTF-8">
 
     <meta
@@ -10,797 +9,506 @@
         content="width=device-width, initial-scale=1.0"
     >
 
-    <title>Megan | Mystic Forest Portfolio</title>
+    <meta
+        name="description"
+        content="Megan - Enchanted Forest Student Portfolio"
+    >
+
+    <title>Megan | Enchanted Forest Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
-
 </head>
 
+<body class="home-page">
 
-<body>
+    <!-- =====================================================
+         LOADING SCREEN
+    ====================================================== -->
 
+    <div class="loading-screen">
 
-<!-- =====================================================
-     LOADING SCREEN
-===================================================== -->
+        <div class="loading-cloud cloud-one"></div>
+        <div class="loading-cloud cloud-two"></div>
+        <div class="loading-cloud cloud-three"></div>
 
-<div class="loading-screen" id="loadingScreen">
+        <div class="loading-moon">☾</div>
 
-    <div class="loading-cloud cloud-1"></div>
-    <div class="loading-cloud cloud-2"></div>
-    <div class="loading-cloud cloud-3"></div>
+        <div class="loading-content">
 
-    <div class="loading-magic">
+            <div class="loading-symbol">✦</div>
 
-        <div class="magic-orb"></div>
+            <h1>ENCHANTED FOREST</h1>
 
-        <div class="loading-stars">
-            ✦ ✧ ✦ ✧ ✦
-        </div>
+            <p>กำลังเปิดประตูสู่โลกของฉัน...</p>
 
-        <h1>
-            MYSTIC FOREST
-        </h1>
+            <div class="loading-bar">
+                <span></span>
+            </div>
 
-        <p>
-            กำลังเปิดประตูสู่โลกเวทมนตร์...
-        </p>
-
-        <div class="loading-bar">
-            <span></span>
         </div>
 
     </div>
 
-</div>
 
+    <!-- =====================================================
+         BACKGROUND ATMOSPHERE
+    ====================================================== -->
 
-<!-- =====================================================
-     MOUSE
-===================================================== -->
+    <div class="forest-background">
 
-<div class="mouse-glow"></div>
+        <div class="moon"></div>
 
+        <div class="stars">
+            <span>✦</span>
+            <span>✧</span>
+            <span>✦</span>
+            <span>✧</span>
+            <span>✦</span>
+            <span>✧</span>
+            <span>✦</span>
+            <span>✧</span>
+            <span>✦</span>
+            <span>✧</span>
+            <span>✦</span>
+            <span>✧</span>
+        </div>
 
-<!-- =====================================================
-     CLICK EFFECT
-===================================================== -->
+        <div class="shooting-stars">
+            <i></i>
+            <i></i>
+            <i></i>
+        </div>
 
-<div class="click-layer"></div>
+        <!-- Giant Mushrooms -->
 
+        <div class="giant-mushroom mushroom-left">
+            <div class="mushroom-cap"></div>
+            <div class="mushroom-stem"></div>
+        </div>
 
-<!-- =====================================================
-     FAIRY
-===================================================== -->
+        <div class="giant-mushroom mushroom-right">
+            <div class="mushroom-cap"></div>
+            <div class="mushroom-stem"></div>
+        </div>
 
-<img
-    class="flying-fairy"
-    src="https://placehold.co/180x100/png?text=FAIRY"
-    alt="Fairy decoration"
->
+        <!-- Giant Vines -->
 
+        <div class="vine vine-left"></div>
+        <div class="vine vine-right"></div>
+        <div class="vine vine-top-left"></div>
+        <div class="vine vine-top-right"></div>
 
-<!-- =====================================================
-     STARS
-===================================================== -->
+        <!-- Trees -->
 
-<div class="star-field">
+        <div class="tree tree-left">
+            <div class="tree-trunk"></div>
+            <div class="tree-leaves"></div>
+        </div>
 
-    <span>✦</span>
-    <span>✧</span>
-    <span>✦</span>
-    <span>✧</span>
-    <span>✦</span>
-    <span>✧</span>
-    <span>✦</span>
-    <span>✧</span>
-    <span>✦</span>
-    <span>✧</span>
+        <div class="tree tree-right">
+            <div class="tree-trunk"></div>
+            <div class="tree-leaves"></div>
+        </div>
 
-</div>
+        <!-- Fairy 1 -->
 
+        <div class="fairy fairy-one">
 
-<!-- =====================================================
-     MAGIC DUST
-===================================================== -->
-
-<div class="magic-dust dust-1"></div>
-<div class="magic-dust dust-2"></div>
-<div class="magic-dust dust-3"></div>
-<div class="magic-dust dust-4"></div>
-
-
-<!-- =====================================================
-     BACKGROUND
-===================================================== -->
-
-<div class="forest-background">
-
-    <div class="moon">
-
-        <div class="moon-ring"></div>
-
-    </div>
-
-
-    <div class="aurora"></div>
-
-
-    <!-- BACK MOUNTAINS -->
-
-    <div class="mountain mountain-back"></div>
-
-    <div class="mountain mountain-middle"></div>
-
-    <div class="mountain mountain-front"></div>
-
-
-    <!-- BACK TREES -->
-
-    <div class="forest-trees trees-back">
-
-        <span>🌲</span>
-        <span>🌲</span>
-        <span>🌲</span>
-        <span>🌲</span>
-        <span>🌲</span>
-        <span>🌲</span>
-        <span>🌲</span>
-
-    </div>
-
-
-    <!-- GIANT MUSHROOMS -->
-
-    <div class="giant-mushroom mushroom-left">
-
-        <div class="mushroom-cap">
+            <img
+                src="https://placehold.co/100x180/8b5cf6/ffffff?text=FAIRY+1"
+                alt="พื้นที่สำหรับใส่รูป Fairy ตัวที่หนึ่ง"
+            >
 
             <span>✦</span>
-            <span>•</span>
+
+        </div>
+
+        <!-- Fairy 2 -->
+
+        <div class="fairy fairy-two">
+
+            <img
+                src="https://placehold.co/100x180/a78bfa/ffffff?text=FAIRY+2"
+                alt="พื้นที่สำหรับใส่รูป Fairy ตัวที่สอง"
+            >
+
             <span>✧</span>
 
         </div>
 
-        <div class="mushroom-stem"></div>
+        <!-- Magical Glow -->
 
-        <div class="mushroom-glow"></div>
-
-    </div>
-
-
-    <div class="giant-mushroom mushroom-right">
-
-        <div class="mushroom-cap">
-
-            <span>✧</span>
-            <span>•</span>
-            <span>✦</span>
-
-        </div>
-
-        <div class="mushroom-stem"></div>
-
-        <div class="mushroom-glow"></div>
+        <div class="forest-glow glow-one"></div>
+        <div class="forest-glow glow-two"></div>
+        <div class="forest-glow glow-three"></div>
 
     </div>
 
 
-    <div class="small-mushroom mushroom-small-1">
+    <!-- =====================================================
+         HEADER / NAVIGATION
+    ====================================================== -->
 
-        <div class="small-cap"></div>
+    <header class="site-header">
 
-        <div class="small-stem"></div>
-
-    </div>
-
-
-    <div class="small-mushroom mushroom-small-2">
-
-        <div class="small-cap"></div>
-
-        <div class="small-stem"></div>
-
-    </div>
-
-
-    <!-- VINES -->
-
-    <div class="vine vine-left">
-
-        <span>☘</span>
-        <span>🌿</span>
-        <span>☘</span>
-        <span>🌿</span>
-
-    </div>
-
-
-    <div class="vine vine-right">
-
-        <span>🌿</span>
-        <span>☘</span>
-        <span>🌿</span>
-        <span>☘</span>
-
-    </div>
-
-
-    <!-- FOREGROUND TREES -->
-
-    <div class="foreground-trees">
-
-        <div class="tree tree-left"></div>
-        <div class="tree tree-right"></div>
-
-    </div>
-
-
-    <!-- FOREST FLOOR -->
-
-    <div class="forest-floor">
-
-        <span class="rock rock-1"></span>
-        <span class="rock rock-2"></span>
-        <span class="rock rock-3"></span>
-
-    </div>
-
-</div>
-
-
-<!-- =====================================================
-     RAIN
-===================================================== -->
-
-<div class="rain"></div>
-
-
-<!-- =====================================================
-     NAVBAR
-===================================================== -->
-
-<header class="site-header">
-
-    <nav class="navbar">
-
-        <a
-            href="index.html"
-            class="logo"
-        >
-            <span>✦</span>
-            MEGAN
-        </a>
-
-
-        <div class="nav-links">
+        <nav class="navbar">
 
             <a
                 href="index.html"
-                class="active"
+                class="brand"
             >
-                Home
+                <span class="brand-symbol">✦</span>
+                <span>
+                    MEGAN
+                    <small>MY PROFILE</small>
+                </span>
             </a>
 
-            <a href="profile.html">
-                Profile
+            <div class="nav-links">
+
+                <a
+                    href="index.html"
+                    class="active"
+                >
+                    Home
+                </a>
+
+                <a href="profile.html">
+                    My Profile
+                </a>
+
+                <a href="education.html">
+                    Education
+                </a>
+
+                <a href="hobby.html">
+                    Hobby
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
+
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <div class="magic-label">
+                    ✦ WELCOME TO MY WORLD ✦
+                </div>
+
+                <p class="hero-small">
+                    Student Portfolio • Enchanted Forest
+                </p>
+
+                <h1>
+                    Hello,
+                    <span>I'm Megan</span>
+                </h1>
+
+                <p class="hero-description">
+                    สวัสดี ฉันชื่อ
+                    <strong>เคไซยาห์ เมกาน ชินวรรธนวงศ์</strong>
+                    นักเรียนชั้นมัธยมศึกษาปีที่ 3
+                    ที่กำลังสร้างพื้นที่เล็ก ๆ
+                    เพื่อรวบรวมเรื่องราว ความสนใจ
+                    และตัวตนของฉัน
+                </p>
+
+                <p class="hero-quote">
+                    “จินตนาการคือจุดเริ่มต้น
+                    ของสิ่งมหัศจรรย์ทุกอย่าง”
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a
+                        href="profile.html"
+                        class="magic-button primary-button"
+                    >
+                        <span>✦</span>
+                        รู้จักฉันมากขึ้น
+                    </a>
+
+                    <a
+                        href="hobby.html"
+                        class="magic-button secondary-button"
+                    >
+                        ดูงานอดิเรกของฉัน
+                        <span>→</span>
+                    </a>
+
+                </div>
+
+                <div class="hero-stats">
+
+                    <div>
+                        <strong>15</strong>
+                        <span>Age</span>
+                    </div>
+
+                    <div>
+                        <strong>M.3/2</strong>
+                        <span>Class</span>
+                    </div>
+
+                    <div>
+                        <strong>CMI</strong>
+                        <span>Province</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 MY PHOTO
+            ================================================== -->
+
+            <div class="hero-visual">
+
+                <div class="photo-orbit orbit-one"></div>
+                <div class="photo-orbit orbit-two"></div>
+
+                <div class="photo-decoration sparkle-a">✦</div>
+                <div class="photo-decoration sparkle-b">✧</div>
+                <div class="photo-decoration sparkle-c">✦</div>
+
+                <div class="photo-frame">
+
+                    <div class="photo-tag top-tag">
+                        <span>✦</span>
+                        CREATIVE
+                    </div>
+
+                    <div class="photo-inner">
+
+                        <img
+                            src="https://placehold.co/500x650/251447/e9d5ff?text=MY+PHOTO"
+                            alt="รูปโปรไฟล์ของฉัน"
+                        >
+
+                    </div>
+
+                    <div class="photo-tag bottom-tag">
+                        MAGICAL
+                        <span>✧</span>
+                    </div>
+
+                </div>
+
+                <div class="photo-caption">
+
+                    <span>✦</span>
+
+                    <p>
+                        MY PHOTO
+                        <small>My little magical world</small>
+                    </p>
+
+                    <span>✦</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             INTRO SECTION
+        ====================================================== -->
+
+        <section class="intro-section section-container">
+
+            <div class="section-heading">
+
+                <span>01 / MY WORLD</span>
+
+                <h2>
+                    A little piece
+                    <em>of me</em>
+                </h2>
+
+                <p>
+                    เว็บไซต์เล็ก ๆ ที่รวบรวมเรื่องราว
+                    ตัวตน และสิ่งที่ฉันสนใจ
+                    ในโลกแห่งจินตนาการ
+                </p>
+
+            </div>
+
+            <div class="intro-grid">
+
+                <article class="magic-card featured-card">
+
+                    <div class="card-icon">🌙</div>
+
+                    <h3>My Profile</h3>
+
+                    <p>
+                        ทำความรู้จักกับตัวฉัน
+                        ข้อมูลส่วนตัว ความฝัน
+                        และเรื่องราวที่เป็นตัวฉัน
+                    </p>
+
+                    <a href="profile.html">
+                        Explore →
+                    </a>
+
+                </article>
+
+
+                <article class="magic-card">
+
+                    <div class="card-icon">🌿</div>
+
+                    <h3>My Journey</h3>
+
+                    <p>
+                        เส้นทางการเรียนรู้
+                        และประสบการณ์ในช่วงมัธยมศึกษา
+                    </p>
+
+                    <a href="education.html">
+                        Explore →
+                    </a>
+
+                </article>
+
+
+                <article class="magic-card">
+
+                    <div class="card-icon">✨</div>
+
+                    <h3>My Interests</h3>
+
+                    <p>
+                        สิ่งที่ฉันชอบ
+                        งานอดิเรก และสิ่งที่ทำในเวลาว่าง
+                    </p>
+
+                    <a href="hobby.html">
+                        Explore →
+                    </a>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             CTA
+        ====================================================== -->
+
+        <section class="magic-cta">
+
+            <div>
+
+                <span>✦ A JOURNEY THROUGH MY WORLD ✦</span>
+
+                <h2>
+                    Ready to explore
+                    <em>my story?</em>
+                </h2>
+
+            </div>
+
+            <a
+                href="contact.html"
+                class="magic-button primary-button"
+            >
+                ติดต่อฉัน
+                <span>→</span>
             </a>
 
-            <a href="education.html">
-                Education
-            </a>
+        </section>
 
-            <a href="hobby.html">
-                Hobby
-            </a>
+    </main>
 
-            <a href="contact.html">
-                Contact
-            </a>
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="site-footer">
+
+        <div class="footer-main">
+
+            <div>
+
+                <div class="footer-logo">
+                    ✦ MEGAN
+                </div>
+
+                <p>
+                    Enchanted Forest Student Portfolio
+                </p>
+
+            </div>
+
+            <div>
+
+                <h3>Explore</h3>
+
+                <div class="footer-links">
+
+                    <a href="index.html">Home</a>
+                    <a href="profile.html">My Profile</a>
+                    <a href="education.html">Education</a>
+                    <a href="hobby.html">Hobby</a>
+                    <a href="contact.html">Contact</a>
+
+                </div>
+
+            </div>
+
+            <div>
+
+                <h3>Student</h3>
+
+                <p>
+                    เคไซยาห์ เมกาน ชินวรรธนวงศ์
+                </p>
+
+                <p>
+                    ม.3/2 • จอมทอง
+                </p>
+
+            </div>
 
         </div>
 
-    </nav>
-
-</header>
-
-
-<!-- =====================================================
-     MAIN
-===================================================== -->
-
-<main>
-
-
-<section class="hero">
-
-    <div class="hero-content">
-
-        <div class="magic-label">
-            ✦ WELCOME TO MY WORLD ✦
-        </div>
-
-
-        <h1>
-
-            Hello,
+        <div class="footer-bottom">
 
             <span>
-                I'm Megan
+                © 2026 Megan Portfolio
             </span>
 
-        </h1>
-
-
-        <h2>
-            เคไซยาห์ เมกาน ชินวรรธนวงศ์
-        </h2>
-
-
-        <p class="hero-description">
-
-            นักเรียนชั้นมัธยมศึกษาปีที่ 3
-            ผู้กำลังเรียนรู้สิ่งใหม่ ๆ
-            และสนุกกับการสร้างสรรค์ผลงาน
-            ผ่านเทคโนโลยีและจินตนาการ
-
-        </p>
-
-
-        <div class="hero-buttons">
-
-            <a
-                href="profile.html"
-                class="magic-button"
-            >
-
-                <span>
-                    ✦
-                </span>
-
-                รู้จักฉันมากขึ้น
-
-            </a>
-
-
-            <a
-                href="hobby.html"
-                class="magic-button secondary"
-            >
-
-                <span>
-                    ✨
-                </span>
-
-                ดูงานอดิเรกของฉัน
-
-            </a>
+            <span>
+                Made with ✦ imagination
+            </span>
 
         </div>
 
-
-        <div class="hero-stats">
-
-            <div>
-                <strong>
-                    M.3/2
-                </strong>
-
-                <span>
-                    Student
-                </span>
-            </div>
-
-
-            <div>
-                <strong>
-                    Chiang Mai
-                </strong>
-
-                <span>
-                    Thailand
-                </span>
-            </div>
-
-
-            <div>
-                <strong>
-                    2026
-                </strong>
-
-                <span>
-                    Portfolio
-                </span>
-            </div>
-
-        </div>
-
-    </div>
-
-
-    <!-- =================================================
-         3D PHOTO
-    ================================================= -->
-
-    <div class="photo-scene">
-
-        <div class="photo-orbit orbit-1"></div>
-        <div class="photo-orbit orbit-2"></div>
-
-        <div
-            class="photo-card"
-            id="photoCard"
-        >
-
-            <div class="photo-shine"></div>
-
-            <div class="photo-glow-border"></div>
-
-            <img
-                src="https://placehold.co/700x900/png?text=MY+PHOTO"
-                alt="รูปโปรไฟล์ของเมกาน"
-            >
-
-
-            <div class="photo-caption">
-
-                <span>✦</span>
-
-                MY PHOTO
-
-                <span>✦</span>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =====================================================
-     EXPLORE
-===================================================== -->
-
-<section class="intro-section">
-
-    <div class="section-heading">
-
-        <span>✦</span>
-
-        EXPLORE MY WORLD
-
-        <span>✦</span>
-
-    </div>
-
-
-    <div class="magic-grid">
-
-
-        <a
-            href="profile.html"
-            class="magic-card"
-        >
-
-            <div class="card-icon">
-                🧙
-            </div>
-
-            <h3>
-                My Profile
-            </h3>
-
-            <p>
-                ทำความรู้จักตัวตน
-                และเรื่องราวของฉัน
-            </p>
-
-            <span class="card-arrow">
-                →
-            </span>
-
-        </a>
-
-
-        <a
-            href="education.html"
-            class="magic-card"
-        >
-
-            <div class="card-icon">
-                📚
-            </div>
-
-            <h3>
-                Education
-            </h3>
-
-            <p>
-                เส้นทางการเรียนรู้
-                และการศึกษาของฉัน
-            </p>
-
-            <span class="card-arrow">
-                →
-            </span>
-
-        </a>
-
-
-        <a
-            href="hobby.html"
-            class="magic-card"
-        >
-
-            <div class="card-icon">
-                🎮
-            </div>
-
-            <h3>
-                Hobby
-            </h3>
-
-            <p>
-                สิ่งที่ฉันสนใจ
-                และกิจกรรมในเวลาว่าง
-            </p>
-
-            <span class="card-arrow">
-                →
-            </span>
-
-        </a>
-
-
-        <a
-            href="contact.html"
-            class="magic-card"
-        >
-
-            <div class="card-icon">
-                💌
-            </div>
-
-            <h3>
-                Contact
-            </h3>
-
-            <p>
-                ช่องทางสำหรับติดต่อ
-                และพูดคุยกับฉัน
-            </p>
-
-            <span class="card-arrow">
-                →
-            </span>
-
-        </a>
-
-
-    </div>
-
-</section>
-
-
-</main>
-
-
-<!-- =====================================================
-     FOOTER
-===================================================== -->
-
-<footer class="footer">
-
-    <div class="footer-content">
-
-        <div>
-
-            <h3>
-                ✦ MEGAN
-            </h3>
-
-            <p>
-                Mystic Purple Enchanted Forest
-            </p>
-
-        </div>
-
-
-        <div>
-
-            <p>
-                เคไซยาห์ เมกาน ชินวรรธนวงศ์
-            </p>
-
-            <p>
-                นักเรียนชั้น ม.3/2
-            </p>
-
-        </div>
-
-    </div>
-
-
-    <p class="copyright">
-        © 2026 Megan Portfolio
-    </p>
-
-</footer>
-
-
-<!-- =====================================================
-     JAVASCRIPT
-===================================================== -->
-
-<script>
-
-
-/* ================= LOADING ================= */
-
-window.addEventListener(
-    "load",
-    () => {
-
-        setTimeout(
-            () => {
-
-                document
-                    .getElementById(
-                        "loadingScreen"
-                    )
-                    .classList.add(
-                        "loaded"
-                    );
-
-            },
-            2200
-        );
-
-    }
-);
-
-
-/* ================= MOUSE GLOW ================= */
-
-const mouseGlow =
-    document.querySelector(
-        ".mouse-glow"
-    );
-
-
-document.addEventListener(
-    "mousemove",
-    (event) => {
-
-        mouseGlow.style.left =
-            event.clientX + "px";
-
-        mouseGlow.style.top =
-            event.clientY + "px";
-
-    }
-);
-
-
-/* ================= CLICK MAGIC ================= */
-
-document.addEventListener(
-    "click",
-    (event) => {
-
-
-        const sparkle =
-            document.createElement(
-                "div"
-            );
-
-        sparkle.className =
-            "click-spark";
-
-        sparkle.innerHTML =
-            "✦";
-
-        sparkle.style.left =
-            event.clientX + "px";
-
-        sparkle.style.top =
-            event.clientY + "px";
-
-
-        document.body.appendChild(
-            sparkle
-        );
-
-
-        const ripple =
-            document.createElement(
-                "div"
-            );
-
-        ripple.className =
-            "mouse-ripple";
-
-        ripple.style.left =
-            event.clientX + "px";
-
-        ripple.style.top =
-            event.clientY + "px";
-
-
-        document.body.appendChild(
-            ripple
-        );
-
-
-        setTimeout(
-            () => {
-
-                sparkle.remove();
-                ripple.remove();
-
-            },
-            800
-        );
-
-    }
-);
-
-
-/* ================= 3D PHOTO ================= */
-
-const photo =
-    document.getElementById(
-        "photoCard"
-    );
-
-
-document.addEventListener(
-    "mousemove",
-    (event) => {
-
-
-        const centerX =
-            window.innerWidth / 2;
-
-        const centerY =
-            window.innerHeight / 2;
-
-
-        const rotateX =
-            (event.clientY - centerY)
-            / 45;
-
-
-        const rotateY =
-            (event.clientX - centerX)
-            / -45;
-
-
-        photo.style.transform =
-            `
-            rotateX(${rotateX}deg)
-            rotateY(${rotateY}deg)
-            `;
-
-    }
-);
-
-
-photo.addEventListener(
-    "mouseleave",
-    () => {
-
-        photo.style.transform =
-            "rotateX(0deg) rotateY(0deg)";
-
-    }
-);
-
-
-</script>
-
+    </footer>
 
 </body>
+
 </html>
