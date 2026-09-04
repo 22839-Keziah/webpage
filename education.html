@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="th">
+
 <head>
 
     <meta charset="UTF-8">
@@ -15,31 +16,36 @@
 
 </head>
 
-<body class="inner-page">
 
+<body>
+
+
+<!-- LOADING -->
 
 <div class="loading-screen" id="loadingScreen">
 
-    <div class="loading-cloud cloud-one">☁</div>
-    <div class="loading-cloud cloud-two">☁</div>
+    <div class="loading-cloud cloud-1"></div>
+    <div class="loading-cloud cloud-2"></div>
 
-    <div class="loading-content">
+    <div class="loading-magic">
 
-        <div class="loading-moon">☾</div>
+        <div class="magic-orb"></div>
 
-        <img
-            src="https://placehold.co/280x120/e9ddff/563d82?text=Magic+Cloud"
-            alt="เมฆเวทมนตร์"
-            class="loading-image"
-        >
+        <div class="loading-stars">
+            ✦ ✧ ✦ ✧
+        </div>
 
-        <h2>Entering the Mystic Forest...</h2>
+        <h1>
+            EDUCATION
+        </h1>
+
+        <p>
+            กำลังเปิดเส้นทางแห่งการเรียนรู้...
+        </p>
 
         <div class="loading-bar">
             <span></span>
         </div>
-
-        <p>✦ Exploring my journey ✦</p>
 
     </div>
 
@@ -49,50 +55,59 @@
 <div class="mouse-glow"></div>
 
 
+<img
+    class="flying-fairy"
+    src="https://placehold.co/180x100/png?text=FAIRY"
+    alt="Fairy decoration"
+>
+
+
+<div class="star-field">
+
+    <span>✦</span>
+    <span>✧</span>
+    <span>✦</span>
+    <span>✧</span>
+    <span>✦</span>
+    <span>✧</span>
+
+</div>
+
+
+<!-- FOREST -->
+
 <div class="forest-background">
 
-    <div class="moon parallax-slow">☾</div>
-
-    <div class="stars">
-        <span>✦</span>
-        <span>✧</span>
-        <span>⋆</span>
-        <span>✦</span>
-        <span>·</span>
-        <span>✧</span>
-        <span>⋆</span>
-        <span>✦</span>
-        <span>✧</span>
-        <span>·</span>
-        <span>✦</span>
-        <span>⋆</span>
+    <div class="moon">
+        <div class="moon-ring"></div>
     </div>
 
-    <div class="shooting-star shooting-one"></div>
-    <div class="shooting-star shooting-two"></div>
-    <div class="shooting-star shooting-three"></div>
+    <div class="aurora"></div>
 
-    <div class="rain"></div>
+    <div class="mountain mountain-back"></div>
+    <div class="mountain mountain-middle"></div>
+    <div class="mountain mountain-front"></div>
 
-    <div class="giant-vine vine-left parallax-slow"></div>
-    <div class="giant-vine vine-right parallax-slow"></div>
 
-    <div class="forest-tree tree-left parallax-slow">
-        <div class="tree-trunk"></div>
-        <div class="tree-crown"></div>
+    <div class="forest-trees trees-back">
+
+        <span>🌲</span>
+        <span>🌲</span>
+        <span>🌲</span>
+        <span>🌲</span>
+        <span>🌲</span>
+
     </div>
 
-    <div class="forest-tree tree-right parallax-slow">
-        <div class="tree-trunk"></div>
-        <div class="tree-crown"></div>
-    </div>
 
-    <div class="giant-mushroom mushroom-left parallax-medium">
+    <div class="giant-mushroom mushroom-left">
 
         <div class="mushroom-cap">
+
             <span>✦</span>
             <span>•</span>
             <span>✧</span>
+
         </div>
 
         <div class="mushroom-stem"></div>
@@ -102,12 +117,14 @@
     </div>
 
 
-    <div class="giant-mushroom mushroom-right parallax-medium">
+    <div class="giant-mushroom mushroom-right">
 
         <div class="mushroom-cap">
+
             <span>✧</span>
             <span>•</span>
             <span>✦</span>
+
         </div>
 
         <div class="mushroom-stem"></div>
@@ -117,51 +134,76 @@
     </div>
 
 
-    <div class="fairy fairy-one parallax-medium">
+    <div class="vine vine-left">
 
-        <img
-            src="https://placehold.co/130x220/e9ddff/563d82?text=Fairy+1"
-            alt="นางฟ้าตัวที่หนึ่ง"
-        >
+        <span>☘</span>
+        <span>🌿</span>
+        <span>☘</span>
 
     </div>
 
 
-    <div class="fairy fairy-two parallax-medium">
+    <div class="vine vine-right">
 
-        <img
-            src="https://placehold.co/130x220/e9ddff/563d82?text=Fairy+2"
-            alt="นางฟ้าตัวที่สอง"
-        >
+        <span>🌿</span>
+        <span>☘</span>
+        <span>🌿</span>
+
+    </div>
+
+
+    <div class="foreground-trees">
+
+        <div class="tree tree-left"></div>
+        <div class="tree tree-right"></div>
 
     </div>
 
 </div>
 
 
+<div class="rain"></div>
+
+
+<!-- NAV -->
+
 <header class="site-header">
 
     <nav class="navbar">
 
-        <a href="index.html" class="logo">
-            ✦ MEGAN
-            <small>Mystic Forest</small>
+        <a
+            href="index.html"
+            class="logo"
+        >
+            <span>✦</span>
+            MEGAN
         </a>
 
 
         <div class="nav-links">
 
-            <a href="index.html">Home</a>
+            <a href="index.html">
+                Home
+            </a>
 
-            <a href="profile.html">Profile</a>
+            <a href="profile.html">
+                Profile
+            </a>
 
-            <a href="education.html" class="active">
+            <a
+                href="education.html"
+                class="active"
+            >
                 Education
             </a>
 
-            <a href="hobby.html">Hobby</a>
+            <a href="hobby.html">
+                Hobby
+            </a>
 
-            <a href="contact.html">Contact</a>
+            <a href="contact.html">
+                Contact
+            </a>
 
         </div>
 
@@ -172,220 +214,345 @@
 
 <main>
 
-    <section class="page-hero">
 
-        <p>✦ MY LEARNING JOURNEY ✦</p>
+<!-- TITLE -->
 
-        <h1>Education</h1>
+<section class="page-title">
+
+    <div class="magic-label">
+        ✦ MY JOURNEY ✦
+    </div>
+
+    <h1>
+
+        My
 
         <span>
-            เส้นทางการเรียนรู้ของฉัน
+            Education
         </span>
 
-    </section>
+    </h1>
+
+    <p>
+        เส้นทางแห่งการเรียนรู้ของฉัน
+    </p>
+
+</section>
 
 
-    <!-- TIMELINE -->
+<!-- TIMELINE -->
 
-    <section class="timeline-section">
-
-        <div class="timeline">
+<section class="timeline">
 
 
-            <article class="timeline-item interactive-card"
-                     data-emoji="🌱">
+    <div class="timeline-item">
 
-                <div class="timeline-dot">
-                    🌱
-                </div>
-
-                <div class="timeline-content">
-
-                    <span class="timeline-status">
-                        สำเร็จแล้ว
-                    </span>
-
-                    <h2>ระดับประถมศึกษา</h2>
-
-                    <h3>Elementary School</h3>
-
-                    <p>
-                        ช่วงแรกของเส้นทางการเรียนรู้
-                        ได้เรียนรู้พื้นฐานต่าง ๆ
-                        และเริ่มค้นหาสิ่งที่ตัวเองสนใจ
-                    </p>
-
-                </div>
-
-            </article>
-
-
-            <article class="timeline-item interactive-card"
-                     data-emoji="📚">
-
-                <div class="timeline-dot">
-                    📚
-                </div>
-
-                <div class="timeline-content">
-
-                    <span class="timeline-status current">
-                        ปัจจุบัน
-                    </span>
-
-                    <h2>มัธยมศึกษาตอนต้น</h2>
-
-                    <h3>Junior High School</h3>
-
-                    <p>
-                        กำลังศึกษาอยู่ที่
-                        โรงเรียนจอมทอง
-                        ชั้นมัธยมศึกษาปีที่ 3/2
-                    </p>
-
-                </div>
-
-            </article>
-
-
-            <article class="timeline-item future interactive-card"
-                     data-emoji="✨">
-
-                <div class="timeline-dot">
-                    ✨
-                </div>
-
-                <div class="timeline-content">
-
-                    <span class="timeline-status">
-                        NEXT CHAPTER
-                    </span>
-
-                    <h2>อนาคต</h2>
-
-                    <h3>My Next Adventure</h3>
-
-                    <p>
-                        เรียนรู้และพัฒนาตัวเองต่อไป
-                        พร้อมค้นหาสิ่งที่อยากทำ
-                        และสร้างผลงานที่เป็นตัวของตัวเอง
-                    </p>
-
-                </div>
-
-            </article>
-
-        </div>
-
-    </section>
-
-
-    <!-- TABLE -->
-
-    <section class="education-table-section">
-
-        <div class="section-heading">
-
-            <p>✦ EDUCATION DETAILS ✦</p>
-
-            <h2>My Academic Journey</h2>
-
+        <div class="timeline-dot">
+            🌱
         </div>
 
 
-        <div class="table-wrapper">
+        <div class="timeline-card">
 
-            <table>
+            <span>
+                ประถมศึกษา
+            </span>
 
-                <thead>
+            <h2>
+                Elementary School
+            </h2>
 
-                    <tr>
+            <p>
+                ระดับการศึกษาที่สำเร็จแล้ว
+                และเป็นจุดเริ่มต้นของการเรียนรู้
+            </p>
 
-                        <th>ระดับ</th>
-
-                        <th>สถานศึกษา</th>
-
-                        <th>สถานะ</th>
-
-                        <th>รายละเอียด</th>
-
-                    </tr>
-
-                </thead>
-
-
-                <tbody>
-
-                    <tr>
-
-                        <td>ประถมศึกษา</td>
-
-                        <td>ระดับประถมศึกษา</td>
-
-                        <td>
-                            <span class="table-badge done">
-                                สำเร็จแล้ว
-                            </span>
-                        </td>
-
-                        <td>
-                            เรียนรู้พื้นฐาน
-                        </td>
-
-                    </tr>
-
-
-                    <tr>
-
-                        <td>ม.1 – ม.3</td>
-
-                        <td>โรงเรียนจอมทอง</td>
-
-                        <td>
-                            <span class="table-badge now">
-                                ปัจจุบัน
-                            </span>
-                        </td>
-
-                        <td>
-                            ชั้น ม.3/2
-                        </td>
-
-                    </tr>
-
-                </tbody>
-
-            </table>
+            <div class="status-badge completed">
+                ✓ สำเร็จแล้ว
+            </div>
 
         </div>
-
-    </section>
-
-</main>
-
-
-<footer class="site-footer">
-
-    <div>
-
-        <h3>✦ MEGAN</h3>
-
-        <p>Mystic Purple Enchanted Forest</p>
-
-        <small>
-            เคไซยาห์ เมกาน ชินวรรธนวงศ์ • ม.3/2
-        </small>
 
     </div>
 
 
-    <div class="footer-links">
+    <div class="timeline-item">
 
-        <a href="index.html">Home</a>
-        <a href="profile.html">Profile</a>
-        <a href="education.html">Education</a>
-        <a href="hobby.html">Hobby</a>
-        <a href="contact.html">Contact</a>
+        <div class="timeline-dot">
+            📚
+        </div>
+
+
+        <div class="timeline-card">
+
+            <span>
+                มัธยมศึกษาตอนต้น
+            </span>
+
+            <h2>
+                Junior High School
+            </h2>
+
+            <p>
+                เส้นทางการเรียนรู้และพัฒนา
+                ทักษะในระดับมัธยมศึกษา
+            </p>
+
+            <div class="status-badge completed">
+                ✓ สำเร็จแล้ว
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="timeline-item">
+
+        <div class="timeline-dot">
+            🎓
+        </div>
+
+
+        <div class="timeline-card current">
+
+            <span>
+                ปัจจุบัน
+            </span>
+
+            <h2>
+                มัธยมศึกษาปีที่ 3/2
+            </h2>
+
+            <p>
+                โรงเรียนจอมทอง
+            </p>
+
+            <strong>
+                วิชาที่ชอบ : ภาษาอังกฤษ
+            </strong>
+
+            <div class="status-badge studying">
+                ◉ กำลังศึกษาอยู่
+            </div>
+
+        </div>
+
+    </div>
+
+
+</section>
+
+
+<!-- =====================================================
+     EDUCATION TABLE
+===================================================== -->
+
+<section class="education-table-section">
+
+
+    <div class="section-heading">
+
+        <span>✦</span>
+
+        EDUCATION STATUS
+
+        <span>✦</span>
+
+    </div>
+
+
+    <div class="education-table-wrapper">
+
+        <table class="education-table">
+
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        ระดับการศึกษา
+                    </th>
+
+                    <th>
+                        สถานะ
+                    </th>
+
+                    <th>
+                        รายละเอียด
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+
+                <tr>
+
+                    <td>
+                        🌱 ประถมศึกษา
+                    </td>
+
+                    <td>
+
+                        <span class="table-status completed">
+                            ✓ สำเร็จแล้ว
+                        </span>
+
+                    </td>
+
+                    <td>
+                        จบการศึกษาระดับประถมศึกษา
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        📚 มัธยมศึกษาตอนต้น
+                    </td>
+
+                    <td>
+
+                        <span class="table-status completed">
+                            ✓ สำเร็จแล้ว
+                        </span>
+
+                    </td>
+
+                    <td>
+                        ผ่านระดับการศึกษาที่ผ่านมา
+                    </td>
+
+                </tr>
+
+
+                <tr class="current-row">
+
+                    <td>
+                        🎓 มัธยมศึกษาปีที่ 3/2
+                    </td>
+
+                    <td>
+
+                        <span class="table-status studying">
+                            ◉ กำลังศึกษาอยู่
+                        </span>
+
+                    </td>
+
+                    <td>
+                        โรงเรียนจอมทอง
+                    </td>
+
+                </tr>
+
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- HIGHLIGHTS -->
+
+<section class="education-highlight">
+
+
+    <div class="magic-card">
+
+        <div class="card-icon">
+            🏫
+        </div>
+
+        <h3>
+            School
+        </h3>
+
+        <p>
+            โรงเรียนจอมทอง
+        </p>
+
+    </div>
+
+
+    <div class="magic-card">
+
+        <div class="card-icon">
+            🎓
+        </div>
+
+        <h3>
+            Class
+        </h3>
+
+        <p>
+            ม.3/2
+        </p>
+
+    </div>
+
+
+    <div class="magic-card">
+
+        <div class="card-icon">
+            🌟
+        </div>
+
+        <h3>
+            Favorite Subject
+        </h3>
+
+        <p>
+            ภาษาอังกฤษ
+        </p>
+
+    </div>
+
+
+</section>
+
+
+</main>
+
+
+<footer class="footer">
+
+    <div class="footer-content">
+
+        <div>
+
+            <h3>
+                ✦ MEGAN
+            </h3>
+
+            <p>
+                Mystic Purple Enchanted Forest
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <p>
+                เคไซยาห์ เมกาน ชินวรรธนวงศ์
+            </p>
+
+            <p>
+                ม.3/2
+            </p>
+
+        </div>
 
     </div>
 
@@ -399,68 +566,63 @@
 
 <script>
 
-document.addEventListener("DOMContentLoaded", () => {
 
-    setTimeout(() => {
+window.addEventListener(
+    "load",
+    () => {
 
-        document
-            .getElementById("loadingScreen")
-            .classList.add("loaded");
+        setTimeout(
+            () => {
 
-    }, 1800);
+                document
+                    .getElementById(
+                        "loadingScreen"
+                    )
+                    .classList.add(
+                        "loaded"
+                    );
+
+            },
+            2200
+        );
+
+    }
+);
 
 
-    const glow =
-        document.querySelector(".mouse-glow");
+const mouseGlow =
+    document.querySelector(
+        ".mouse-glow"
+    );
 
 
-    document.addEventListener("mousemove", event => {
+document.addEventListener(
+    "mousemove",
+    (event) => {
 
-        glow.style.left =
+        mouseGlow.style.left =
             event.clientX + "px";
 
-        glow.style.top =
+        mouseGlow.style.top =
             event.clientY + "px";
 
-
-        const x =
-            (event.clientX / innerWidth - .5) * 2;
-
-        const y =
-            (event.clientY / innerHeight - .5) * 2;
+    }
+);
 
 
-        document
-            .querySelectorAll(".parallax-slow")
-            .forEach(el => {
-
-                el.style.transform =
-                    `translate3d(${x * -12}px,${y * -12}px,0)`;
-
-            });
-
-
-        document
-            .querySelectorAll(".parallax-medium")
-            .forEach(el => {
-
-                el.style.transform =
-                    `translate3d(${x * -25}px,${y * -25}px,0)`;
-
-            });
-
-    });
-
-
-    document.addEventListener("click", event => {
+document.addEventListener(
+    "click",
+    (event) => {
 
         const sparkle =
-            document.createElement("span");
+            document.createElement(
+                "div"
+            );
 
         sparkle.className =
             "click-spark";
 
-        sparkle.textContent =
+        sparkle.innerHTML =
             "✦";
 
         sparkle.style.left =
@@ -469,11 +631,16 @@ document.addEventListener("DOMContentLoaded", () => {
         sparkle.style.top =
             event.clientY + "px";
 
-        document.body.appendChild(sparkle);
+
+        document.body.appendChild(
+            sparkle
+        );
 
 
         const ripple =
-            document.createElement("span");
+            document.createElement(
+                "div"
+            );
 
         ripple.className =
             "mouse-ripple";
@@ -484,67 +651,28 @@ document.addEventListener("DOMContentLoaded", () => {
         ripple.style.top =
             event.clientY + "px";
 
-        document.body.appendChild(ripple);
+
+        document.body.appendChild(
+            ripple
+        );
 
 
-        setTimeout(() => {
+        setTimeout(
+            () => {
 
-            sparkle.remove();
-            ripple.remove();
+                sparkle.remove();
+                ripple.remove();
 
-        }, 900);
+            },
+            800
+        );
 
-    });
+    }
+);
 
-
-    document
-        .querySelectorAll(".interactive-card")
-        .forEach(card => {
-
-            card.addEventListener("click", () => {
-
-                card.classList.add("pressed");
-
-
-                setTimeout(() => {
-
-                    card.classList.remove("pressed");
-
-                }, 300);
-
-
-                const popup =
-                    document.createElement("div");
-
-                popup.className =
-                    "emoji-pop";
-
-                popup.textContent =
-                    card.dataset.emoji || "✨";
-
-
-                const rect =
-                    card.getBoundingClientRect();
-
-                popup.style.left =
-                    rect.left + rect.width / 2 + "px";
-
-                popup.style.top =
-                    rect.top + "px";
-
-
-                document.body.appendChild(popup);
-
-
-                setTimeout(() => popup.remove(), 900);
-
-            });
-
-        });
-
-});
 
 </script>
+
 
 </body>
 </html>
