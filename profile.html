@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="th">
-
 <head>
 
     <meta charset="UTF-8">
@@ -10,475 +9,615 @@
         content="width=device-width, initial-scale=1.0"
     >
 
-    <title>My Profile | Megan</title>
+    <title>Profile | Megan</title>
 
     <link rel="stylesheet" href="style.css">
 
 </head>
 
-
 <body class="inner-page">
 
 
-    <!-- LOADING -->
+<!-- =====================================================
+     LOADING
+===================================================== -->
 
-    <div class="loading-screen">
+<div class="loading-screen" id="loadingScreen">
+
+    <div class="loading-cloud cloud-one">☁</div>
+    <div class="loading-cloud cloud-two">☁</div>
+
+    <div class="loading-content">
 
         <div class="loading-moon">☾</div>
 
-        <div class="loading-cloud cloud-one"></div>
-        <div class="loading-cloud cloud-two"></div>
+        <img
+            src="https://placehold.co/280x120/e9ddff/563d82?text=Magic+Cloud"
+            alt="เมฆเวทมนตร์"
+            class="loading-image"
+        >
 
-        <div class="loading-content">
+        <h2>Entering the Mystic Forest...</h2>
 
-            <div class="loading-orb"></div>
-
-            <p class="loading-small">
-                OPENING MY PROFILE
-            </p>
-
-            <h1>
-                ENCHANTED FOREST
-            </h1>
-
-            <div class="loading-line">
-                <span></span>
-            </div>
-
-            <p>
-                Discover my magical world
-            </p>
-
+        <div class="loading-bar">
+            <span></span>
         </div>
+
+        <p>✦ Welcome, Megan ✦</p>
+
+    </div>
+
+</div>
+
+
+<div class="mouse-glow"></div>
+
+
+<!-- =====================================================
+     BACKGROUND
+===================================================== -->
+
+<div class="forest-background">
+
+    <div class="moon parallax-slow">☾</div>
+
+    <div class="stars">
+        <span>✦</span>
+        <span>✧</span>
+        <span>⋆</span>
+        <span>✦</span>
+        <span>·</span>
+        <span>✧</span>
+        <span>⋆</span>
+        <span>✦</span>
+        <span>✧</span>
+        <span>·</span>
+        <span>✦</span>
+        <span>⋆</span>
+    </div>
+
+    <div class="shooting-star shooting-one"></div>
+    <div class="shooting-star shooting-two"></div>
+    <div class="shooting-star shooting-three"></div>
+
+    <div class="rain"></div>
+
+    <div class="giant-vine vine-left parallax-slow"></div>
+    <div class="giant-vine vine-right parallax-slow"></div>
+
+    <div class="forest-tree tree-left parallax-slow">
+        <div class="tree-trunk"></div>
+        <div class="tree-crown"></div>
+    </div>
+
+    <div class="forest-tree tree-right parallax-slow">
+        <div class="tree-trunk"></div>
+        <div class="tree-crown"></div>
+    </div>
+
+    <div class="giant-mushroom mushroom-left parallax-medium">
+
+        <div class="mushroom-cap">
+            <span>✦</span>
+            <span>•</span>
+            <span>✧</span>
+        </div>
+
+        <div class="mushroom-stem"></div>
+        <div class="mushroom-glow"></div>
 
     </div>
 
 
-    <!-- BACKGROUND -->
+    <div class="giant-mushroom mushroom-right parallax-medium">
 
-    <div class="forest-background">
-
-        <div class="moon"></div>
-
-        <span class="star star-1">✦</span>
-        <span class="star star-2">✧</span>
-        <span class="star star-3">✦</span>
-        <span class="star star-4">✧</span>
-        <span class="star star-5">✦</span>
-        <span class="star star-6">✧</span>
-
-        <span class="shooting-star shooting-one"></span>
-        <span class="shooting-star shooting-two"></span>
-
-        <div class="giant-vine vine-left"></div>
-        <div class="giant-vine vine-right"></div>
-
-        <div class="giant-mushroom mushroom-left">
-            <span class="mushroom-cap"></span>
-            <span class="mushroom-stem"></span>
-            <span class="mushroom-glow"></span>
+        <div class="mushroom-cap">
+            <span>✧</span>
+            <span>•</span>
+            <span>✦</span>
         </div>
 
-        <div class="giant-mushroom mushroom-right">
-            <span class="mushroom-cap"></span>
-            <span class="mushroom-stem"></span>
-            <span class="mushroom-glow"></span>
-        </div>
-
-        <div class="fairy fairy-one">
-
-            <img
-                src="https://placehold.co/110x170/241044/EEDFFF?text=FAIRY+1"
-                alt="แฟรี่ตกแต่ง"
-            >
-
-        </div>
-
-        <div class="fairy fairy-two">
-
-            <img
-                src="https://placehold.co/110x170/241044/EEDFFF?text=FAIRY+2"
-                alt="แฟรี่ตกแต่ง"
-            >
-
-        </div>
-
-        <div class="rain"></div>
-
-        <div class="fireflies">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+        <div class="mushroom-stem"></div>
+        <div class="mushroom-glow"></div>
 
     </div>
 
 
-    <!-- NAV -->
+    <div class="fairy fairy-one parallax-medium">
 
-    <header class="site-header">
+        <!-- เปลี่ยนเป็นรูป Fairy ของคุณ -->
+        <img
+            src="https://placehold.co/130x220/e9ddff/563d82?text=Fairy+1"
+            alt="นางฟ้าตัวที่หนึ่ง"
+        >
 
-        <nav class="navbar">
+        <span>✦</span>
 
-            <a href="index.html" class="logo">
-                <span class="logo-symbol">✦</span>
-                <span>MY PROFILE</span>
+    </div>
+
+
+    <div class="fairy fairy-two parallax-medium">
+
+        <!-- เปลี่ยนเป็นรูป Fairy ของคุณ -->
+        <img
+            src="https://placehold.co/130x220/e9ddff/563d82?text=Fairy+2"
+            alt="นางฟ้าตัวที่สอง"
+        >
+
+        <span>✧</span>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     NAV
+===================================================== -->
+
+<header class="site-header">
+
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+
+            ✦ MEGAN
+
+            <small>Mystic Forest</small>
+
+        </a>
+
+
+        <div class="nav-links">
+
+            <a href="index.html">Home</a>
+
+            <a href="profile.html" class="active">
+                Profile
             </a>
 
-            <div class="nav-links">
+            <a href="education.html">
+                Education
+            </a>
 
-                <a href="index.html">
-                    Home
-                </a>
+            <a href="hobby.html">
+                Hobby
+            </a>
 
-                <a
-                    href="profile.html"
-                    class="active"
-                >
-                    My Profile
-                </a>
+            <a href="contact.html">
+                Contact
+            </a>
 
-                <a href="education.html">
-                    Education
-                </a>
+        </div>
 
-                <a href="hobby.html">
-                    Hobby
-                </a>
+    </nav>
 
-                <a href="contact.html">
-                    Contact
-                </a>
+</header>
+
+
+<!-- =====================================================
+     MAIN
+===================================================== -->
+
+<main>
+
+    <section class="page-hero">
+
+        <p>✦ DISCOVER MY STORY ✦</p>
+
+        <h1>My Profile</h1>
+
+        <span>
+            ทำความรู้จักฉันผ่านเรื่องราวในป่าเวทมนตร์
+        </span>
+
+    </section>
+
+
+    <!-- PROFILE -->
+
+    <section class="profile-section">
+
+        <div class="profile-photo-area">
+
+            <div class="magic-label interactive-card"
+                 data-emoji="✨">
+
+                <strong>Creative</strong>
+
+                <small>
+                    Full of imagination
+                </small>
 
             </div>
 
-        </nav>
 
-    </header>
+            <div class="photo-card profile-photo"
+                 id="photoCard">
+
+                <div class="photo-shine"></div>
+
+                <!-- Placeholder รูปของคุณ -->
+                <img
+                    src="https://placehold.co/520x650/e9ddff/563d82?text=MY+PHOTO"
+                    alt="รูปโปรไฟล์ของ Megan"
+                >
+
+                <div class="photo-corner corner-one">✦</div>
+                <div class="photo-corner corner-two">✧</div>
+                <div class="photo-corner corner-three">⋆</div>
+                <div class="photo-corner corner-four">✦</div>
+
+            </div>
 
 
-    <main>
+            <div class="magic-label interactive-card"
+                 data-emoji="🪄">
 
-        <section class="page-hero">
+                <strong>Magical</strong>
 
-            <span>
-                ✦ GET TO KNOW ME ✦
-            </span>
+                <small>
+                    See the world differently
+                </small>
 
-            <h1>
-                My <em>Profile</em>
-            </h1>
+            </div>
 
-            <p>
-                Welcome into my enchanted world
+        </div>
+
+
+        <div class="profile-content">
+
+            <p class="eyebrow">
+                ✦ HELLO, I'M MEGAN ✦
             </p>
 
-        </section>
+            <h2>
+                เคไซยาห์ เมกาน
+                <span>ชินวรรธนวงศ์</span>
+            </h2>
+
+            <p class="profile-intro">
+
+                สวัสดี! ฉันชื่อเมกาน
+                เป็นนักเรียนที่ชอบเรียนรู้สิ่งใหม่ ๆ
+                สนใจการสร้างสรรค์ผลงาน
+                และอยากพัฒนาตัวเองอยู่เสมอ
+
+            </p>
 
 
-        <section class="profile-section">
+            <div class="detail-grid">
 
-            <div class="profile-visual">
+                <div class="detail-item interactive-card"
+                     data-emoji="👤">
 
-                <div class="photo-tag tag-top">
-
-                    <span>✦</span>
-
-                    <div>
-                        <small>CREATIVE</small>
-                        <strong>MY SPIRIT</strong>
-                    </div>
-
-                </div>
-
-
-                <div class="photo-stage">
-
-                    <div class="photo-glow"></div>
-
-                    <div class="photo-frame">
-
-                        <img
-                            src="https://placehold.co/500x640/241044/EEDFFF?text=MY+PHOTO"
-                            alt="รูปโปรไฟล์ของเมกาน"
-                            class="profile-photo"
-                        >
-
-                    </div>
+                    <span>ชื่อเล่น</span>
+                    <strong>เมกาน</strong>
 
                 </div>
 
 
-                <div class="photo-tag tag-bottom">
+                <div class="detail-item interactive-card"
+                     data-emoji="🎂">
 
-                    <span>☾</span>
-
-                    <div>
-                        <small>MAGICAL</small>
-                        <strong>MY AURA</strong>
-                    </div>
+                    <span>วันเกิด</span>
+                    <strong>1 สิงหาคม 2554</strong>
 
                 </div>
 
-            </div>
+
+                <div class="detail-item interactive-card"
+                     data-emoji="🏫">
+
+                    <span>โรงเรียน</span>
+                    <strong>จอมทอง</strong>
+
+                </div>
 
 
-            <div class="profile-content">
+                <div class="detail-item interactive-card"
+                     data-emoji="📚">
 
-                <span class="eyebrow">
-                    ✦ WHO AM I?
-                </span>
+                    <span>ระดับชั้น</span>
+                    <strong>ม.3/2</strong>
 
-                <h2>
-                    Hello, I'm
-                    <span>Megan</span>
-                </h2>
-
-                <p class="lead">
-
-                    ฉันชื่อ
-                    <strong>เคไซยาห์ เมกาน ชินวรรธนวงศ์</strong>
-                    หรือชื่อเล่นว่า "เมกาน"
-                    เป็นนักเรียนชั้นมัธยมศึกษาปีที่ 3
-                    ที่ชอบเรียนรู้และสร้างสรรค์สิ่งใหม่ ๆ
-
-                </p>
+                </div>
 
 
-                <div class="info-grid">
+                <div class="detail-item interactive-card"
+                     data-emoji="🌿">
 
-                    <div class="info-item">
-                        <span>NAME</span>
-                        <strong>เคไซยาห์ เมกาน ชินวรรธนวงศ์</strong>
-                    </div>
+                    <span>จังหวัด</span>
+                    <strong>เชียงใหม่</strong>
 
-                    <div class="info-item">
-                        <span>NICKNAME</span>
-                        <strong>เมกาน</strong>
-                    </div>
+                </div>
 
-                    <div class="info-item">
-                        <span>AGE</span>
-                        <strong>15 ปี</strong>
-                    </div>
 
-                    <div class="info-item">
-                        <span>BIRTHDAY</span>
-                        <strong>1 สิงหาคม 2554</strong>
-                    </div>
+                <div class="detail-item interactive-card"
+                     data-emoji="📖">
 
-                    <div class="info-item">
-                        <span>SCHOOL</span>
-                        <strong>จอมทอง</strong>
-                    </div>
-
-                    <div class="info-item">
-                        <span>CLASS</span>
-                        <strong>ม.3/2</strong>
-                    </div>
-
-                    <div class="info-item">
-                        <span>PROVINCE</span>
-                        <strong>เชียงใหม่</strong>
-                    </div>
-
-                    <div class="info-item">
-                        <span>FAVORITE SUBJECT</span>
-                        <strong>ภาษาอังกฤษ</strong>
-                    </div>
+                    <span>วิชาที่ชอบ</span>
+                    <strong>ภาษาอังกฤษ</strong>
 
                 </div>
 
             </div>
 
-        </section>
+        </div>
+
+    </section>
 
 
-        <section class="about-section">
+    <!-- ABOUT -->
 
-            <div class="section-heading">
+    <section class="about-section">
 
-                <span>✦ MY STORY</span>
+        <div class="section-heading">
 
-                <h2>
-                    เกี่ยวกับ
-                    <em>ฉัน</em>
-                </h2>
+            <p>✦ ABOUT ME ✦</p>
 
+            <h2>My Little Universe</h2>
+
+            <span>
+                ตัวตน ความคิด และสิ่งที่ฉันอยากเรียนรู้
+            </span>
+
+        </div>
+
+
+        <div class="about-card interactive-card"
+             data-emoji="🌙">
+
+            <div class="about-icon">
+                🌙
             </div>
-
-
-            <div class="about-layout">
-
-                <article class="about-main magic-card">
-
-                    <span class="big-number">
-                        01
-                    </span>
-
-                    <div class="card-icon">
-                        🧚
-                    </div>
-
-                    <h3>
-                        Creative & Magical
-                    </h3>
-
-                    <p>
-
-                        ฉันเป็นคนที่ชอบจินตนาการ
-                        และสนุกกับการสร้างสรรค์สิ่งต่าง ๆ
-                        โดยเฉพาะสิ่งที่มีความสวยงาม
-                        มีเรื่องราว และมีเอกลักษณ์ของตัวเอง
-
-                    </p>
-
-                </article>
-
-
-                <div class="about-side">
-
-                    <div class="mini-card">
-                        <span>✦</span>
-                        <strong>Creative</strong>
-                        <p>
-                            ชอบคิดและออกแบบ
-                        </p>
-                    </div>
-
-                    <div class="mini-card">
-                        <span>☾</span>
-                        <strong>Magical</strong>
-                        <p>
-                            ชอบโลกแฟนตาซี
-                        </p>
-                    </div>
-
-                    <div class="mini-card">
-                        <span>✧</span>
-                        <strong>Curious</strong>
-                        <p>
-                            สนใจการเรียนรู้
-                        </p>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <footer class="site-footer">
-
-        <div class="footer-inner">
 
             <div>
 
-                <a href="index.html" class="footer-logo">
-                    ✦ MY PROFILE
-                </a>
+                <h3>ฉันเป็นใคร?</h3>
 
                 <p>
-                    An enchanted little corner
-                    of Megan's world.
+
+                    ฉันเป็นนักเรียนชั้นมัธยมศึกษาปีที่ 3
+                    ที่กำลังค้นหาสิ่งที่ตัวเองชอบ
+                    และเรียนรู้ประสบการณ์ใหม่ ๆ
+                    ฉันเชื่อว่าความคิดสร้างสรรค์
+                    สามารถเปลี่ยนไอเดียเล็ก ๆ
+                    ให้กลายเป็นผลงานที่น่าสนใจได้
+
                 </p>
 
             </div>
 
-            <div class="footer-nav">
-
-                <a href="index.html">Home</a>
-                <a href="profile.html">My Profile</a>
-                <a href="education.html">Education</a>
-                <a href="hobby.html">Hobby</a>
-                <a href="contact.html">Contact</a>
-
-            </div>
-
         </div>
 
-        <div class="footer-bottom">
+    </section>
 
-            <span>
-                © 2026 Megan Portfolio
-            </span>
-
-            <span>
-                M.3/2 · Chomthong School
-            </span>
-
-        </div>
-
-    </footer>
+</main>
 
 
-    <script>
+<!-- FOOTER -->
 
-        const photo =
-            document.querySelector(".photo-stage");
+<footer class="site-footer">
 
-        document.addEventListener(
-            "mousemove",
-            (event) => {
+    <div>
 
-                const x =
-                    (event.clientX /
-                        window.innerWidth - 0.5) * 2;
+        <h3>✦ MEGAN</h3>
 
-                const y =
-                    (event.clientY /
-                        window.innerHeight - 0.5) * 2;
+        <p>Mystic Purple Enchanted Forest</p>
 
-                if (photo) {
+        <small>
+            เคไซยาห์ เมกาน ชินวรรธนวงศ์ • ม.3/2
+        </small>
 
-                    photo.style.transform =
-                        `perspective(1000px)
-                         rotateY(${x * 5}deg)
-                         rotateX(${y * -5}deg)
-                         translateZ(15px)`;
-
-                }
-
-            }
-        );
+    </div>
 
 
-        document.addEventListener(
-            "click",
-            (event) => {
+    <div class="footer-links">
 
-                const ripple =
-                    document.createElement("span");
+        <a href="index.html">Home</a>
+        <a href="profile.html">Profile</a>
+        <a href="education.html">Education</a>
+        <a href="hobby.html">Hobby</a>
+        <a href="contact.html">Contact</a>
 
-                ripple.className =
-                    "click-ripple";
+    </div>
 
-                ripple.style.left =
-                    event.clientX + "px";
 
-                ripple.style.top =
-                    event.clientY + "px";
+    <p class="copyright">
+        © 2026 Megan Portfolio
+    </p>
 
-                document.body.appendChild(
-                    ripple
-                );
+</footer>
 
-                setTimeout(
-                    () => ripple.remove(),
-                    700
-                );
 
-            }
-        );
+<script>
 
-    </script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    setTimeout(() => {
+
+        document
+            .getElementById("loadingScreen")
+            .classList.add("loaded");
+
+    }, 1800);
+
+
+    const glow =
+        document.querySelector(".mouse-glow");
+
+
+    document.addEventListener("mousemove", event => {
+
+        glow.style.left =
+            event.clientX + "px";
+
+        glow.style.top =
+            event.clientY + "px";
+
+
+        const x =
+            (event.clientX / innerWidth - .5) * 2;
+
+        const y =
+            (event.clientY / innerHeight - .5) * 2;
+
+
+        document
+            .querySelectorAll(".parallax-slow")
+            .forEach(el => {
+
+                el.style.transform =
+                    `translate3d(${x * -12}px,${y * -12}px,0)`;
+
+            });
+
+
+        document
+            .querySelectorAll(".parallax-medium")
+            .forEach(el => {
+
+                el.style.transform =
+                    `translate3d(${x * -25}px,${y * -25}px,0)`;
+
+            });
+
+    });
+
+
+    const photo =
+        document.getElementById("photoCard");
+
+
+    photo.addEventListener("mousemove", event => {
+
+        const rect =
+            photo.getBoundingClientRect();
+
+        const x =
+            event.clientX - rect.left;
+
+        const y =
+            event.clientY - rect.top;
+
+        const ry =
+            ((x / rect.width) - .5) * 18;
+
+        const rx =
+            ((y / rect.height) - .5) * -18;
+
+
+        photo.style.transform =
+            `perspective(1000px)
+             rotateX(${rx}deg)
+             rotateY(${ry}deg)
+             translateZ(20px)
+             scale(1.035)`;
+
+    });
+
+
+    photo.addEventListener("mouseleave", () => {
+
+        photo.style.transform =
+            "perspective(1000px) rotateX(0) rotateY(0) translateZ(0) scale(1)";
+
+    });
+
+
+    document.addEventListener("click", event => {
+
+        const sparkle =
+            document.createElement("span");
+
+        sparkle.className =
+            "click-spark";
+
+        sparkle.textContent =
+            "✦";
+
+        sparkle.style.left =
+            event.clientX + "px";
+
+        sparkle.style.top =
+            event.clientY + "px";
+
+        document.body.appendChild(sparkle);
+
+
+        const ripple =
+            document.createElement("span");
+
+        ripple.className =
+            "mouse-ripple";
+
+        ripple.style.left =
+            event.clientX + "px";
+
+        ripple.style.top =
+            event.clientY + "px";
+
+        document.body.appendChild(ripple);
+
+
+        setTimeout(() => {
+
+            sparkle.remove();
+            ripple.remove();
+
+        }, 900);
+
+    });
+
+
+    document
+        .querySelectorAll(".interactive-card")
+        .forEach(card => {
+
+            card.addEventListener("click", () => {
+
+                card.classList.add("pressed");
+
+                setTimeout(() => {
+
+                    card.classList.remove("pressed");
+
+                }, 300);
+
+
+                const popup =
+                    document.createElement("div");
+
+                popup.className =
+                    "emoji-pop";
+
+                popup.textContent =
+                    card.dataset.emoji || "✨";
+
+
+                const rect =
+                    card.getBoundingClientRect();
+
+                popup.style.left =
+                    rect.left + rect.width / 2 + "px";
+
+                popup.style.top =
+                    rect.top + "px";
+
+
+                document.body.appendChild(popup);
+
+
+                setTimeout(() => popup.remove(), 900);
+
+            });
+
+        });
+
+});
+
+</script>
 
 </body>
-
 </html>
