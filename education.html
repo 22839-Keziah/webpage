@@ -16,9 +16,84 @@
 
 </head>
 
-
+<script src="magic-effects.js"></script>
 <body>
+    
+<!-- MUSIC PLAYER -->
+<audio id="forestMusic" loop preload="auto">
+    <source src="seasons.mp3" type="audio/mpeg">
+    เบราว์เซอร์ของคุณไม่รองรับเสียงเพลง
+</audio>
 
+<button id="musicToggle" class="music-toggle" type="button">
+    🔇 เปิดเพลง
+</button>
+
+<!-- MAGIC BACKGROUND -->
+<div class="magic-background" aria-hidden="true">
+
+    <!-- ดาว -->
+    <span class="magic-star star-1"></span>
+    <span class="magic-star star-2"></span>
+    <span class="magic-star star-3"></span>
+    <span class="magic-star star-4"></span>
+    <span class="magic-star star-5"></span>
+    <span class="magic-star star-6"></span>
+    <span class="magic-star star-7"></span>
+    <span class="magic-star star-8"></span>
+    <span class="magic-star star-9"></span>
+    <span class="magic-star star-10"></span>
+
+    <!-- ดาวตก -->
+    <span class="shooting-star shooting-1"></span>
+    <span class="shooting-star shooting-2"></span>
+    <span class="shooting-star shooting-3"></span>
+    <span class="shooting-star shooting-4"></span>
+
+    <!-- หิ่งห้อย -->
+    <span class="firefly firefly-1"></span>
+    <span class="firefly firefly-2"></span>
+    <span class="firefly firefly-3"></span>
+    <span class="firefly firefly-4"></span>
+    <span class="firefly firefly-5"></span>
+    <span class="firefly firefly-6"></span>
+    <span class="firefly firefly-7"></span>
+    <span class="firefly firefly-8"></span>
+
+    <!-- เถาวัลย์ขนาดใหญ่ -->
+    <div class="giant-vine giant-vine-left">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="giant-vine giant-vine-right">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- ต้นไม้ -->
+    <div class="magic-tree tree-left">
+        <div class="tree-crown"></div>
+        <div class="tree-trunk"></div>
+    </div>
+
+    <div class="magic-tree tree-right">
+        <div class="tree-crown"></div>
+        <div class="tree-trunk"></div>
+    </div>
+
+    <!-- หมอกเรืองแสง -->
+    <div class="magic-mist mist-one"></div>
+    <div class="magic-mist mist-two"></div>
+
+</div>
+
+<!-- จุดสำหรับประกายและ Ripple -->
+<div id="magicEffectsLayer"></div>
 
 <!-- LOADING -->
 
