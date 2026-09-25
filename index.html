@@ -697,58 +697,18 @@ window.addEventListener(
 );
 
 
+```javascript
 /* ================= MUSIC ================= */
 
-const bgMusic =
-    document.getElementById(
-        "bgMusic"
-    );
+const bgMusic = document.getElementById("bgMusic");
+const musicButton = document.getElementById("musicButton");
+const musicIcon = document.getElementById("musicIcon");
 
-const musicButton =
-    document.getElementById(
-        "musicButton"
-    );
-
-const musicIcon =
-    document.getElementById(
-        "musicIcon"
-    );
-
-
-/*
-    ระดับเสียงเริ่มต้น
-    0.35 = 35%
-*/
-
+/* ระดับเสียง 35% */
 bgMusic.volume = 0.35;
 
 
-/*
-    อ่านสถานะเพลง
-    จาก localStorage
-*/
-
-let musicEnabled =
-    localStorage.getItem(
-        "meganMusic"
-    );
-
-
-/*
-    ถ้ายังไม่มีข้อมูล
-    ให้เริ่มเป็นปิดเสียง
-*/
-
-if (musicEnabled === null) {
-
-    musicEnabled = "false";
-
-}
-
-
-/*
-    อัปเดตหน้าตาปุ่ม
-*/
+/* ================= UPDATE BUTTON ================= */
 
 function updateMusicButton() {
 
@@ -760,6 +720,11 @@ function updateMusicButton() {
             "music-playing"
         );
 
+        musicButton.setAttribute(
+            "aria-label",
+            "ปิดเพลง"
+        );
+
     } else {
 
         musicIcon.textContent = "🔇";
@@ -768,74 +733,59 @@ function updateMusicButton() {
             "music-playing"
         );
 
+        musicButton.setAttribute(
+            "aria-label",
+            "เปิดเพลง"
+        );
+
     }
 
 }
 
 
-/*
-    พยายามเล่นเพลง
-*/
+/* ================= PLAY MUSIC ================= */
 
 function playMusic() {
 
-    bgMusic
-        .play()
-        .then(
-            () => {
+    bgMusic.play()
+        .then(() => {
 
-                localStorage.setItem(
-                    "meganMusic",
-                    "true"
-                );
+            localStorage.setItem(
+                "meganMusic",
+                "true"
+            );
 
-                updateMusicButton();
+            updateMusicButton();
 
-            }
-        )
-        .catch(
-            () => {
+        })
+        .catch((error) => {
 
-                /*
-                    Browser อาจบล็อก autoplay
-                    จึงรอการคลิกจากผู้ใช้
-                */
+            console.error(
+                "ไม่สามารถเล่นเพลงได้:",
+                error
+            );
 
-                updateMusicButton();
+            updateMusicButton();
 
-            }
-        );
+            alert(
+                "ไม่สามารถเปิดเพลงได้\n\n" +
+                "กรุณาตรวจสอบว่าไฟล์\n" +
+                "string-theory.mp3\n" +
+                "อยู่ใน GitHub โฟลเดอร์เดียวกับ index.html"
+            );
 
-}
-
-
-/*
-    ถ้าผู้ใช้เคยเปิดเพลงไว้
-    ให้ลองเล่นเมื่อเปิดหน้าเว็บ
-*/
-
-if (musicEnabled === "true") {
-
-    playMusic();
+        });
 
 }
 
 
-/*
-    กดปุ่มเพลง
-*/
+/* ================= MUSIC BUTTON ================= */
 
 musicButton.addEventListener(
     "click",
     (event) => {
 
-        /*
-            ป้องกันไม่ให้ click
-            ไปสร้าง sparkle ซ้ำ
-        */
-
         event.stopPropagation();
-
 
         if (bgMusic.paused) {
 
@@ -858,36 +808,7 @@ musicButton.addEventListener(
 );
 
 
-/*
-    ถ้า Browser บล็อก autoplay
-    เมื่อผู้ใช้คลิกหน้าเว็บครั้งแรก
-    ให้เริ่มเพลง
-*/
-
-document.addEventListener(
-    "click",
-    () => {
-
-        if (
-            musicEnabled === "true" &&
-            bgMusic.paused
-        ) {
-
-            playMusic();
-
-        }
-
-    },
-    {
-        once: true
-    }
-);
-
-
-/*
-    เมื่อเพลงเล่น / หยุด
-    ให้เปลี่ยนปุ่ม
-*/
+/* ================= MUSIC EVENTS ================= */
 
 bgMusic.addEventListener(
     "play",
@@ -898,6 +819,34 @@ bgMusic.addEventListener(
     "pause",
     updateMusicButton
 );
+
+bgMusic.addEventListener(
+    "ended",
+    updateMusicButton
+);
+
+
+/* ================= MUSIC ERROR ================= */
+
+bgMusic.addEventListener(
+    "error",
+    () => {
+
+        console.error(
+            "ไม่พบหรือไม่สามารถอ่านไฟล์ string-theory.mp3 ได้"
+        );
+
+        musicIcon.textContent = "⚠️";
+
+    }
+);
+
+
+/* ================= INITIAL STATE ================= */
+
+updateMusicButton();
+```
+
 
 
 /* ================= MOUSE GLOW ================= */
