@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="th">
 
@@ -19,6 +20,10 @@
 
 <body>
 
+
+<!-- =====================================================
+     LOADING SCREEN
+===================================================== -->
 
 <div class="loading-screen" id="loadingScreen">
 
@@ -50,8 +55,50 @@
 </div>
 
 
+<!-- =====================================================
+     MUSIC PLAYER
+===================================================== -->
+
+<audio
+    id="bgMusic"
+    loop
+    preload="auto"
+>
+    <source
+        src="string-theory.mp3"
+        type="audio/mpeg"
+    >
+
+    เบราว์เซอร์ของคุณไม่รองรับการเล่นเพลง
+</audio>
+
+
+<button
+    class="music-button"
+    id="musicButton"
+    type="button"
+    aria-label="เปิดหรือปิดเพลง"
+>
+
+    <span id="musicIcon">
+        🔇
+    </span>
+
+    <span class="music-pulse"></span>
+
+</button>
+
+
+<!-- =====================================================
+     MOUSE
+===================================================== -->
+
 <div class="mouse-glow"></div>
 
+
+<!-- =====================================================
+     FAIRY
+===================================================== -->
 
 <img
     class="flying-fairy"
@@ -59,6 +106,10 @@
     alt="Fairy decoration"
 >
 
+
+<!-- =====================================================
+     STARS
+===================================================== -->
 
 <div class="star-field">
 
@@ -72,18 +123,30 @@
 </div>
 
 
+<!-- =====================================================
+     FOREST BACKGROUND
+===================================================== -->
+
 <div class="forest-background">
 
     <div class="moon">
+
         <div class="moon-ring"></div>
+
     </div>
+
 
     <div class="aurora"></div>
 
+
     <div class="mountain mountain-back"></div>
+
     <div class="mountain mountain-middle"></div>
+
     <div class="mountain mountain-front"></div>
 
+
+    <!-- BACK TREES -->
 
     <div class="forest-trees trees-back">
 
@@ -95,6 +158,8 @@
 
     </div>
 
+
+    <!-- GIANT MUSHROOM LEFT -->
 
     <div class="giant-mushroom mushroom-left">
 
@@ -113,6 +178,8 @@
     </div>
 
 
+    <!-- GIANT MUSHROOM RIGHT -->
+
     <div class="giant-mushroom mushroom-right">
 
         <div class="mushroom-cap">
@@ -129,6 +196,8 @@
 
     </div>
 
+
+    <!-- VINES -->
 
     <div class="vine vine-left">
 
@@ -148,9 +217,12 @@
     </div>
 
 
+    <!-- FOREGROUND TREES -->
+
     <div class="foreground-trees">
 
         <div class="tree tree-left"></div>
+
         <div class="tree tree-right"></div>
 
     </div>
@@ -158,8 +230,16 @@
 </div>
 
 
+<!-- =====================================================
+     RAIN
+===================================================== -->
+
 <div class="rain"></div>
 
+
+<!-- =====================================================
+     NAVBAR
+===================================================== -->
 
 <header class="site-header">
 
@@ -169,8 +249,13 @@
             href="index.html"
             class="logo"
         >
-            <span>✦</span>
+
+            <span>
+                ✦
+            </span>
+
             MEGAN
+
         </a>
 
 
@@ -180,13 +265,16 @@
                 Home
             </a>
 
+
             <a href="profile.html">
                 Profile
             </a>
 
+
             <a href="education.html">
                 Education
             </a>
+
 
             <a
                 href="hobby.html"
@@ -194,6 +282,7 @@
             >
                 Hobby
             </a>
+
 
             <a href="contact.html">
                 Contact
@@ -206,14 +295,21 @@
 </header>
 
 
+<!-- =====================================================
+     MAIN
+===================================================== -->
+
 <main>
 
 
 <section class="page-title">
 
     <div class="magic-label">
+
         ✦ MY INTERESTS ✦
+
     </div>
+
 
     <h1>
 
@@ -225,15 +321,24 @@
 
     </h1>
 
+
     <p>
+
         สิ่งที่ฉันสนใจและอยากเรียนรู้
+
     </p>
 
 </section>
 
 
+<!-- =====================================================
+     HOBBY GRID
+===================================================== -->
+
 <section class="hobby-grid">
 
+
+    <!-- GAME -->
 
     <div class="hobby-card">
 
@@ -246,8 +351,10 @@
         </h2>
 
         <p>
+
             กิจกรรมที่ช่วยผ่อนคลาย
             และเปิดโลกจินตนาการ
+
         </p>
 
         <div class="emoji-pop">
@@ -256,6 +363,8 @@
 
     </div>
 
+
+    <!-- SPORT -->
 
     <div class="hobby-card">
 
@@ -268,8 +377,10 @@
         </h2>
 
         <p>
+
             กิจกรรมที่ช่วยให้ได้เคลื่อนไหว
             และใช้เวลาว่างอย่างสนุก
+
         </p>
 
         <div class="emoji-pop">
@@ -278,6 +389,8 @@
 
     </div>
 
+
+    <!-- MUSIC -->
 
     <div class="hobby-card">
 
@@ -290,8 +403,10 @@
         </h2>
 
         <p>
+
             เสียงเพลงที่ช่วยสร้างบรรยากาศ
             และแรงบันดาลใจ
+
         </p>
 
         <div class="emoji-pop">
@@ -300,6 +415,8 @@
 
     </div>
 
+
+    <!-- MOVIE -->
 
     <div class="hobby-card">
 
@@ -312,8 +429,10 @@
         </h2>
 
         <p>
+
             เรื่องราวและโลกต่าง ๆ
             ที่เต็มไปด้วยจินตนาการ
+
         </p>
 
         <div class="emoji-pop">
@@ -322,6 +441,8 @@
 
     </div>
 
+
+    <!-- TECHNOLOGY -->
 
     <div class="hobby-card">
 
@@ -334,8 +455,10 @@
         </h2>
 
         <p>
+
             สนใจการสร้างเว็บไซต์
             และเรียนรู้เทคโนโลยีใหม่
+
         </p>
 
         <div class="emoji-pop">
@@ -344,6 +467,8 @@
 
     </div>
 
+
+    <!-- INTEREST -->
 
     <div class="hobby-card">
 
@@ -356,8 +481,10 @@
         </h2>
 
         <p>
+
             พื้นที่สำหรับเพิ่มสิ่งที่สนใจ
             และงานอดิเรกของตัวเอง
+
         </p>
 
         <div class="emoji-pop">
@@ -373,9 +500,14 @@
 </main>
 
 
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
 <footer class="footer">
 
     <div class="footer-content">
+
 
         <div>
 
@@ -402,18 +534,29 @@
 
         </div>
 
+
     </div>
 
 
     <p class="copyright">
+
         © 2026 Megan Portfolio
+
     </p>
 
 </footer>
 
 
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
 <script>
 
+
+/* =====================================================
+   LOADING
+===================================================== */
 
 window.addEventListener(
     "load",
@@ -438,6 +581,218 @@ window.addEventListener(
 );
 
 
+/* =====================================================
+   MUSIC PLAYER
+===================================================== */
+
+const bgMusic =
+    document.getElementById(
+        "bgMusic"
+    );
+
+
+const musicButton =
+    document.getElementById(
+        "musicButton"
+    );
+
+
+const musicIcon =
+    document.getElementById(
+        "musicIcon"
+    );
+
+
+/*
+    ระดับเสียง
+    0.35 = 35%
+*/
+
+bgMusic.volume = 0.35;
+
+
+/*
+    อ่านสถานะเพลง
+    จากหน้าอื่นที่เคยเปิดไว้
+*/
+
+let musicEnabled =
+    localStorage.getItem(
+        "meganMusic"
+    );
+
+
+/*
+    ถ้ายังไม่มีข้อมูล
+    ให้ปิดเพลงไว้ก่อน
+*/
+
+if (musicEnabled === null) {
+
+    musicEnabled = "false";
+
+}
+
+
+/*
+    อัปเดตปุ่มเพลง
+*/
+
+function updateMusicButton() {
+
+    if (!bgMusic.paused) {
+
+        musicIcon.textContent =
+            "🎵";
+
+        musicButton.classList.add(
+            "music-playing"
+        );
+
+    } else {
+
+        musicIcon.textContent =
+            "🔇";
+
+        musicButton.classList.remove(
+            "music-playing"
+        );
+
+    }
+
+}
+
+
+/*
+    เริ่มเล่นเพลง
+*/
+
+function playMusic() {
+
+    bgMusic
+        .play()
+        .then(
+            () => {
+
+                localStorage.setItem(
+                    "meganMusic",
+                    "true"
+                );
+
+                updateMusicButton();
+
+            }
+        )
+        .catch(
+            () => {
+
+                /*
+                    Browser บล็อก autoplay
+                    ให้รอการคลิก
+                */
+
+                updateMusicButton();
+
+            }
+        );
+
+}
+
+
+/*
+    ถ้าผู้ใช้เปิดเพลงไว้
+    ให้พยายามเปิดเพลง
+*/
+
+if (musicEnabled === "true") {
+
+    playMusic();
+
+}
+
+
+/*
+    ปุ่มเปิด / ปิดเพลง
+*/
+
+musicButton.addEventListener(
+    "click",
+    (event) => {
+
+        /*
+            ป้องกัน click effect
+            ไม่ให้ทำงานซ้ำ
+        */
+
+        event.stopPropagation();
+
+
+        if (bgMusic.paused) {
+
+            playMusic();
+
+        } else {
+
+            bgMusic.pause();
+
+            localStorage.setItem(
+                "meganMusic",
+                "false"
+            );
+
+            updateMusicButton();
+
+        }
+
+    }
+);
+
+
+/*
+    Browser บางตัวไม่อนุญาต
+    autoplay จนกว่าจะมี user interaction
+*/
+
+document.addEventListener(
+    "click",
+    () => {
+
+        if (
+            musicEnabled === "true" &&
+            bgMusic.paused
+        ) {
+
+            playMusic();
+
+        }
+
+    },
+    {
+        once: true
+    }
+);
+
+
+/*
+    ตรวจสอบสถานะเพลง
+*/
+
+bgMusic.addEventListener(
+    "play",
+    updateMusicButton
+);
+
+
+bgMusic.addEventListener(
+    "pause",
+    updateMusicButton
+);
+
+
+/* =====================================================
+   MOUSE GLOW
+===================================================== */
+
 const mouseGlow =
     document.querySelector(
         ".mouse-glow"
@@ -458,23 +813,32 @@ document.addEventListener(
 );
 
 
+/* =====================================================
+   CLICK MAGIC
+===================================================== */
+
 document.addEventListener(
     "click",
     (event) => {
+
 
         const sparkle =
             document.createElement(
                 "div"
             );
 
+
         sparkle.className =
             "click-spark";
+
 
         sparkle.innerHTML =
             "✦";
 
+
         sparkle.style.left =
             event.clientX + "px";
+
 
         sparkle.style.top =
             event.clientY + "px";
@@ -490,11 +854,14 @@ document.addEventListener(
                 "div"
             );
 
+
         ripple.className =
             "mouse-ripple";
 
+
         ripple.style.left =
             event.clientX + "px";
+
 
         ripple.style.top =
             event.clientY + "px";
@@ -509,6 +876,7 @@ document.addEventListener(
             () => {
 
                 sparkle.remove();
+
                 ripple.remove();
 
             },
@@ -524,3 +892,4 @@ document.addEventListener(
 
 </body>
 </html>
+```
